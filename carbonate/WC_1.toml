@@ -1,0 +1,29 @@
+# Imported iolite reference-material record; kept separate from curated records.
+format_version = 2
+material = "carbonate"
+
+[standards."IOLITE_WC_1"]
+aliases = ["WC-1"]
+description = "iolite matrix: Calcite"
+origin = "iolite:WC-1.json"
+
+[[standards."IOLITE_WC_1".measurements]]
+role = "radiogenic_ratio"
+unit = "ratio"
+status = "provisional"
+source = "iolite_unattributed"
+notes = "Imported without numerical reinterpretation from an iolite JSON reference-material record."
+
+[standards."IOLITE_WC_1".measurements.values]
+"207Pb/206Pb*" = { value = 0.85, uncertainty = 0.04, uncertainty_type = "reported_unspecified" }
+"238U/206Pb*" = { value = 24.84, uncertainty = 0.62, uncertainty_type = "reported_unspecified" }
+
+[[standards."IOLITE_WC_1".measurements]]
+role = "reference_age"
+unit = "Ma"
+status = "provisional"
+source = "iolite_unattributed"
+notes = "Imported without numerical reinterpretation from an iolite JSON reference-material record."
+
+[standards."IOLITE_WC_1".measurements.values]
+"concordia_age" = { value = 254.4, uncertainty = 6.4, uncertainty_type = "reported_unspecified" }

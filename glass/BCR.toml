@@ -1,0 +1,78 @@
+# Curated glass reference-material record.
+# Only documented inputs are stored; redundant ratios are derived in Python.
+format_version = 2
+material = "glass"
+
+[standards."BCR"]
+aliases = ["BCR-2G"]
+
+[[standards."BCR".measurements]]
+role = "concentration"
+unit = "ug/g"
+status = "provisional"
+source = "georem2005"
+notes = "Elemental mass fraction assigned to the {quantity} measurement channel; value is not multiplied by the isotope abundance."
+
+[standards."BCR".measurements.values]
+"139La" = { value = 24.7 }
+"140Ce" = { value = 53.3 }
+"141Pr" = { value = 6.7 }
+"146Nd" = { value = 28.9 }
+"147Sm" = { value = 6.58 }
+"153Eu" = { value = 1.97 }
+"157Gd" = { value = 6.71 }
+"159Tb" = { value = 1.07 }
+"163Dy" = { value = 6.41 }
+"165Ho" = { value = 1.28 }
+"166Er" = { value = 3.66 }
+"169Tm" = { value = 0.54 }
+"172Yb" = { value = 3.39 }
+"175Lu" = { value = 0.503 }
+"177Hf" = { value = 4.9 }
+"181Ta" = { value = 0.74 }
+"208Pb" = { value = 11.0 }
+"232Th" = { value = 5.9 }
+"238U" = { value = 1.69 }
+"29Si" = { value = 254301.21484440003 }
+"31P" = { value = 1614.9531393136497 }
+"49Ti" = { value = 13608.635794743428 }
+"89Y" = { value = 35.0 }
+"91Zr" = { value = 184.0 }
+"93Nb" = { value = 12.6 }
+
+[[standards."BCR".measurements]]
+role = "concentration"
+unit = "ug/g"
+status = "provisional"
+source = "georem2005"
+notes = "Elemental mass fraction assigned to the {quantity} measurement channel; value is not multiplied by the isotope abundance."
+
+[standards."BCR".measurements.values]
+"26Mg" = { value = 21650.434135450258 }
+"44Ca" = { value = 50886.16262482168 }
+"55Mn" = { value = 1548.858190019735 }
+"57Fe" = { value = 96528.27352996432 }
+"88Sr" = { value = 340.0 }
+
+[[standards."BCR".measurements]]
+role = "concentration"
+unit = "ug/g"
+status = "provisional"
+source = "georem2005"
+notes = "Elemental mass fraction assigned to the {quantity} measurement channel; value is not multiplied by the isotope abundance."
+
+[standards."BCR".measurements.values]
+"51V" = { value = 425.0 }
+"52Cr" = { value = 17.0 }
+
+[[standards."BCR".measurements]]
+role = "initial_ratio"
+unit = "ratio"
+status = "provisional"
+source = "georem2005"
+notes = "Canonical initial/common-Pb ratio; reciprocal and cross-ratios are derived."
+
+[standards."BCR".measurements.values]
+"206Pb/204Pb_i" = 18.761
+"207Pb/204Pb_i" = 15.627913001000188
+"208Pb/204Pb_i" = 38.760225961394816

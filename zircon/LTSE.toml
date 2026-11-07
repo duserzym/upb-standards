@@ -1,0 +1,60 @@
+# Only documented inputs are stored; redundant ratios are derived in Python.
+format_version = 2
+material = "zircon"
+
+[standards."LTSE"]
+aliases = ["SLZC"]
+
+[[standards."LTSE".measurements]]
+role = "concentration"
+unit = "ug/g"
+status = "provisional"
+source = "deer2013"
+notes = "Elemental mass fraction assigned to the {quantity} measurement channel; value is not multiplied by the isotope abundance. Average zircon composition. LTSE is the SLZC megacryst of Hu et al. (2023)."
+
+[standards."LTSE".measurements.values]
+"29Si" = 151443.22960004435
+"91Zr" = 487760.24454904505
+
+[[standards."LTSE".measurements]]
+role = "initial_ratio"
+unit = "ratio"
+status = "provisional"
+source = "boise_upbr26plus_2026"
+notes = "Instructions sheet, Analyte & Standards Archive, column T: 206Pb/204Pb = 18.076074416, 206Pb/207Pb = 1.1606485235997472, 206Pb/208Pb = 0.47745654851370506. Canonical 207Pb/204Pb = 18.076074416 / 1.1606485235997472 = 15.574115719319678; canonical 208Pb/204Pb = 18.076074416 / 0.47745654851370506 = 37.8590983248 (Python float repr). LTSE is the SLZC megacryst of Hu et al. (2023) (source hu2023), confirmed by Yiming Zhang on 2026-11-05. This record describes SLZC; it comes from the UPbR26plus archive and stays provisional until SLZC values published by Hu et al. (2023) replace it."
+
+[standards."LTSE".measurements.values]
+"206Pb/204Pb_i" = 18.076074416
+"207Pb/204Pb_i" = 15.574115719319678
+"208Pb/204Pb_i" = 37.8590983248
+
+[[standards."LTSE".measurements]]
+role = "reference_age"
+unit = "Ma"
+status = "recommended"
+source = "hu2023"
+notes = "SLZC: Th-corrected weighted mean 206Pb/238U CA-ID-TIMS age, 95% confidence, n = 7 (Hu et al. 2023). LTSE is the SLZC megacryst, confirmed by Yiming Zhang on 2026-11-05. The UPbR26plus archive's 560.928 Ma is superseded."
+
+[standards."LTSE".measurements.values]
+"206Pb/238U_age" = { value = 560.83, uncertainty = 1.29, uncertainty_type = "expanded_95" }
+
+[[standards."LTSE".measurements]]
+role = "radiogenic_ratio"
+unit = "ratio"
+status = "recommended"
+source = "hu2023"
+notes = "SLZC CA-ID-TIMS, Hu et al. (2023) supporting information, Appendix S4 (single grains z1-z7, Th-corrected, Jaffey decay constants). Inverse-variance weighted means of the seven grain ratios computed here (the paper publishes the mean date, not mean ratios); uncertainty is 2s internal times sqrt(MSWD) (206Pb/238U MSWD 10.3, 207Pb/235U MSWD 8.9). The 206Pb/238U mean corresponds to 560.835 Ma, matching the published 560.83 Ma. SLZC is slightly discordant (207Pb/235U date about 561.7 Ma), so 207Pb/235U is stored as measured. Supersedes the UPbR26plus archive ratios 0.090912 and 0.73893."
+
+[standards."LTSE".measurements.values]
+"206Pb/238U*" = { value = 0.0908962, uncertainty = 3.1e-05, uncertainty_type = "expanded_95" }
+"207Pb/235U*" = { value = 0.738832, uncertainty = 0.00035, uncertainty_type = "expanded_95" }
+
+[[standards."LTSE".measurements]]
+role = "reference_age"
+unit = "Ma"
+status = "provisional"
+source = "hu2023"
+notes = "The published SLZC 206Pb/238U age, used as a concordia age only so that 208Pb/232Th* is derived (concordant Th-Pb is an assumption: Hu et al. (2023) give model Th/U from 208Pb/206Pb, not a measured 208Pb/232Th). The UPbR26plus archive's 208Pb/232Th* 0.028140699603010466 is superseded."
+
+[standards."LTSE".measurements.values]
+"concordia_age" = 560.83

@@ -1,0 +1,97 @@
+# Imported iolite reference-material record; kept separate from curated records.
+format_version = 2
+material = "glass"
+
+[standards."IOLITE_G_NIST614"]
+aliases = ["G_NIST614"]
+description = "iolite matrix: Glass"
+origin = "iolite:G_NIST614.json"
+
+[[standards."IOLITE_G_NIST614".measurements]]
+role = "concentration"
+unit = "ug/g"
+status = "provisional"
+source = "iolite_unattributed"
+notes = "Imported from an iolite JSON reference-material record. Element concentrations are assigned to UPbRPy isotope channels; the values are elemental mass fractions, not isotope-abundance-scaled."
+
+[standards."IOLITE_G_NIST614".measurements.values]
+"107Ag" = { value = 0.42, uncertainty = 0.04, uncertainty_type = "reported_unspecified" }
+"27Al" = { value = 10796.841304856998, uncertainty = 264.62846335433824, uncertainty_type = "reported_unspecified" }
+"75As" = { value = 0.74, uncertainty = 0.23, uncertainty_type = "reported_unspecified" }
+"197Au" = { value = 0.48, uncertainty = 0.07, uncertainty_type = "reported_unspecified" }
+"11B" = { value = 1.49, uncertainty = 0.19, uncertainty_type = "reported_unspecified" }
+"137Ba" = { value = 3.2, uncertainty = 0.09, uncertainty_type = "reported_unspecified" }
+"9Be" = { value = 0.753, uncertainty = 0.051, uncertainty_type = "reported_unspecified" }
+"209Bi" = { value = 0.581, uncertainty = 0.043, uncertainty_type = "reported_unspecified" }
+"13C" = 1.091685791542639
+"44Ca" = { value = 85048.80788915242, uncertainty = 1429.3917292294525, uncertainty_type = "reported_unspecified" }
+"111Cd" = { value = 0.56, uncertainty = 0.05, uncertainty_type = "reported_unspecified" }
+"140Ce" = { value = 0.813, uncertainty = 0.025, uncertainty_type = "reported_unspecified" }
+"35Cl" = { value = 102.0, uncertainty = 84.0, uncertainty_type = "reported_unspecified" }
+"59Co" = { value = 0.79, uncertainty = 0.09, uncertainty_type = "reported_unspecified" }
+"52Cr" = { value = 1.19, uncertainty = 0.12, uncertainty_type = "reported_unspecified" }
+"133Cs" = { value = 0.664, uncertainty = 0.034, uncertainty_type = "reported_unspecified" }
+"63Cu" = { value = 1.37, uncertainty = 0.07, uncertainty_type = "reported_unspecified" }
+"163Dy" = { value = 0.746, uncertainty = 0.022, uncertainty_type = "reported_unspecified" }
+"166Er" = { value = 0.74, uncertainty = 0.017, uncertainty_type = "reported_unspecified" }
+"153Eu" = { value = 0.77, uncertainty = 0.016, uncertainty_type = "reported_unspecified" }
+"19F" = 6.2
+"57Fe" = { value = 18.8, uncertainty = 6.0, uncertainty_type = "reported_unspecified" }
+"69Ga" = { value = 1.31, uncertainty = 0.09, uncertainty_type = "reported_unspecified" }
+"157Gd" = { value = 0.763, uncertainty = 0.021, uncertainty_type = "reported_unspecified" }
+"73Ge" = { value = 0.942, uncertainty = 0.096, uncertainty_type = "reported_unspecified" }
+"1H" = 21.262281432139883
+"177Hf" = { value = 0.711, uncertainty = 0.022, uncertainty_type = "reported_unspecified" }
+"165Ho" = { value = 0.749, uncertainty = 0.015, uncertainty_type = "reported_unspecified" }
+"115In" = { value = 0.79, uncertainty = 0.05, uncertainty_type = "reported_unspecified" }
+"193Ir" = 0.002
+"39K" = { value = 30.0, uncertainty = 1.0, uncertainty_type = "reported_unspecified" }
+"139La" = { value = 0.72, uncertainty = 0.013, uncertainty_type = "reported_unspecified" }
+"7Li" = { value = 1.69, uncertainty = 0.09, uncertainty_type = "reported_unspecified" }
+"175Lu" = { value = 0.732, uncertainty = 0.018, uncertainty_type = "reported_unspecified" }
+"24Mg" = { value = 33.8, uncertainty = 1.9, uncertainty_type = "reported_unspecified" }
+"55Mn" = { value = 1.42, uncertainty = 0.07, uncertainty_type = "reported_unspecified" }
+"95Mo" = { value = 0.8, uncertainty = 0.03, uncertainty_type = "reported_unspecified" }
+"23Na" = { value = 101635.12933790608, uncertainty = 2225.5867738227607, uncertainty_type = "reported_unspecified" }
+"93Nb" = { value = 0.824, uncertainty = 0.03, uncertainty_type = "reported_unspecified" }
+"146Nd" = { value = 0.752, uncertainty = 0.014, uncertainty_type = "reported_unspecified" }
+"60Ni" = { value = 1.1, uncertainty = 0.1, uncertainty_type = "reported_unspecified" }
+"31P" = { value = 11.4, uncertainty = 3.9, uncertainty_type = "reported_unspecified" }
+"208Pb" = { value = 2.32, uncertainty = 0.04, uncertainty_type = "reported_unspecified" }
+"105Pd" = { value = 2.05, uncertainty = 0.1, uncertainty_type = "reported_unspecified" }
+"141Pr" = { value = 0.768, uncertainty = 0.015, uncertainty_type = "reported_unspecified" }
+"195Pt" = { value = 2.36, uncertainty = 0.12, uncertainty_type = "reported_unspecified" }
+"85Rb" = { value = 0.855, uncertainty = 0.005, uncertainty_type = "reported_unspecified" }
+"185Re" = { value = 0.17, uncertainty = 0.008, uncertainty_type = "reported_unspecified" }
+"103Rh" = { value = 1.54, uncertainty = 0.18, uncertainty_type = "reported_unspecified" }
+"34S" = { value = 291.0, uncertainty = 66.0, uncertainty_type = "reported_unspecified" }
+"121Sb" = { value = 0.79, uncertainty = 0.064, uncertainty_type = "reported_unspecified" }
+"45Sc" = 0.74
+"77Se" = { value = 0.4, uncertainty = 0.08, uncertainty_type = "reported_unspecified" }
+"29Si" = { value = 337021.8697468501, uncertainty = 4206.930412928782, uncertainty_type = "reported_unspecified" }
+"147Sm" = { value = 0.754, uncertainty = 0.013, uncertainty_type = "reported_unspecified" }
+"118Sn" = { value = 1.68, uncertainty = 0.15, uncertainty_type = "reported_unspecified" }
+"88Sr" = { value = 45.8, uncertainty = 0.1, uncertainty_type = "reported_unspecified" }
+"181Ta" = { value = 0.808, uncertainty = 0.026, uncertainty_type = "reported_unspecified" }
+"159Tb" = { value = 0.739, uncertainty = 0.02, uncertainty_type = "reported_unspecified" }
+"232Th" = { value = 0.748, uncertainty = 0.006, uncertainty_type = "reported_unspecified" }
+"49Ti" = { value = 3.61, uncertainty = 0.25, uncertainty_type = "reported_unspecified" }
+"205Tl" = { value = 0.273, uncertainty = 0.02, uncertainty_type = "reported_unspecified" }
+"169Tm" = { value = 0.732, uncertainty = 0.02, uncertainty_type = "reported_unspecified" }
+"238U" = { value = 0.823, uncertainty = 0.002, uncertainty_type = "reported_unspecified" }
+"51V" = { value = 1.01, uncertainty = 0.04, uncertainty_type = "reported_unspecified" }
+"182W" = { value = 0.806, uncertainty = 0.071, uncertainty_type = "reported_unspecified" }
+"89Y" = { value = 0.79, uncertainty = 0.032, uncertainty_type = "reported_unspecified" }
+"172Yb" = { value = 0.777, uncertainty = 0.021, uncertainty_type = "reported_unspecified" }
+"66Zn" = { value = 2.79, uncertainty = 0.38, uncertainty_type = "reported_unspecified" }
+"91Zr" = { value = 0.848, uncertainty = 0.028, uncertainty_type = "reported_unspecified" }
+
+[[standards."IOLITE_G_NIST614".measurements]]
+role = "isotope_ratio"
+unit = "ratio"
+status = "provisional"
+source = "iolite_unattributed"
+notes = "Imported without numerical reinterpretation from an iolite JSON reference-material record."
+
+[standards."IOLITE_G_NIST614".measurements.values]
+"207Pb/206Pb" = { value = 0.87101, uncertainty = 0.00042, uncertainty_type = "reported_unspecified" }

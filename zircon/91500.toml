@@ -1,0 +1,80 @@
+# Curated zircon reference-material record.
+# Only documented inputs are stored; redundant ratios are derived in Python.
+format_version = 2
+material = "zircon"
+
+[standards."91500"]
+aliases = []
+
+[[standards."91500".measurements]]
+role = "concentration"
+unit = "ug/g"
+status = "provisional"
+source = "wiedenbeck1995"
+notes = "Elemental mass fraction assigned to the {quantity} measurement channel; value is not multiplied by the isotope abundance."
+
+[standards."91500".measurements.values]
+"139La" = { value = 0.013 }
+"140Ce" = { value = 2.56 }
+"141Pr" = { value = 0.02 }
+"146Nd" = { value = 0.25 }
+"147Sm" = { value = 0.38 }
+"153Eu" = { value = 0.19 }
+"157Gd" = { value = 1.76 }
+"159Tb" = { value = 0.78 }
+"163Dy" = { value = 10.3 }
+"165Ho" = { value = 4.6 }
+"166Er" = { value = 23.7 }
+"169Tm" = { value = 5.95 }
+"172Yb" = { value = 60.1 }
+"175Lu" = { value = 14.1 }
+"177Hf" = { value = 5895.0 }
+"232Th" = { value = 29.9 }
+"238U" = { value = 80.0 }
+"89Y" = { value = 153.0 }
+"93Nb" = { value = 0.79 }
+
+[[standards."91500".measurements]]
+role = "concentration"
+unit = "ug/g"
+status = "provisional"
+source = "deer2013"
+notes = "Elemental mass fraction assigned to the {quantity} measurement channel; value is not multiplied by the isotope abundance. Average zircon composition."
+
+[standards."91500".measurements.values]
+"29Si" = 151443.22960004435
+"91Zr" = 487760.24454904505
+
+[[standards."91500".measurements]]
+role = "initial_ratio"
+unit = "ratio"
+status = "provisional"
+source = "stacey1975"
+notes = "Canonical initial/common-Pb ratio; reciprocal and cross-ratios are derived."
+
+[standards."91500".measurements.values]
+"206Pb/204Pb_i" = 16.95
+"207Pb/204Pb_i" = 15.49360146252285
+"208Pb/204Pb_i" = 36.63280743462286
+
+[[standards."91500".measurements]]
+role = "radiogenic_ratio"
+unit = "ratio"
+status = "provisional"
+source = "wiedenbeck1995"
+notes = "Documented radiogenic ratio; reciprocal and linked ratios are derived."
+
+[standards."91500".measurements.values]
+"206Pb/238U*" = 0.17917
+"207Pb/235U*" = 1.8502
+"208Pb/232Th*" = 0.05374
+
+[[standards."91500".measurements]]
+role = "reference_age"
+unit = "Ma"
+status = "provisional"
+source = "wiedenbeck1995"
+notes = "Accepted age; concordant radiogenic ratios are derived when direct values are absent."
+
+[standards."91500".measurements.values]
+"concordia_age" = 1065.4

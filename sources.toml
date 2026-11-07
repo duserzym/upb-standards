@@ -1,0 +1,226 @@
+# Shared publication registry for the reference-material library.
+# Measurement records use stable IDs so each citation is written only once.
+format_version = 2
+
+[sources."deer2013"]
+display = "Deer, Howie & Zussman (2013), An Introduction to the Rock-Forming Minerals, 3rd ed."
+kind = "book"
+no_doi_reason = "Book; DOI not yet looked up."
+file = "Deer2013An introduction to the rock-forming minerals.pdf"
+
+[sources."georem2005"]
+display = "Jochum et al. (2005), Geostandards and Geoanalytical Research 29, 333-338, doi:10.1111/j.1751-908X.2005.tb00904.x"
+kind = "journal_article"
+doi = "10.1111/j.1751-908X.2005.tb00904.x"
+url = "https://doi.org/10.1111/j.1751-908X.2005.tb00904.x"
+notes = "Publication describing the GeoReM compilation used for USGS glass reference values."
+
+[sources."jochum2011"]
+display = "Jochum et al. (2011), Geostandards and Geoanalytical Research 35, 397-429, doi:10.1111/j.1751-908X.2011.00120.x"
+kind = "journal_article"
+doi = "10.1111/j.1751-908X.2011.00120.x"
+url = "https://doi.org/10.1111/j.1751-908X.2011.00120.x"
+
+[sources."woodhead2001"]
+display = "Woodhead & Hergt (2001), Geostandards Newsletter 25, 261-266, doi:10.1111/j.1751-908X.2001.tb00601.x"
+kind = "journal_article"
+doi = "10.1111/j.1751-908X.2001.tb00601.x"
+url = "https://doi.org/10.1111/j.1751-908X.2001.tb00601.x"
+
+[sources."meng2024"]
+display = "Meng et al. (2024), Journal of Analytical Atomic Spectrometry 39, 2488-2501, doi:10.1039/D4JA00190G"
+kind = "journal_article"
+doi = "10.1039/D4JA00190G"
+url = "https://doi.org/10.1039/D4JA00190G"
+file = "Meng2024The KNW rutile—a natural reference material for microbeam U–Pb age and trace element determination.pdf"
+
+[sources."axelsson2018"]
+display = "Axelsson et al. (2018), Geostandards and Geoanalytical Research 42, 319-338, doi:10.1111/ggr.12213"
+kind = "journal_article"
+doi = "10.1111/ggr.12213"
+url = "https://doi.org/10.1111/ggr.12213"
+file = "Axelsson2018aRutile R632 â A New Natural a.pdf"
+
+[sources."kennedy2023"]
+display = "Kennedy et al. (2023), Geostandards and Geoanalytical Research 47, 373-402, doi:10.1111/ggr.12477"
+kind = "journal_article"
+doi = "10.1111/ggr.12477"
+url = "https://doi.org/10.1111/ggr.12477"
+file = "Kennedy2023aApatite Reference Materials foa.pdf"
+
+[sources."apen2022"]
+display = "Apen et al. (2022), Chemical Geology 590, 120689, doi:10.1016/j.chemgeo.2021.120689"
+kind = "journal_article"
+doi = "10.1016/j.chemgeo.2021.120689"
+url = "https://doi.org/10.1016/j.chemgeo.2021.120689"
+file = "Apen2022bApatites for destruction Refera.pdf"
+
+[sources."droubi2023"]
+display = "Droubi et al. (2023), Geostandards and Geoanalytical Research 47, 337-369, doi:10.1111/ggr.12488"
+kind = "journal_article"
+doi = "10.1111/ggr.12488"
+url = "https://doi.org/10.1111/ggr.12488"
+
+[sources."aleinikoff2007"]
+display = "Aleinikoff et al. (2007), American Journal of Science 307, 63-118, doi:10.2475/01.2007.04"
+kind = "journal_article"
+doi = "10.2475/01.2007.04"
+url = "https://doi.org/10.2475/01.2007.04"
+
+[sources."spandler2016"]
+display = "Spandler et al. (2016), Chemical Geology 425, 110-126, doi:10.1016/j.chemgeo.2016.01.002"
+kind = "journal_article"
+doi = "10.1016/j.chemgeo.2016.01.002"
+url = "https://doi.org/10.1016/j.chemgeo.2016.01.002"
+file = "Spandler2016aMKED1 A new titanite standard a.pdf"
+
+[sources."heaman2009"]
+display = "Heaman (2009), Chemical Geology 261, 43-52, doi:10.1016/j.chemgeo.2008.10.021"
+kind = "journal_article"
+doi = "10.1016/j.chemgeo.2008.10.021"
+url = "https://doi.org/10.1016/j.chemgeo.2008.10.021"
+
+[sources."kennedy2010"]
+display = "Kennedy et al. (2010), Canadian Mineralogist 48, 1423-1443, doi:10.3749/canmin.48.5.1423"
+kind = "journal_article"
+doi = "10.3749/canmin.48.5.1423"
+url = "https://doi.org/10.3749/canmin.48.5.1423"
+
+[sources."price2014"]
+display = "Price (2014), The Mount Scott Intrusive Suite, Oklahoma Geological Survey Guidebook 38, 299-318"
+kind = "book_chapter"
+no_doi_reason = "Geological survey guidebook chapter; DOI not yet looked up."
+file = "Price2014aThe Mount Scott Intrusive Suita.pdf"
+
+[sources."black2004"]
+display = "Black et al. (2004), Chemical Geology 205, 115-140, doi:10.1016/j.chemgeo.2004.01.003"
+kind = "journal_article"
+doi = "10.1016/j.chemgeo.2004.01.003"
+url = "https://doi.org/10.1016/j.chemgeo.2004.01.003"
+
+[sources."stern2009"]
+display = "Stern et al. (2009), Geostandards and Geoanalytical Research 33, 145-168, doi:10.1111/j.1751-908X.2009.00023.x"
+kind = "journal_article"
+doi = "10.1111/j.1751-908X.2009.00023.x"
+url = "https://doi.org/10.1111/j.1751-908X.2009.00023.x"
+
+[sources."paces1993"]
+display = "Paces & Miller (1993), Journal of Geophysical Research: Solid Earth 98, 13997-14013, doi:10.1029/93JB01159"
+kind = "journal_article"
+doi = "10.1029/93JB01159"
+url = "https://doi.org/10.1029/93JB01159"
+
+[sources."slama2008"]
+display = "Slama et al. (2008), Chemical Geology 249, 1-35, doi:10.1016/j.chemgeo.2007.11.005"
+kind = "journal_article"
+doi = "10.1016/j.chemgeo.2007.11.005"
+url = "https://doi.org/10.1016/j.chemgeo.2007.11.005"
+
+[sources."wiedenbeck1995"]
+display = "Wiedenbeck et al. (1995), Geostandards Newsletter 19, 1-23, doi:10.1111/j.1751-908X.1995.tb00147.x"
+kind = "journal_article"
+doi = "10.1111/j.1751-908X.1995.tb00147.x"
+url = "https://doi.org/10.1111/j.1751-908X.1995.tb00147.x"
+file = "Wiedenbeck1995aTHREE NATURAL ZIRCON STANDARDSb.pdf"
+
+[sources."kennedy2014"]
+display = "Kennedy et al. (2014), Canadian Mineralogist 52, 409-421, doi:10.3749/canmin.52.3.409"
+kind = "journal_article"
+doi = "10.3749/canmin.52.3.409"
+url = "https://doi.org/10.3749/canmin.52.3.409"
+
+[sources."pedersen1989"]
+display = "Pedersen et al. (1989), Caledonian Geology of Scandinavia, 3-18, doi:10.1007/978-94-009-2549-6_1"
+kind = "book_chapter"
+doi = "10.1007/978-94-009-2549-6_1"
+url = "https://doi.org/10.1007/978-94-009-2549-6_1"
+
+[sources."stacey1975"]
+display = "Stacey & Kramers (1975), Earth and Planetary Science Letters 26, 207-221, doi:10.1016/0012-821X(75)90088-6"
+kind = "journal_article"
+doi = "10.1016/0012-821X(75)90088-6"
+url = "https://doi.org/10.1016/0012-821X(75)90088-6"
+
+[sources."thomson2012"]
+display = "Thomson et al. (2012), Geochemistry, Geophysics, Geosystems 13, Q0AA21, doi:10.1029/2011GC003928"
+kind = "journal_article"
+doi = "10.1029/2011GC003928"
+url = "https://doi.org/10.1029/2011GC003928"
+
+[sources."schoene_bowring2006"]
+display = "Schoene & Bowring (2006), Contributions to Mineralogy and Petrology 151, 615-630, doi:10.1007/s00410-006-0077-4"
+kind = "journal_article"
+doi = "10.1007/s00410-006-0077-4"
+url = "https://doi.org/10.1007/s00410-006-0077-4"
+
+[sources."woodhead_hergt2005"]
+display = "Woodhead & Hergt (2005), Geostandards and Geoanalytical Research 29, 183-195, doi:10.1111/j.1751-908X.2005.tb00891.x"
+kind = "journal_article"
+doi = "10.1111/j.1751-908X.2005.tb00891.x"
+url = "https://doi.org/10.1111/j.1751-908X.2005.tb00891.x"
+
+# The following compilation records preserve provenance stated by the iolite
+# files when a single publication cannot represent every imported value.
+[sources."iolite_91500_compilation"]
+display = "Iolite 91500 compilation: Wiedenbeck et al. (1995), GeoReM, and Woodhead & Hergt (2005)"
+kind = "publication_compilation"
+no_doi_reason = "Software compilation of multiple publications; no single DOI represents the record."
+notes = "U-Pb and trace-element values cite Wiedenbeck et al. (1995) and GeoReM; Hf values cite Woodhead & Hergt (2005)."
+
+[sources."iolite_gj1_compilation"]
+display = "Iolite GJ-1 compilation: Condon ID-TIMS data; Jackson et al. (2004); Morel et al. (2008); Liu et al. (2010)"
+kind = "publication_compilation"
+no_doi_reason = "Software compilation of unpublished ID-TIMS data and multiple publications; no single DOI represents the record."
+notes = "The iolite record combines unpublished NIGL ID-TIMS values with published U-Th-Pb, Hf-isotope, and trace-element datasets."
+
+[sources."iolite_temora2_compilation"]
+display = "Iolite Temora-2 compilation: Black et al. (2004) and Woodhead & Hergt (2005)"
+kind = "publication_compilation"
+no_doi_reason = "Software compilation of multiple publications; no single DOI represents the record."
+notes = "U-Pb values cite Black et al. (2004); Hf values cite Woodhead & Hergt (2005)."
+
+[sources."iolite_maniitsoq_personal_communication"]
+display = "Iolite Maniitsoq record: Jeffrey Marsh (Laurentian University), personal communication"
+kind = "personal_communication"
+no_doi_reason = "Unpublished personal communication; no DOI identified in the source record."
+notes = "No publication was identified in the source JSON; retain as provisional."
+
+[sources."iolite_hfo_liam"]
+display = "Iolite HFO record attributed only as 'HFO Liam'"
+kind = "unpublished_compilation"
+no_doi_reason = "Unpublished software compilation attributed only as 'HFO Liam'; no publication identified."
+notes = "No publication was identified in the source JSON; retain as provisional."
+
+[sources."iolite_local_shells"]
+display = "Iolite C_MMC local-shell working value (unpublished)"
+kind = "unpublished_working_value"
+no_doi_reason = "Unpublished local-shell working value; no publication identified."
+notes = "The source JSON describes local beach shells and gives no publication; retain as provisional."
+
+[sources."iolite_unattributed"]
+display = "Unattributed iolite reference-material record"
+kind = "unattributed_import"
+no_doi_reason = "Unattributed software import; no publication identified."
+notes = "The source JSON supplies no publication; values are retained verbatim as provisional records pending review."
+
+[sources."luo2025"]
+display = "Luo et al. (2025), Geostandards and Geoanalytical Research 49, 403-423, doi:10.1111/ggr.12603"
+kind = "journal_article"
+doi = "10.1111/ggr.12603"
+url = "https://doi.org/10.1111/ggr.12603"
+notes = "Zircon S513 - A New Gem-Quality Reference Material for In Situ Microbeam U-Th-Pb, (U-Th)/He Geochronology and Hf-O Isotope Measurement."
+
+[sources."hu2023"]
+display = "Hu et al. (2023), Geostandards and Geoanalytical Research 47, 509-533, doi:10.1111/ggr.12495"
+kind = "journal_article"
+doi = "10.1111/ggr.12495"
+url = "https://doi.org/10.1111/ggr.12495"
+notes = "Hu, P., Luo, T., Crowley, J., Wu, Y., Zhang, C., Xia, X., Long, T., Zhang, S., Bao, Z., Xu, L., Feng, L., Zhang, W. & Hu, Z. (2023), Characterisation of Three Sri Lankan Zircon Megacrysts as Potential Reference Materials for Microbeam U-Pb Geochronology and Hf-O-Zr Isotope Measurements, Geostandards and Geoanalytical Research 47(3), 509-533. The materials are SLZA, SLZB and SLZC; the Boise standard LTSE is SLZC (confirmed by Yiming Zhang, 2026-11-05)."
+
+[sources."boise_upbr26plus_2026"]
+display = "Boise State Isotope Geology Laboratory, UPbR26plus spreadsheet, Analyte & Standards Archive (Zircon_04Nov26_HerreraLindsey-i193-LA-UPbR26plus.xlsm, 2026-11-04)"
+kind = "lab_compilation"
+status = "provisional"
+file = "Zircon_04Nov26_HerreraLindsey-i193-LA-UPbR26plus.xlsm"
+no_doi_reason = "Unpublished laboratory compilation; no DOI."
+notes = "No DOI: an unpublished laboratory compilation; values to be confirmed by the Boise lab."

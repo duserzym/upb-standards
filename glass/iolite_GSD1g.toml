@@ -1,0 +1,111 @@
+# Imported iolite reference-material record; kept separate from curated records.
+format_version = 2
+material = "glass"
+
+[standards."IOLITE_G_GSD1G"]
+aliases = ["G_GSD1G"]
+description = "Synthetic Basalt Glass from USGS"
+origin = "iolite:G_GSD1G.json; Data Source: GeoRem database as of 2018-07-09"
+
+[[standards."IOLITE_G_GSD1G".measurements]]
+role = "concentration"
+unit = "ug/g"
+status = "provisional"
+source = "georem2005"
+notes = "Imported from an iolite JSON reference-material record. Element concentrations are assigned to UPbRPy isotope channels; the values are elemental mass fractions, not isotope-abundance-scaled."
+
+[standards."IOLITE_G_GSD1G".measurements.values]
+"107Ag" = { value = 23.0, uncertainty = 3.0, uncertainty_type = "reported_unspecified" }
+"27Al" = 70919.5
+"75As" = { value = 27.0, uncertainty = 8.0, uncertainty_type = "reported_unspecified" }
+"197Au" = 4.0
+"11B" = { value = 50.0, uncertainty = 20.0, uncertainty_type = "reported_unspecified" }
+"137Ba" = { value = 67.0, uncertainty = 1.0, uncertainty_type = "reported_unspecified" }
+"9Be" = { value = 46.0, uncertainty = 5.0, uncertainty_type = "reported_unspecified" }
+"209Bi" = { value = 35.0, uncertainty = 4.0, uncertainty_type = "reported_unspecified" }
+"44Ca" = 51458.4
+"111Cd" = { value = 18.0, uncertainty = 4.0, uncertainty_type = "reported_unspecified" }
+"140Ce" = { value = 41.4, uncertainty = 0.4, uncertainty_type = "reported_unspecified" }
+"59Co" = { value = 40.0, uncertainty = 2.0, uncertainty_type = "reported_unspecified" }
+"52Cr" = { value = 42.0, uncertainty = 3.0, uncertainty_type = "reported_unspecified" }
+"133Cs" = { value = 32.0, uncertainty = 2.0, uncertainty_type = "reported_unspecified" }
+"63Cu" = { value = 42.0, uncertainty = 2.0, uncertainty_type = "reported_unspecified" }
+"163Dy" = { value = 51.2, uncertainty = 0.5, uncertainty_type = "reported_unspecified" }
+"166Er" = { value = 40.1, uncertainty = 0.4, uncertainty_type = "reported_unspecified" }
+"153Eu" = { value = 41.0, uncertainty = 2.0, uncertainty_type = "reported_unspecified" }
+"57Fe" = 103382.23
+"69Ga" = { value = 54.0, uncertainty = 7.0, uncertainty_type = "reported_unspecified" }
+"157Gd" = { value = 50.7, uncertainty = 0.5, uncertainty_type = "reported_unspecified" }
+"73Ge" = { value = 32.0, uncertainty = 8.0, uncertainty_type = "reported_unspecified" }
+"177Hf" = { value = 39.0, uncertainty = 2.0, uncertainty_type = "reported_unspecified" }
+"165Ho" = { value = 49.0, uncertainty = 2.0, uncertainty_type = "reported_unspecified" }
+"115In" = { value = 38.0, uncertainty = 5.0, uncertainty_type = "reported_unspecified" }
+"39K" = { value = 25300.0, uncertainty = 300.0, uncertainty_type = "reported_unspecified" }
+"139La" = { value = 39.1, uncertainty = 0.4, uncertainty_type = "reported_unspecified" }
+"7Li" = { value = 43.0, uncertainty = 6.0, uncertainty_type = "reported_unspecified" }
+"175Lu" = { value = 51.5, uncertainty = 0.5, uncertainty_type = "reported_unspecified" }
+"24Mg" = 21711.6
+"55Mn" = { value = 220.0, uncertainty = 20.0, uncertainty_type = "reported_unspecified" }
+"95Mo" = { value = 39.0, uncertainty = 3.0, uncertainty_type = "reported_unspecified" }
+"23Na" = 26706.96
+"93Nb" = { value = 42.0, uncertainty = 3.0, uncertainty_type = "reported_unspecified" }
+"146Nd" = { value = 44.7, uncertainty = 0.5, uncertainty_type = "reported_unspecified" }
+"60Ni" = { value = 58.0, uncertainty = 4.0, uncertainty_type = "reported_unspecified" }
+"31P" = { value = 860.0, uncertainty = 160.0, uncertainty_type = "reported_unspecified" }
+"208Pb" = { value = 50.0, uncertainty = 2.0, uncertainty_type = "reported_unspecified" }
+"141Pr" = { value = 45.0, uncertainty = 1.0, uncertainty_type = "reported_unspecified" }
+"195Pt" = 6.0
+"85Rb" = { value = 37.3, uncertainty = 0.4, uncertainty_type = "reported_unspecified" }
+"121Sb" = { value = 43.0, uncertainty = 7.0, uncertainty_type = "reported_unspecified" }
+"45Sc" = { value = 52.0, uncertainty = 2.0, uncertainty_type = "reported_unspecified" }
+"77Se" = { value = 2.0, uncertainty = 1.0, uncertainty_type = "reported_unspecified" }
+"29Si" = 248678.0
+"147Sm" = { value = 47.8, uncertainty = 0.5, uncertainty_type = "reported_unspecified" }
+"118Sn" = { value = 29.0, uncertainty = 6.0, uncertainty_type = "reported_unspecified" }
+"88Sr" = { value = 69.4, uncertainty = 0.7, uncertainty_type = "reported_unspecified" }
+"181Ta" = { value = 40.0, uncertainty = 4.0, uncertainty_type = "reported_unspecified" }
+"159Tb" = { value = 47.0, uncertainty = 2.0, uncertainty_type = "reported_unspecified" }
+"232Th" = { value = 41.0, uncertainty = 2.0, uncertainty_type = "reported_unspecified" }
+"49Ti" = 7433.924
+"205Tl" = { value = 0.9, uncertainty = 0.1, uncertainty_type = "reported_unspecified" }
+"169Tm" = { value = 49.0, uncertainty = 2.0, uncertainty_type = "reported_unspecified" }
+"238U" = { value = 41.0, uncertainty = 2.0, uncertainty_type = "reported_unspecified" }
+"51V" = { value = 44.0, uncertainty = 2.0, uncertainty_type = "reported_unspecified" }
+"182W" = { value = 43.0, uncertainty = 4.0, uncertainty_type = "reported_unspecified" }
+"89Y" = { value = 42.0, uncertainty = 2.0, uncertainty_type = "reported_unspecified" }
+"172Yb" = { value = 50.9, uncertainty = 0.5, uncertainty_type = "reported_unspecified" }
+"66Zn" = { value = 54.0, uncertainty = 2.0, uncertainty_type = "reported_unspecified" }
+"91Zr" = { value = 42.0, uncertainty = 2.0, uncertainty_type = "reported_unspecified" }
+
+[[standards."IOLITE_G_GSD1G".measurements]]
+role = "isotope_ratio"
+unit = "ratio"
+status = "provisional"
+source = "georem2005"
+notes = "Imported without numerical reinterpretation from an iolite JSON reference-material record."
+
+[standards."IOLITE_G_GSD1G".measurements.values]
+"143Nd/144Nd" = 0.511521
+"176Hf/177Hf" = 0.282121
+"206Pb/204Pb" = 19.579
+"207Pb/204Pb" = 15.745
+"207Pb/206Pb" = 0.80418
+"208Pb/204Pb" = 38.908
+"208Pb/206Pb" = 1.9871
+"234U/238U" = 1.798
+"238U/235U" = 271.4
+"87Sr/86Sr" = 0.709416
+
+[[standards."IOLITE_G_GSD1G".measurements]]
+role = "delta_value"
+unit = "permil"
+status = "provisional"
+source = "georem2005"
+notes = "Imported without numerical reinterpretation from an iolite JSON reference-material record."
+
+[standards."IOLITE_G_GSD1G".measurements.values]
+"d11B" = 10.1
+"d29Si" = -0.12
+"d30Si" = -0.21
+"d44/40Ca" = 0.86
+"d7Li" = { value = 30.9, uncertainty = 1.0, uncertainty_type = "reported_unspecified" }

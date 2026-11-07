@@ -1,0 +1,40 @@
+# Imported iolite reference-material record; kept separate from curated records.
+format_version = 2
+material = "zircon"
+
+[standards."IOLITE_Z_FCTUFF"]
+aliases = ["Z_FCTuff"]
+description = "iolite matrix: Zircon"
+origin = "iolite:Z_FCTuff.json"
+
+[[standards."IOLITE_Z_FCTUFF".measurements]]
+role = "reference_age"
+unit = "Ma"
+status = "provisional"
+source = "iolite_unattributed"
+notes = "Imported without numerical reinterpretation from an iolite JSON reference-material record."
+
+[standards."IOLITE_Z_FCTUFF".measurements.values]
+"concordia_age" = { value = 29.14, uncertainty = 0.14, uncertainty_type = "reported_unspecified" }
+
+[[standards."IOLITE_Z_FCTUFF".measurements]]
+role = "radiogenic_ratio"
+unit = "ratio"
+status = "provisional"
+source = "iolite_unattributed"
+notes = "Imported without numerical reinterpretation from an iolite JSON reference-material record."
+
+[standards."IOLITE_Z_FCTUFF".measurements.values]
+"206Pb/238U*" = { value = 0.004553976, uncertainty = 2.13823e-05, uncertainty_type = "reported_unspecified" }
+"207Pb/206Pb*" = { value = 0.050966468, uncertainty = 0.000397252, uncertainty_type = "reported_unspecified" }
+
+[[standards."IOLITE_Z_FCTUFF".measurements]]
+role = "concentration"
+unit = "ug/g"
+status = "provisional"
+source = "iolite_unattributed"
+notes = "Imported from an iolite JSON reference-material record. Element concentrations are assigned to UPbRPy isotope channels; the values are elemental mass fractions, not isotope-abundance-scaled."
+
+[standards."IOLITE_Z_FCTUFF".measurements.values]
+"238U" = { value = 441.0, uncertainty = 187.0, uncertainty_type = "reported_unspecified" }
+"232Th" = { value = 178.0, uncertainty = 84.0, uncertainty_type = "reported_unspecified" }

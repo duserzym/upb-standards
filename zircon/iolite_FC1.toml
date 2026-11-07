@@ -1,0 +1,67 @@
+# Imported iolite reference-material record; kept separate from curated records.
+format_version = 2
+material = "zircon"
+
+[standards."IOLITE_FC1"]
+aliases = ["FC1"]
+description = "iolite matrix: Zircon"
+origin = "iolite:FC1.json"
+
+[[standards."IOLITE_FC1".measurements]]
+role = "isotope_ratio"
+unit = "ratio"
+status = "provisional"
+source = "iolite_unattributed"
+notes = "Imported without numerical reinterpretation from an iolite JSON reference-material record."
+
+[standards."IOLITE_FC1".measurements.values]
+"174Hf/177Hf" = { value = 0.008665, uncertainty = 1.248999599679651e-05, uncertainty_type = "reported_unspecified" }
+"176Hf/177Hf" = { value = 0.2821765510909091, uncertainty = 1.418951917238691e-05, uncertainty_type = "reported_unspecified" }
+"178Hf/177Hf" = { value = 1.467243833333333, uncertainty = 3.7610040567874046e-05, uncertainty_type = "reported_unspecified" }
+"180Hf/177Hf" = { value = 1.8868085714285716, uncertainty = 2.9113897843091945e-05, uncertainty_type = "reported_unspecified" }
+"18O/16O" = { value = 0.0020328, uncertainty = 1e-06, uncertainty_type = "reported_unspecified" }
+"206Pb/204Pb" = { value = 2921.6000000000004, uncertainty = 1974.242133072841, uncertainty_type = "reported_unspecified" }
+"207Pb/204Pb" = { value = 234.75, uncertainty = 150.40161235837869, uncertainty_type = "reported_unspecified" }
+"208Pb/204Pb" = { value = 440.85, uncertainty = 184.90842328028216, uncertainty_type = "reported_unspecified" }
+
+[[standards."IOLITE_FC1".measurements]]
+role = "radiogenic_ratio"
+unit = "ratio"
+status = "provisional"
+source = "iolite_unattributed"
+notes = "Imported without numerical reinterpretation from an iolite JSON reference-material record."
+
+[standards."IOLITE_FC1".measurements.values]
+"207Pb/206Pb*" = { value = 0.07624333333333333, uncertainty = 0.00022278539748675732, uncertainty_type = "reported_unspecified" }
+
+[[standards."IOLITE_FC1".measurements]]
+role = "concentration"
+unit = "ug/g"
+status = "provisional"
+source = "iolite_unattributed"
+notes = "Imported from an iolite JSON reference-material record. Element concentrations are assigned to UPbRPy isotope channels; the values are elemental mass fractions, not isotope-abundance-scaled."
+
+[standards."IOLITE_FC1".measurements.values]
+"177Hf" = { value = 10175.781992322602, uncertainty = 1695.9636653871005, uncertainty_type = "reported_unspecified" }
+
+[[standards."IOLITE_FC1".measurements]]
+role = "delta_value"
+unit = "permil"
+status = "provisional"
+source = "iolite_unattributed"
+notes = "Imported without numerical reinterpretation from an iolite JSON reference-material record."
+
+[standards."IOLITE_FC1".measurements.values]
+"d18O" = { value = 5.467999999999998, uncertainty = 0.18931455305918773, uncertainty_type = "reported_unspecified" }
+"d94/90Zr" = { value = 0.27, uncertainty = 1.9, uncertainty_type = "reported_unspecified" }
+"d96/90Zr" = { value = 0.42, uncertainty = 2.85, uncertainty_type = "reported_unspecified" }
+
+[[standards."IOLITE_FC1".measurements]]
+role = "epsilon_value"
+unit = "dimensionless"
+status = "provisional"
+source = "iolite_unattributed"
+notes = "Imported without numerical reinterpretation from an iolite JSON reference-material record."
+
+[standards."IOLITE_FC1".measurements.values]
+"eHf" = { value = -21.265, uncertainty = 0.19091883092036754, uncertainty_type = "reported_unspecified" }

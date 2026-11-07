@@ -1,0 +1,51 @@
+# Curated zircon reference-material record.
+# Only documented inputs are stored; redundant ratios are derived in Python.
+format_version = 2
+material = "zircon"
+
+[standards."AUSZ2"]
+aliases = []
+
+[[standards."AUSZ2".measurements]]
+role = "concentration"
+unit = "ug/g"
+status = "provisional"
+source = "deer2013"
+notes = "Elemental mass fraction assigned to the {quantity} measurement channel; value is not multiplied by the isotope abundance. Average zircon composition."
+
+[standards."AUSZ2".measurements.values]
+"29Si" = 151443.0
+"91Zr" = 487760.24454904505
+
+[[standards."AUSZ2".measurements]]
+role = "initial_ratio"
+unit = "ratio"
+status = "provisional"
+source = "stacey1975"
+notes = "Canonical initial/common-Pb ratio; reciprocal and cross-ratios are derived."
+
+[standards."AUSZ2".measurements.values]
+"206Pb/204Pb_i" = 18.6419
+"207Pb/204Pb_i" = 15.6262
+"208Pb/204Pb_i" = 38.5607
+
+[[standards."AUSZ2".measurements]]
+role = "radiogenic_ratio"
+unit = "ratio"
+status = "provisional"
+source = "kennedy2014"
+notes = "Documented radiogenic ratio; reciprocal and linked ratios are derived."
+
+[standards."AUSZ2".measurements.values]
+"206Pb/238U*" = 0.00604616
+"207Pb/235U*" = 0.039012
+
+[[standards."AUSZ2".measurements]]
+role = "reference_age"
+unit = "Ma"
+status = "provisional"
+source = "kennedy2014"
+notes = "Accepted age; concordant radiogenic ratios are derived when direct values are absent."
+
+[standards."AUSZ2".measurements.values]
+"concordia_age" = 38.86

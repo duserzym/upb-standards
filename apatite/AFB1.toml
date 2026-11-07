@@ -1,0 +1,39 @@
+# Curated apatite reference-material record.
+# Only documented inputs are stored; redundant ratios are derived in Python.
+format_version = 2
+material = "apatite"
+
+[standards."AFB1"]
+aliases = []
+
+[[standards."AFB1".measurements]]
+role = "concentration"
+unit = "ug/g"
+status = "recommended"
+source = "deer2013"
+notes = "Elemental mass fraction assigned to the {quantity} measurement channel; value is not multiplied by the isotope abundance. Average apatite composition."
+
+[standards."AFB1".measurements.values]
+"31P" = 182326.02705940383
+"44Ca" = 400442.6533523538
+
+[[standards."AFB1".measurements]]
+role = "initial_ratio"
+unit = "ratio"
+status = "recommended"
+source = "kennedy2023"
+notes = "Concordia-constrained three-dimensional common-Pb composition reported with the ID-TIMS results."
+
+[standards."AFB1".measurements.values]
+"206Pb/204Pb_i" = 19.72
+"207Pb/204Pb_i" = 15.80
+
+[[standards."AFB1".measurements]]
+role = "reference_age"
+unit = "Ma"
+status = "recommended"
+source = "kennedy2023"
+notes = "Concordia-constrained ID-TIMS age; concordant radiogenic ratios are derived."
+
+[standards."AFB1".measurements.values]
+"concordia_age" = { value = 473.25, uncertainty = 0.09, uncertainty_type = "2sd" }

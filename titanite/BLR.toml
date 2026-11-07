@@ -1,0 +1,72 @@
+# Curated titanite reference-material record.
+# Only documented inputs are stored; redundant ratios are derived in Python.
+format_version = 2
+material = "titanite"
+
+[standards."BLR"]
+aliases = []
+
+[[standards."BLR".measurements]]
+role = "concentration"
+unit = "ug/g"
+status = "provisional"
+source = "droubi2023"
+notes = "Elemental mass fraction assigned to the {quantity} measurement channel; value is not multiplied by the isotope abundance."
+
+[standards."BLR".measurements.values]
+"139La" = { value = 403.0 }
+"140Ce" = { value = 1610.0 }
+"141Pr" = { value = 258.0 }
+"146Nd" = { value = 1520.0 }
+"147Sm" = { value = 497.0 }
+"153Eu" = { value = 76.6 }
+"157Gd" = { value = 536.0 }
+"159Tb" = { value = 122.0 }
+"163Dy" = { value = 807.0 }
+"165Ho" = { value = 187.0 }
+"166Er" = { value = 471.0 }
+"169Tm" = { value = 71.5 }
+"172Yb" = { value = 353.0 }
+"175Lu" = { value = 29.8 }
+"177Hf" = { value = 54.5 }
+"181Ta" = { value = 199.0 }
+"232Th" = { value = 192.0 }
+"238U" = { value = 320.0 }
+"29Si" = { value = 139400.0 }
+"49Ti" = { value = 197900.0 }
+"88Sr" = { value = 71.5 }
+"89Y" = { value = 3670.0 }
+"91Zr" = { value = 1470.0 }
+"93Nb" = { value = 4060.0 }
+
+[[standards."BLR".measurements]]
+role = "initial_ratio"
+unit = "ratio"
+status = "provisional"
+source = "stacey1975"
+notes = "Canonical initial/common-Pb ratio; reciprocal and cross-ratios are derived."
+
+[standards."BLR".measurements.values]
+"206Pb/204Pb_i" = 16.975998159
+"207Pb/204Pb_i" = 15.47282830746001
+"208Pb/204Pb_i" = 36.6346174477
+
+[[standards."BLR".measurements]]
+role = "total_ratio"
+unit = "ratio"
+status = "provisional"
+source = "droubi2023"
+notes = "Measured total ratio; exact reciprocals are derived."
+
+[standards."BLR".measurements.values]
+"208Pb/232Th_total" = 0.064
+
+[[standards."BLR".measurements]]
+role = "reference_age"
+unit = "Ma"
+status = "provisional"
+source = "aleinikoff2007"
+notes = "Accepted age; concordant radiogenic ratios are derived when direct values are absent."
+
+[standards."BLR".measurements.values]
+"concordia_age" = 1047

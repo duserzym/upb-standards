@@ -1,0 +1,78 @@
+# Curated glass reference-material record.
+# Only documented inputs are stored; redundant ratios are derived in Python.
+format_version = 2
+material = "glass"
+
+[standards."BIR"]
+aliases = ["BIR-1G"]
+
+[[standards."BIR".measurements]]
+role = "concentration"
+unit = "ug/g"
+status = "provisional"
+source = "georem2005"
+notes = "Elemental mass fraction assigned to the {quantity} measurement channel; value is not multiplied by the isotope abundance."
+
+[standards."BIR".measurements.values]
+"139La" = { value = 0.609 }
+"140Ce" = { value = 1.89 }
+"141Pr" = { value = 0.37 }
+"146Nd" = { value = 2.37 }
+"147Sm" = { value = 1.09 }
+"153Eu" = { value = 0.517 }
+"157Gd" = { value = 1.85 }
+"159Tb" = { value = 0.35 }
+"163Dy" = { value = 2.55 }
+"165Ho" = { value = 0.56 }
+"166Er" = { value = 1.7 }
+"169Tm" = { value = 0.24 }
+"172Yb" = { value = 1.64 }
+"175Lu" = { value = 0.248 }
+"177Hf" = { value = 0.57 }
+"181Ta" = { value = 0.036 }
+"208Pb" = { value = 3.7 }
+"232Th" = { value = 0.03 }
+"238U" = { value = 0.023 }
+"29Si" = { value = 222046.0 }
+"31P" = { value = 118.0 }
+"49Ti" = { value = 6235.0 }
+"89Y" = { value = 14.3 }
+"91Zr" = { value = 14.0 }
+"93Nb" = { value = 0.52 }
+
+[[standards."BIR".measurements]]
+role = "concentration"
+unit = "ug/g"
+status = "provisional"
+source = "georem2005"
+notes = "Elemental mass fraction assigned to the {quantity} measurement channel; value is not multiplied by the isotope abundance."
+
+[standards."BIR".measurements.values]
+"26Mg" = { value = 58498.38749689902 }
+"44Ca" = { value = 95768.90156918687 }
+"55Mn" = { value = 1362.9952072173667 }
+"57Fe" = { value = 79041.26745569542 }
+"88Sr" = { value = 109.0 }
+
+[[standards."BIR".measurements]]
+role = "concentration"
+unit = "ug/g"
+status = "provisional"
+source = "georem2005"
+notes = "Elemental mass fraction assigned to the {quantity} measurement channel; value is not multiplied by the isotope abundance."
+
+[standards."BIR".measurements.values]
+"51V" = { value = 326.0 }
+"52Cr" = { value = 392.0 }
+
+[[standards."BIR".measurements]]
+role = "initial_ratio"
+unit = "ratio"
+status = "provisional"
+source = "georem2005"
+notes = "Canonical initial/common-Pb ratio; reciprocal and cross-ratios are derived."
+
+[standards."BIR".measurements.values]
+"206Pb/204Pb_i" = 16.975998159
+"207Pb/204Pb_i" = 14.094928241912143
+"208Pb/204Pb_i" = 34.62952462959521

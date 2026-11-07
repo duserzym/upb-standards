@@ -1,0 +1,69 @@
+# Imported iolite reference-material record; kept separate from curated records.
+format_version = 2
+material = "apatite"
+
+[standards."IOLITE_A_MAD"]
+aliases = ["A_MAD"]
+description = "Madagascar Apatite"
+origin = "iolite:A_MAD.json; Data Source: Thomson et al., 2012, G3"
+
+[[standards."IOLITE_A_MAD".measurements]]
+role = "reference_age"
+unit = "Ma"
+status = "provisional"
+source = "thomson2012"
+notes = "Imported without numerical reinterpretation from an iolite JSON reference-material record."
+
+[standards."IOLITE_A_MAD".measurements.values]
+"concordia_age" = 473.46
+
+[[standards."IOLITE_A_MAD".measurements]]
+role = "radiogenic_ratio"
+unit = "ratio"
+status = "provisional"
+source = "thomson2012"
+notes = "Imported without numerical reinterpretation from an iolite JSON reference-material record."
+
+[standards."IOLITE_A_MAD".measurements.values]
+"206Pb/238U*" = 0.0762416
+"207Pb/235U*" = 0.601257
+"208Pb/232Th*" = 0.0
+"207Pb/206Pb*" = 0.0571961
+"206Pb/208Pb*" = 0.0
+
+[[standards."IOLITE_A_MAD".measurements]]
+role = "initial_ratio"
+unit = "ratio"
+status = "provisional"
+source = "thomson2012"
+notes = "Imported without numerical reinterpretation from an iolite JSON reference-material record."
+
+[standards."IOLITE_A_MAD".measurements.values]
+"207Pb/206Pb_i" = 0.8681
+
+[[standards."IOLITE_A_MAD".measurements]]
+role = "isotope_ratio"
+unit = "ratio"
+status = "provisional"
+source = "thomson2012"
+notes = "Imported without numerical reinterpretation from an iolite JSON reference-material record."
+
+[standards."IOLITE_A_MAD".measurements.values]
+"206Pb/204Pb" = 0.0
+"207Pb/204Pb" = 0.0
+"208Pb/204Pb" = 0.0
+"176Hf/177Hf" = 0.0
+"87Sr/86Sr" = { value = 0.7118, uncertainty = 3e-05, uncertainty_type = "reported_unspecified" }
+"87Rb/86Sr" = { value = 0.0001, uncertainty = 0.0002, uncertainty_type = "reported_unspecified" }
+
+[[standards."IOLITE_A_MAD".measurements]]
+role = "concentration"
+unit = "ug/g"
+status = "provisional"
+source = "thomson2012"
+notes = "Imported from an iolite JSON reference-material record. Element concentrations are assigned to UPbRPy isotope channels; the values are elemental mass fractions, not isotope-abundance-scaled."
+
+[standards."IOLITE_A_MAD".measurements.values]
+"208Pb" = 51.2
+"232Th" = 798.0
+"238U" = 22.2

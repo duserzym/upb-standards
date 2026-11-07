@@ -1,0 +1,62 @@
+# Curated zircon reference-material record.
+# Only documented inputs are stored; redundant ratios are derived in Python.
+format_version = 2
+material = "zircon"
+
+[standards."PL"]
+aliases = ["Plesovice"]
+
+[[standards."PL".measurements]]
+role = "concentration"
+unit = "ug/g"
+status = "provisional"
+source = "slama2008"
+notes = "Elemental mass fraction assigned to the {quantity} measurement channel; value is not multiplied by the isotope abundance."
+
+[standards."PL".measurements.values]
+"177Hf" = 11877.0
+
+[[standards."PL".measurements]]
+role = "concentration"
+unit = "ug/g"
+status = "provisional"
+source = "deer2013"
+notes = "Elemental mass fraction assigned to the {quantity} measurement channel; value is not multiplied by the isotope abundance. Average zircon composition."
+
+[standards."PL".measurements.values]
+"29Si" = 151443.22960004435
+"91Zr" = 487760.24454904505
+
+[[standards."PL".measurements]]
+role = "initial_ratio"
+unit = "ratio"
+status = "provisional"
+source = "stacey1975"
+notes = "Canonical initial/common-Pb ratio; reciprocal and cross-ratios are derived."
+
+[standards."PL".measurements.values]
+"206Pb/204Pb_i" = 18.210609839
+"207Pb/204Pb_i" = 15.58918883968319
+"208Pb/204Pb_i" = 38.01348495169999
+
+[[standards."PL".measurements]]
+role = "radiogenic_ratio"
+unit = "ratio"
+status = "provisional"
+source = "slama2008"
+notes = "Documented radiogenic ratio; reciprocal and linked ratios are derived."
+
+[standards."PL".measurements.values]
+"206Pb/238U*" = 0.053655
+"207Pb/235U*" = 0.39392
+"207Pb/206Pb*" = 0.053236797
+
+[[standards."PL".measurements]]
+role = "reference_age"
+unit = "Ma"
+status = "provisional"
+source = "slama2008"
+notes = "Accepted age; concordant radiogenic ratios are derived when direct values are absent."
+
+[standards."PL".measurements.values]
+"concordia_age" = 336.9

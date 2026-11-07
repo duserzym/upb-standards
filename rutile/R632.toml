@@ -1,0 +1,47 @@
+# Curated rutile reference-material record.
+# Only documented inputs are stored; redundant ratios are derived in Python.
+format_version = 2
+material = "rutile"
+
+[standards."R632"]
+aliases = []
+
+[[standards."R632".measurements]]
+role = "concentration"
+unit = "ug/g"
+status = "recommended"
+source = "axelsson2018"
+notes = "Recommended elemental mass fraction assigned to the {quantity} measurement channel."
+
+[standards."R632".measurements.values]
+"118Sn" = { value = 289, uncertainty = 12, uncertainty_type = "1sd" }
+"121Sb" = { value = 1.3, uncertainty = 0.11, uncertainty_type = "1sd" }
+"177Hf" = { value = 107.7, uncertainty = 5.5, uncertainty_type = "1sd" }
+"181Ta" = { value = 37.9, uncertainty = 3.2, uncertainty_type = "1sd" }
+"182W" = { value = 1235, uncertainty = 88, uncertainty_type = "1sd" }
+"51V" = { value = 1179, uncertainty = 64, uncertainty_type = "1sd" }
+"52Cr" = { value = 212, uncertainty = 23, uncertainty_type = "1sd" }
+"57Fe" = { value = 3220, uncertainty = 299, uncertainty_type = "1sd" }
+"91Zr" = { value = 4294, uncertainty = 196, uncertainty_type = "1sd" }
+"93Nb" = { value = 630, uncertainty = 28, uncertainty_type = "1sd" }
+"95Mo" = { value = 18.2, uncertainty = 1.2, uncertainty_type = "1sd" }
+
+[[standards."R632".measurements]]
+role = "concentration"
+unit = "ug/g"
+status = "recommended"
+source = "deer2013"
+notes = "Average rutile Ti mass fraction assigned to the {quantity} measurement channel."
+
+[standards."R632".measurements.values]
+"49Ti" = 599499.3742177722
+
+[[standards."R632".measurements]]
+role = "reference_age"
+unit = "Ma"
+status = "recommended"
+source = "axelsson2018"
+notes = "Recommended combined U-Pb concordia age; radiogenic ratios are derived."
+
+[standards."R632".measurements.values]
+"concordia_age" = { value = 496, uncertainty = 2, uncertainty_type = "2sd" }

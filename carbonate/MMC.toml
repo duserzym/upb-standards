@@ -1,0 +1,18 @@
+# Imported iolite reference-material record; kept separate from curated records.
+format_version = 2
+material = "carbonate"
+
+[standards."IOLITE_C_MMC"]
+aliases = ["C_MMC"]
+description = "Modern Marine Carbonate"
+origin = "iolite:C_MMC.json; Data Source: a bunch of shells from your local beach"
+
+[[standards."IOLITE_C_MMC".measurements]]
+role = "isotope_ratio"
+unit = "ratio"
+status = "provisional"
+source = "iolite_local_shells"
+notes = "Imported without numerical reinterpretation from an iolite JSON reference-material record."
+
+[standards."IOLITE_C_MMC".measurements.values]
+"87Sr/86Sr" = { value = 0.709163, uncertainty = 2e-05, uncertainty_type = "reported_unspecified" }

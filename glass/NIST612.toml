@@ -1,0 +1,100 @@
+# Curated glass reference-material record.
+# Only documented inputs are stored; redundant ratios are derived in Python.
+format_version = 2
+material = "glass"
+
+[standards."NIST612"]
+aliases = ["NIST SRM 612"]
+
+[[standards."NIST612".measurements]]
+role = "concentration"
+unit = "ug/g"
+status = "provisional"
+source = "jochum2011"
+notes = "Elemental mass fraction assigned to the {quantity} measurement channel; value is not multiplied by the isotope abundance."
+
+[standards."NIST612".measurements.values]
+"139La" = { value = 35.8 }
+"140Ce" = { value = 38.7 }
+"141Pr" = { value = 37.2 }
+"146Nd" = { value = 35.9 }
+"147Sm" = { value = 38.1 }
+"153Eu" = { value = 35.0 }
+"157Gd" = { value = 36.7 }
+"159Tb" = { value = 36.0 }
+"163Dy" = { value = 36.0 }
+"165Ho" = { value = 38.0 }
+"166Er" = { value = 38.0 }
+"169Tm" = { value = 38.0 }
+"172Yb" = { value = 39.2 }
+"175Lu" = { value = 36.9 }
+"177Hf" = { value = 35.0 }
+"181Ta" = { value = 40.0 }
+"208Pb" = { value = 38.57 }
+"232Th" = { value = 37.79 }
+"238U" = { value = 37.38 }
+"29Si" = { value = 336107.6718255949 }
+"31P" = { value = 51.0 }
+"49Ti" = { value = 44.0 }
+"89Y" = { value = 38.0 }
+"91Zr" = { value = 38.0 }
+"93Nb" = { value = 40.0 }
+
+[[standards."NIST612".measurements]]
+role = "concentration"
+unit = "ug/g"
+status = "provisional"
+source = "jochum2011"
+notes = "Elemental mass fraction assigned to the {quantity} measurement channel; value is not multiplied by the isotope abundance."
+
+[standards."NIST612".measurements.values]
+"26Mg" = { value = 77.0 }
+"44Ca" = { value = 85048.5021398003 }
+"55Mn" = { value = 38.0 }
+"57Fe" = { value = 51.0 }
+"88Sr" = { value = 78.4 }
+
+[[standards."NIST612".measurements]]
+role = "concentration"
+unit = "ug/g"
+status = "provisional"
+source = "jochum2011"
+notes = "Elemental mass fraction assigned to the {quantity} measurement channel; value is not multiplied by the isotope abundance."
+
+[standards."NIST612".measurements.values]
+"51V" = { value = 39.0 }
+"52Cr" = { value = 36.0 }
+
+[[standards."NIST612".measurements]]
+role = "initial_ratio"
+unit = "ratio"
+status = "provisional"
+source = "woodhead2001"
+notes = "Canonical initial/common-Pb ratio; reciprocal and cross-ratios are derived."
+
+[standards."NIST612".measurements.values]
+"206Pb/204Pb_i" = 17.095
+"207Pb/204Pb_i" = 15.510311476451
+"208Pb/204Pb_i" = 37.005608747134474
+
+[[standards."NIST612".measurements]]
+role = "radiogenic_ratio"
+unit = "ratio"
+status = "provisional"
+source = "woodhead2001"
+notes = "Bulk-glass isotope-ratio reference retained under the legacy star-column convention."
+
+[standards."NIST612".measurements.values]
+"206Pb/238U*" = 0.25042034434466726
+"207Pb/235U*" = 94.91277198168774
+"208Pb/232Th*" = 0.5348945725732973
+
+[[standards."NIST612".measurements]]
+role = "radiogenic_ratio"
+unit = "ratio"
+status = "provisional"
+source = "woodhead2001"
+notes = "Bulk-glass Pb isotope-ratio reference retained under the legacy star-column convention."
+
+[standards."NIST612".measurements.values]
+"207Pb/206Pb*" = 0.9073010515619186

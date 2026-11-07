@@ -1,0 +1,51 @@
+# Curated zircon reference-material record.
+# Only documented inputs are stored; redundant ratios are derived in Python.
+format_version = 2
+material = "zircon"
+
+[standards."FC1"]
+aliases = ["FC-1"]
+
+[[standards."FC1".measurements]]
+role = "concentration"
+unit = "ug/g"
+status = "provisional"
+source = "deer2013"
+notes = "Elemental mass fraction assigned to the {quantity} measurement channel; value is not multiplied by the isotope abundance. Average zircon composition."
+
+[standards."FC1".measurements.values]
+"29Si" = 151443.22960004435
+"91Zr" = 487760.24454904505
+
+[[standards."FC1".measurements]]
+role = "initial_ratio"
+unit = "ratio"
+status = "provisional"
+source = "stacey1975"
+notes = "Canonical initial/common-Pb ratio; reciprocal and cross-ratios are derived."
+
+[standards."FC1".measurements.values]
+"206Pb/204Pb_i" = 16.888369884
+"207Pb/204Pb_i" = 15.46406677624024
+"208Pb/204Pb_i" = 36.5397429652
+
+[[standards."FC1".measurements]]
+role = "radiogenic_ratio"
+unit = "ratio"
+status = "provisional"
+source = "paces1993"
+notes = "Documented radiogenic ratio; reciprocal and linked ratios are derived."
+
+[standards."FC1".measurements.values]
+"206Pb/238U*" = 0.18522
+"207Pb/235U*" = 1.94403
+
+[[standards."FC1".measurements]]
+role = "reference_age"
+unit = "Ma"
+status = "provisional"
+source = "paces1993"
+notes = "Accepted age; concordant radiogenic ratios are derived when direct values are absent."
+
+[standards."FC1".measurements.values]
+"concordia_age" = { value = 1099.0, uncertainty = 0.6, uncertainty_type = "2sd" }

@@ -1,0 +1,70 @@
+# Only documented inputs are stored; redundant ratios are derived in Python.
+format_version = 2
+material = "zircon"
+
+[standards."S513"]
+aliases = []
+
+[[standards."S513".measurements]]
+role = "concentration"
+unit = "ug/g"
+status = "provisional"
+source = "deer2013"
+notes = "Elemental mass fraction assigned to the {quantity} measurement channel; value is not multiplied by the isotope abundance. Average zircon composition."
+
+[standards."S513".measurements.values]
+"29Si" = 151443.22960004435
+"91Zr" = 487760.24454904505
+
+[[standards."S513".measurements]]
+role = "concentration"
+unit = "ug/g"
+status = "provisional"
+source = "luo2025"
+notes = "Elemental Hf mass fraction assigned to the 177Hf measurement channel; value is not multiplied by the isotope abundance."
+
+[standards."S513".measurements.values]
+"177Hf" = 8259.0
+
+[[standards."S513".measurements]]
+role = "initial_ratio"
+unit = "ratio"
+status = "provisional"
+source = "stacey1975"
+notes = "Stacey-Kramers model Pb at about 561 Ma. For S513, Seiland and AUSZ2, the archive rows labelled 206Pb/207Pb and 206Pb/208Pb contain 207Pb/204Pb and 208Pb/204Pb, respectively; stored here under their canonical keys, as in Seiland.toml."
+
+[standards."S513".measurements.values]
+"206Pb/204Pb_i" = 17.81427985313352
+"207Pb/204Pb_i" = 15.576740129737942
+"208Pb/204Pb_i" = 37.59322277150352
+
+[[standards."S513".measurements]]
+role = "radiogenic_ratio"
+unit = "ratio"
+status = "provisional"
+source = "luo2025"
+notes = "Th-corrected CA-ID-TIMS weighted mean ratios, n = 8. Reciprocal and linked ratios are derived."
+
+[standards."S513".measurements.values]
+"206Pb/238U*" = 0.090955
+"207Pb/235U*" = 0.73873
+
+[[standards."S513".measurements]]
+role = "radiogenic_ratio"
+unit = "ratio"
+status = "provisional"
+source = "boise_upbr26plus_2026"
+notes = "Value from the UPbR26plus Analyte & Standards Archive, Instructions sheet, column U. This is not a published TIMS ratio: Luo et al. (2025) report an LA-ICP-MS 208Pb/232Th age of 561.3 ± 3.3 Ma in the abstract."
+
+[standards."S513".measurements.values]
+"208Pb/232Th*" = 0.028153518284538936
+
+[[standards."S513".measurements]]
+role = "reference_age"
+unit = "Ma"
+status = "provisional"
+source = "luo2025"
+notes = "Th-corrected weighted mean 206Pb/238U CA-ID-TIMS age, 95% confidence, n = 8, MSWD = 0.9. Stored as the supported system-specific age, not a concordia age."
+
+[standards."S513".measurements.values]
+"206Pb/238U_age" = { value = 561.18, uncertainty = 0.63, uncertainty_type = "expanded_95" }

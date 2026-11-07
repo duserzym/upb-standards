@@ -1,0 +1,65 @@
+# Curated glass reference-material record.
+# Only documented inputs are stored; redundant ratios are derived in Python.
+format_version = 2
+material = "glass"
+
+[standards."GSD"]
+aliases = ["GSD-1G"]
+
+[[standards."GSD".measurements]]
+role = "concentration"
+unit = "ug/g"
+status = "provisional"
+source = "georem2005"
+notes = "Elemental mass fraction assigned to the {quantity} measurement channel; value is not multiplied by the isotope abundance."
+
+[standards."GSD".measurements.values]
+"139La" = { value = 39.0 }
+"140Ce" = { value = 40.0 }
+"141Pr" = { value = 43.1 }
+"146Nd" = { value = 43.6 }
+"147Sm" = { value = 44.7 }
+"153Eu" = { value = 42.4 }
+"157Gd" = { value = 49.4 }
+"159Tb" = { value = 47.5 }
+"163Dy" = { value = 52.1 }
+"165Ho" = { value = 48.9 }
+"166Er" = { value = 39.6 }
+"169Tm" = { value = 50.6 }
+"172Yb" = { value = 51.8 }
+"175Lu" = { value = 53.0 }
+"208Pb" = { value = 47.8 }
+"232Th" = { value = 41.0 }
+"238U" = { value = 42.4 }
+"26Mg" = { value = 21591.0 }
+"29Si" = { value = 248818.0 }
+"31P" = { value = 1004.0 }
+"44Ca" = { value = 50601.0 }
+"55Mn" = { value = 220.0 }
+"57Fe" = { value = 103382.0 }
+"88Sr" = { value = 69.3 }
+"89Y" = { value = 44.0 }
+
+[[standards."GSD".measurements]]
+role = "concentration"
+unit = "ug/g"
+status = "provisional"
+source = "georem2005"
+notes = "Elemental mass fraction assigned to the {quantity} measurement channel; value is not multiplied by the isotope abundance."
+
+[standards."GSD".measurements.values]
+"49Ti" = { value = 197900.0 }
+"51V" = { value = 71.5 }
+"52Cr" = { value = 3670.0 }
+
+[[standards."GSD".measurements]]
+role = "initial_ratio"
+unit = "ratio"
+status = "provisional"
+source = "georem2005"
+notes = "Canonical initial/common-Pb ratio; reciprocal and cross-ratios are derived."
+
+[standards."GSD".measurements.values]
+"206Pb/204Pb_i" = 19.579
+"207Pb/204Pb_i" = 15.74507438681142
+"208Pb/204Pb_i" = 38.90898251192369

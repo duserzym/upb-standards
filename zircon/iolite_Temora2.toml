@@ -1,0 +1,45 @@
+# Imported iolite reference-material record; kept separate from curated records.
+format_version = 2
+material = "zircon"
+
+[standards."IOLITE_Z_TEMORA2"]
+aliases = ["Z_Temora2"]
+description = "Temora2 Zircon, natural standard"
+origin = "iolite:Z_Temora2.json; Data Source: Black et al., 2004, Chem. Geol.205, 115-140 and Woodhead & Hergt, 2005 Geostandards 29, 183-195 for Hf data"
+
+[[standards."IOLITE_Z_TEMORA2".measurements]]
+role = "reference_age"
+unit = "Ma"
+status = "provisional"
+source = "iolite_temora2_compilation"
+notes = "Imported without numerical reinterpretation from an iolite JSON reference-material record."
+
+[standards."IOLITE_Z_TEMORA2".measurements.values]
+"concordia_age" = 417.0
+
+[[standards."IOLITE_Z_TEMORA2".measurements]]
+role = "isotope_ratio"
+unit = "ratio"
+status = "provisional"
+source = "iolite_temora2_compilation"
+notes = "Imported without numerical reinterpretation from an iolite JSON reference-material record."
+
+[standards."IOLITE_Z_TEMORA2".measurements.values]
+"176Hf/177Hf" = 0.282686
+"206Pb/204Pb" = 0.0
+"207Pb/204Pb" = 0.0
+"208Pb/204Pb" = 0.0
+
+[[standards."IOLITE_Z_TEMORA2".measurements]]
+role = "radiogenic_ratio"
+unit = "ratio"
+status = "provisional"
+source = "iolite_temora2_compilation"
+notes = "Imported without numerical reinterpretation from an iolite JSON reference-material record."
+
+[standards."IOLITE_Z_TEMORA2".measurements.values]
+"206Pb/238U*" = 0.0667
+"207Pb/235U*" = 0.5075
+"208Pb/232Th*" = 0.0
+"207Pb/206Pb*" = 0.0552
+"206Pb/208Pb*" = 0.0

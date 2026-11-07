@@ -1,0 +1,59 @@
+# Curated rutile reference-material record.
+# Only documented inputs are stored; redundant ratios are derived in Python.
+format_version = 2
+material = "rutile"
+
+[standards."KNW"]
+aliases = []
+
+[[standards."KNW".measurements]]
+role = "concentration"
+unit = "ug/g"
+status = "recommended"
+source = "meng2024"
+notes = "Recommended elemental mass fraction assigned to the {quantity} measurement channel. Sufficiently homogeneous."
+
+[standards."KNW".measurements.values]
+"177Hf" = { value = 51.9, uncertainty = 10.7, uncertainty_type = "expanded_95" }
+"45Sc" = { value = 79.8, uncertainty = 12.8, uncertainty_type = "expanded_95" }
+"51V" = { value = 6622, uncertainty = 625, uncertainty_type = "expanded_95" }
+"52Cr" = { value = 1762, uncertainty = 149, uncertainty_type = "expanded_95" }
+"91Zr" = { value = 1183, uncertainty = 198, uncertainty_type = "expanded_95" }
+"93Nb" = { value = 1261, uncertainty = 158, uncertainty_type = "expanded_95" }
+
+[[standards."KNW".measurements]]
+role = "concentration"
+unit = "ug/g"
+status = "provisional"
+source = "meng2024"
+notes = "Recommended elemental mass fraction assigned to the {quantity} measurement channel. Heterogeneous; use with caution."
+
+[standards."KNW".measurements.values]
+"181Ta" = { value = 238, uncertainty = 136, uncertainty_type = "expanded_95" }
+"182W" = { value = 23.8, uncertainty = 35.0, uncertainty_type = "expanded_95" }
+"208Pb" = { value = 6.5, uncertainty = 4.78, uncertainty_type = "expanded_95" }
+"238U" = { value = 31.0, uncertainty = 18.7, uncertainty_type = "expanded_95" }
+"57Fe" = { value = 720, uncertainty = 814, uncertainty_type = "expanded_95" }
+
+[[standards."KNW".measurements]]
+role = "concentration"
+unit = "ug/g"
+status = "recommended"
+source = "deer2013"
+notes = "Average rutile Ti mass fraction assigned to the {quantity} measurement channel."
+
+[standards."KNW".measurements.values]
+"49Ti" = 599499.3742177722
+
+[[standards."KNW".measurements]]
+role = "reference_age"
+unit = "Ma"
+status = "recommended"
+source = "meng2024"
+notes = "Recommended ID-TIMS age; each isotope-system age derives its corresponding ratio."
+
+[standards."KNW".measurements.values]
+"206Pb/238U_age" = { value = 1088.2, uncertainty = 1.9, uncertainty_type = "2sd" }
+"207Pb/206Pb_age" = { value = 1083.1, uncertainty = 6.0, uncertainty_type = "2sd" }
+"207Pb/235U_age" = { value = 1086.6, uncertainty = 4.6, uncertainty_type = "2sd" }
+"concordia_age" = { value = 1088.2, uncertainty = 1.5, uncertainty_type = "2sd" }

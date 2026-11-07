@@ -1,0 +1,92 @@
+# Imported iolite reference-material record; kept separate from curated records.
+format_version = 2
+material = "hematite"
+
+[standards."IOLITE_H_HFO"]
+aliases = ["H_HFO"]
+description = "HFO Hematite, synthetic standard"
+origin = "iolite:H_HFO.json; Data Source: HFO Liam"
+
+[[standards."IOLITE_H_HFO".measurements]]
+role = "reference_age"
+unit = "Ma"
+status = "provisional"
+source = "iolite_hfo_liam"
+notes = "Imported without numerical reinterpretation from an iolite JSON reference-material record."
+
+[standards."IOLITE_H_HFO".measurements.values]
+"concordia_age" = 1065.0
+
+[[standards."IOLITE_H_HFO".measurements]]
+role = "concentration"
+unit = "ug/g"
+status = "provisional"
+source = "iolite_hfo_liam"
+notes = "Imported from an iolite JSON reference-material record. Element concentrations are assigned to UPbRPy isotope channels; the values are elemental mass fractions, not isotope-abundance-scaled."
+
+[standards."IOLITE_H_HFO".measurements.values]
+"137Ba" = 0.06
+"140Ce" = 2.6
+"52Cr" = 1.5
+"163Dy" = 12.0
+"166Er" = 25.0
+"153Eu" = 0.24
+"157Gd" = 2.2
+"177Hf" = 5900.0
+"165Ho" = 4.8
+"139La" = 0.006
+"175Lu" = 13.0
+"93Nb" = 0.79
+"146Nd" = 0.24
+"60Ni" = 0.07
+"31P" = 24.0
+"208Pb" = 15.0
+"141Pr" = 0.024
+"29Si" = 152840.0
+"147Sm" = 1.0
+"88Sr" = 0.052
+"181Ta" = 1.0
+"159Tb" = 0.86
+"232Th" = 30.0
+"205Tl" = 6.0
+"169Tm" = 6.9
+"238U" = 80.0
+"89Y" = 140.0
+"172Yb" = 74.0
+
+[[standards."IOLITE_H_HFO".measurements]]
+role = "isotope_ratio"
+unit = "ratio"
+status = "provisional"
+source = "iolite_hfo_liam"
+notes = "Imported without numerical reinterpretation from an iolite JSON reference-material record."
+
+[standards."IOLITE_H_HFO".measurements.values]
+"176Hf/177Hf" = 0.282306
+"206Pb/204Pb" = 10000.0
+"207Pb/204Pb" = 749.0
+"208Pb/204Pb" = 1069.0
+
+[[standards."IOLITE_H_HFO".measurements]]
+role = "radiogenic_ratio"
+unit = "ratio"
+status = "provisional"
+source = "iolite_hfo_liam"
+notes = "Imported without numerical reinterpretation from an iolite JSON reference-material record."
+
+[standards."IOLITE_H_HFO".measurements.values]
+"206Pb/238U*" = 0.17917
+"207Pb/235U*" = 1.849825
+"208Pb/232Th*" = 0.05374
+"207Pb/206Pb*" = 0.07488
+"206Pb/208Pb*" = 9.354537
+
+[[standards."IOLITE_H_HFO".measurements]]
+role = "initial_ratio"
+unit = "ratio"
+status = "provisional"
+source = "iolite_hfo_liam"
+notes = "Imported without numerical reinterpretation from an iolite JSON reference-material record."
+
+[standards."IOLITE_H_HFO".measurements.values]
+"207Pb/206Pb_i" = 0.9142

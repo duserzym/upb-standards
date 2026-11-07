@@ -1,0 +1,57 @@
+# Imported iolite reference-material record; kept separate from curated records.
+format_version = 2
+material = "zircon"
+
+[standards."IOLITE_Z_PLESOVICE"]
+aliases = ["Z_Plesovice"]
+description = "Plesovice Zircon, natural standard"
+origin = "iolite:Z_Plesovice.json; Data Source: Slama et al., 2008, Chem. Geol. 249, 1-35"
+
+[[standards."IOLITE_Z_PLESOVICE".measurements]]
+role = "reference_age"
+unit = "Ma"
+status = "provisional"
+source = "slama2008"
+notes = "Imported without numerical reinterpretation from an iolite JSON reference-material record."
+
+[standards."IOLITE_Z_PLESOVICE".measurements.values]
+"concordia_age" = 337.0
+
+[[standards."IOLITE_Z_PLESOVICE".measurements]]
+role = "radiogenic_ratio"
+unit = "ratio"
+status = "provisional"
+source = "slama2008"
+notes = "Imported without numerical reinterpretation from an iolite JSON reference-material record."
+
+[standards."IOLITE_Z_PLESOVICE".measurements.values]
+"206Pb/238U*" = 0.05368
+"207Pb/235U*" = 0.394
+"208Pb/232Th*" = 0.0
+"207Pb/206Pb*" = 0.05325
+"206Pb/208Pb*" = 31.2138
+
+[[standards."IOLITE_Z_PLESOVICE".measurements]]
+role = "isotope_ratio"
+unit = "ratio"
+status = "provisional"
+source = "slama2008"
+notes = "Imported without numerical reinterpretation from an iolite JSON reference-material record."
+
+[standards."IOLITE_Z_PLESOVICE".measurements.values]
+"206Pb/204Pb" = 51930.0
+"207Pb/204Pb" = 0.0
+"208Pb/204Pb" = 0.0
+"176Hf/177Hf" = 0.282482
+
+[[standards."IOLITE_Z_PLESOVICE".measurements]]
+role = "concentration"
+unit = "ug/g"
+status = "provisional"
+source = "slama2008"
+notes = "Imported from an iolite JSON reference-material record. Element concentrations are assigned to UPbRPy isotope channels; the values are elemental mass fractions, not isotope-abundance-scaled."
+
+[standards."IOLITE_Z_PLESOVICE".measurements.values]
+"208Pb" = 39.0
+"232Th" = 78.0
+"238U" = 755.0

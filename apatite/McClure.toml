@@ -1,0 +1,67 @@
+# Imported iolite reference-material record; kept separate from curated records.
+format_version = 2
+material = "apatite"
+
+[standards."IOLITE_A_MCCLURE"]
+aliases = ["A_McClure"]
+description = "McClure Mountain Apatite Apatite"
+origin = "iolite:A_McClure.json; Data Source: Schoene and Bowring, CMP, 2006"
+
+[[standards."IOLITE_A_MCCLURE".measurements]]
+role = "reference_age"
+unit = "Ma"
+status = "provisional"
+source = "schoene_bowring2006"
+notes = "Imported without numerical reinterpretation from an iolite JSON reference-material record."
+
+[standards."IOLITE_A_MCCLURE".measurements.values]
+"concordia_age" = 523.51
+
+[[standards."IOLITE_A_MCCLURE".measurements]]
+role = "radiogenic_ratio"
+unit = "ratio"
+status = "provisional"
+source = "schoene_bowring2006"
+notes = "Imported without numerical reinterpretation from an iolite JSON reference-material record."
+
+[standards."IOLITE_A_MCCLURE".measurements.values]
+"206Pb/238U*" = 0.084598082
+"207Pb/235U*" = 0.67460748
+"208Pb/232Th*" = 0.0
+"207Pb/206Pb*" = 0.057834819
+"206Pb/208Pb*" = 0.0
+
+[[standards."IOLITE_A_MCCLURE".measurements]]
+role = "initial_ratio"
+unit = "ratio"
+status = "provisional"
+source = "schoene_bowring2006"
+notes = "Imported without numerical reinterpretation from an iolite JSON reference-material record."
+
+[standards."IOLITE_A_MCCLURE".measurements.values]
+"207Pb/206Pb_i" = 0.88198
+
+[[standards."IOLITE_A_MCCLURE".measurements]]
+role = "isotope_ratio"
+unit = "ratio"
+status = "provisional"
+source = "schoene_bowring2006"
+notes = "Imported without numerical reinterpretation from an iolite JSON reference-material record."
+
+[standards."IOLITE_A_MCCLURE".measurements.values]
+"206Pb/204Pb" = 0.0
+"207Pb/204Pb" = 0.0
+"208Pb/204Pb" = 0.0
+"176Hf/177Hf" = 0.0
+
+[[standards."IOLITE_A_MCCLURE".measurements]]
+role = "concentration"
+unit = "ug/g"
+status = "provisional"
+source = "schoene_bowring2006"
+notes = "Imported from an iolite JSON reference-material record. Element concentrations are assigned to UPbRPy isotope channels; the values are elemental mass fractions, not isotope-abundance-scaled."
+
+[standards."IOLITE_A_MCCLURE".measurements.values]
+"208Pb" = 0.0
+"232Th" = 71.0
+"238U" = 23.0

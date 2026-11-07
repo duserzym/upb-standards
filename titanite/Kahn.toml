@@ -1,0 +1,28 @@
+# Curated titanite reference-material record.
+# Only documented inputs are stored; redundant ratios are derived in Python.
+format_version = 2
+material = "titanite"
+
+[standards."KHAN"]
+aliases = []
+
+[[standards."KHAN".measurements]]
+role = "concentration"
+unit = "ug/g"
+status = "provisional"
+source = "deer2013"
+notes = "Average titanite elemental mass fraction assigned to the {quantity} measurement channel."
+
+[standards."KHAN".measurements.values]
+"29Si" = 142051.06922948908
+"49Ti" = 211043.76303712974
+
+[[standards."KHAN".measurements]]
+role = "reference_age"
+unit = "Ma"
+status = "provisional"
+source = "heaman2009"
+notes = "Accepted age; concordant radiogenic ratios are derived when direct values are absent."
+
+[standards."KHAN".measurements.values]
+"concordia_age" = 522.2

@@ -1,0 +1,54 @@
+# Imported iolite reference-material record; kept separate from curated records.
+format_version = 2
+material = "zircon"
+
+[standards."IOLITE_Z_OG1"]
+aliases = ["Z_OG1"]
+description = "\"OG1 Zircon, natural standard\""
+origin = "iolite:Z_OG1.json; Data Source: Stern et al. 09, GGR (UPb)"
+
+[[standards."IOLITE_Z_OG1".measurements]]
+role = "reference_age"
+unit = "Ma"
+status = "provisional"
+source = "stern2009"
+notes = "Imported without numerical reinterpretation from an iolite JSON reference-material record."
+
+[standards."IOLITE_Z_OG1".measurements.values]
+"concordia_age" = { value = 0.0, uncertainty = 3465.4, uncertainty_type = "reported_unspecified" }
+
+[[standards."IOLITE_Z_OG1".measurements]]
+role = "concentration"
+unit = "ug/g"
+status = "provisional"
+source = "stern2009"
+notes = "Imported from an iolite JSON reference-material record. Element concentrations are assigned to UPbRPy isotope channels; the values are elemental mass fractions, not isotope-abundance-scaled."
+
+[standards."IOLITE_Z_OG1".measurements.values]
+"208Pb" = 424.0
+"232Th" = 120.0
+"238U" = 150.0
+
+[[standards."IOLITE_Z_OG1".measurements]]
+role = "isotope_ratio"
+unit = "ratio"
+status = "provisional"
+source = "stern2009"
+notes = "Imported without numerical reinterpretation from an iolite JSON reference-material record."
+
+[standards."IOLITE_Z_OG1".measurements.values]
+"176Hf/177Hf" = { value = 0.280633, uncertainty = 3.4e-05, uncertainty_type = "reported_unspecified" }
+"178Hf/177Hf" = { value = 1.467173, uncertainty = 1.3e-05, uncertainty_type = "reported_unspecified" }
+"206Pb/204Pb" = 23712.0
+
+[[standards."IOLITE_Z_OG1".measurements]]
+role = "radiogenic_ratio"
+unit = "ratio"
+status = "provisional"
+source = "stern2009"
+notes = "Imported without numerical reinterpretation from an iolite JSON reference-material record."
+
+[standards."IOLITE_Z_OG1".measurements.values]
+"206Pb/238U*" = 0.705
+"207Pb/235U*" = 29.06
+"207Pb/206Pb*" = { value = 0.29907, uncertainty = 0.00011, uncertainty_type = "reported_unspecified" }

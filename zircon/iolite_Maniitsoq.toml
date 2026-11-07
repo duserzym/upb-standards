@@ -1,0 +1,52 @@
+# Imported iolite reference-material record; kept separate from curated records.
+format_version = 2
+material = "zircon"
+
+[standards."IOLITE_Z_MANIITSOQ"]
+aliases = ["Z_Maniitsoq"]
+description = "“natural zircon, Greenland“"
+origin = "iolite:Z_Maniitsoq.json; Data Source: “Jeffrey Marsh, Laurentian University.”"
+
+[[standards."IOLITE_Z_MANIITSOQ".measurements]]
+role = "reference_age"
+unit = "Ma"
+status = "provisional"
+source = "iolite_maniitsoq_personal_communication"
+notes = "Imported without numerical reinterpretation from an iolite JSON reference-material record."
+
+[standards."IOLITE_Z_MANIITSOQ".measurements.values]
+"concordia_age" = { value = 3008.9, uncertainty = 0.66, uncertainty_type = "reported_unspecified" }
+
+[[standards."IOLITE_Z_MANIITSOQ".measurements]]
+role = "radiogenic_ratio"
+unit = "ratio"
+status = "provisional"
+source = "iolite_maniitsoq_personal_communication"
+notes = "Imported without numerical reinterpretation from an iolite JSON reference-material record."
+
+[standards."IOLITE_Z_MANIITSOQ".measurements.values]
+"206Pb/238U*" = 0.59095
+"207Pb/235U*" = { value = 18.20064, uncertainty = 0.40528, uncertainty_type = "reported_unspecified" }
+"207Pb/206Pb*" = { value = 0.223719, uncertainty = 0.00138, uncertainty_type = "reported_unspecified" }
+
+[[standards."IOLITE_Z_MANIITSOQ".measurements]]
+role = "concentration"
+unit = "ug/g"
+status = "provisional"
+source = "iolite_maniitsoq_personal_communication"
+notes = "Imported from an iolite JSON reference-material record. Element concentrations are assigned to UPbRPy isotope channels; the values are elemental mass fractions, not isotope-abundance-scaled."
+
+[standards."IOLITE_Z_MANIITSOQ".measurements.values]
+"238U" = { value = 0.0, uncertainty = 141.0, uncertainty_type = "reported_unspecified" }
+"232Th" = { value = 0.0, uncertainty = 154.0, uncertainty_type = "reported_unspecified" }
+"177Hf" = { value = 0.0, uncertainty = 10849.0, uncertainty_type = "reported_unspecified" }
+
+[[standards."IOLITE_Z_MANIITSOQ".measurements]]
+role = "isotope_ratio"
+unit = "ratio"
+status = "provisional"
+source = "iolite_maniitsoq_personal_communication"
+notes = "Imported without numerical reinterpretation from an iolite JSON reference-material record."
+
+[standards."IOLITE_Z_MANIITSOQ".measurements.values]
+"176Hf/177Hf" = { value = 0.280864, uncertainty = 2.1e-05, uncertainty_type = "reported_unspecified" }

@@ -1,0 +1,77 @@
+# Imported iolite reference-material record; kept separate from curated records.
+format_version = 2
+material = "zircon"
+
+[standards."IOLITE_Z_GJ1"]
+aliases = ["Z_GJ1"]
+description = "Gemoc GJ 1 Zircon, natural standard"
+origin = "iolite:Z_GJ1.json; Data Source: NIGL ID_TIMS data from D.Condon; 208/232 (model) data from Jackson et al. 2004 Chem Geol 211, 47-69. Hf data from More et al. 2008 Chem Geol 255, 231-235; Trace element data from Liu et al., 2010, Chi. Sci.Bull.55"
+
+[[standards."IOLITE_Z_GJ1".measurements]]
+role = "reference_age"
+unit = "Ma"
+status = "provisional"
+source = "iolite_gj1_compilation"
+notes = "Imported without numerical reinterpretation from an iolite JSON reference-material record."
+
+[standards."IOLITE_Z_GJ1".measurements.values]
+"concordia_age" = { value = 602.0, uncertainty = 0.7, uncertainty_type = "reported_unspecified" }
+
+[[standards."IOLITE_Z_GJ1".measurements]]
+role = "concentration"
+unit = "ug/g"
+status = "provisional"
+source = "iolite_gj1_compilation"
+notes = "Imported from an iolite JSON reference-material record. Element concentrations are assigned to UPbRPy isotope channels; the values are elemental mass fractions, not isotope-abundance-scaled."
+
+[standards."IOLITE_Z_GJ1".measurements.values]
+"140Ce" = 16.0
+"163Dy" = 19.9
+"166Er" = 29.3
+"153Eu" = 1.0
+"157Gd" = 6.9
+"177Hf" = 6558.0
+"165Ho" = 6.81
+"139La" = 0.005
+"175Lu" = 13.1
+"93Nb" = 1.51
+"146Nd" = 0.59
+"208Pb" = 25.7
+"141Pr" = 0.03
+"29Si" = 0.0
+"147Sm" = 1.42
+"159Tb" = 1.95
+"232Th" = 9.51
+"49Ti" = 3.55
+"169Tm" = 6.25
+"238U" = 287.0
+"89Y" = 246.0
+"172Yb" = 62.0
+"91Zr" = 431400.0
+
+[[standards."IOLITE_Z_GJ1".measurements]]
+role = "isotope_ratio"
+unit = "ratio"
+status = "provisional"
+source = "iolite_gj1_compilation"
+notes = "Imported without numerical reinterpretation from an iolite JSON reference-material record."
+
+[standards."IOLITE_Z_GJ1".measurements.values]
+"176Hf/177Hf" = 0.282
+"206Pb/204Pb" = 71975.0
+"207Pb/204Pb" = 7430.5
+"208Pb/204Pb" = 0.0
+
+[[standards."IOLITE_Z_GJ1".measurements]]
+role = "radiogenic_ratio"
+unit = "ratio"
+status = "provisional"
+source = "iolite_gj1_compilation"
+notes = "Imported without numerical reinterpretation from an iolite JSON reference-material record."
+
+[standards."IOLITE_Z_GJ1".measurements.values]
+"206Pb/238U*" = 0.097853
+"207Pb/235U*" = 0.814995
+"208Pb/232Th*" = 0.03074
+"207Pb/206Pb*" = 0.060139
+"206Pb/208Pb*" = 88.08
