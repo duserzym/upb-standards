@@ -1,10 +1,11 @@
 # Curated rutile reference-material record.
-# Only documented inputs are stored; redundant ratios are derived in Python.
+# Published ages and weighted means of the published ID-TIMS aliquot ratios.
 format_version = 2
 material = "rutile"
 
 [standards."KNW"]
-aliases = []
+# Boise rutile session label for the KNW secondary reference.
+aliases = ["Krag"]
 
 [[standards."KNW".measurements]]
 role = "concentration"
@@ -50,10 +51,22 @@ role = "reference_age"
 unit = "Ma"
 status = "recommended"
 source = "meng2024"
-notes = "Recommended ID-TIMS age; each isotope-system age derives its corresponding ratio."
+notes = "ID-TIMS ages reported in §3.2. The authors recommend the 206Pb/238U system."
 
 [standards."KNW".measurements.values]
 "206Pb/238U_age" = { value = 1088.2, uncertainty = 1.9, uncertainty_type = "2sd" }
 "207Pb/206Pb_age" = { value = 1083.1, uncertainty = 6.0, uncertainty_type = "2sd" }
 "207Pb/235U_age" = { value = 1086.6, uncertainty = 4.6, uncertainty_type = "2sd" }
 "concordia_age" = { value = 1088.2, uncertainty = 1.5, uncertainty_type = "2sd" }
+
+[[standards."KNW".measurements]]
+role = "radiogenic_ratio"
+unit = "ratio"
+status = "provisional"
+source = "meng2024"
+notes = "Table 3, KNW1–KNW7. Inverse-variance weighted means of the seven printed ID-TIMS aliquot ratios. Uncertainties are propagated 2σ standard errors of each mean. The authors recommend the separately listed ages. Table 3 uses 238U/235U = 137.818."
+
+[standards."KNW".measurements.values]
+"206Pb/238U*" = { value = 0.183870, uncertainty = 0.000327, uncertainty_type = "2sd" }
+"207Pb/235U*" = { value = 1.91596, uncertainty = 0.01349, uncertainty_type = "2sd" }
+"207Pb/206Pb*" = { value = 0.075539, uncertainty = 0.000478, uncertainty_type = "2sd" }
