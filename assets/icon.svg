@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">upb-standards icon</title>
+  <desc id="desc">A reference catalogue with a blue zircon, green apatite, purple titanite and red rutile, each beside grey value bars, on a white card and softly shaded light tile.</desc>
+  <defs>
+    <linearGradient id="tile" x2="0.8" y2="1"><stop stop-color="#ffffff"/><stop offset="1" stop-color="#e9eef5"/></linearGradient>
+    <linearGradient id="paper" x2="0.8" y2="1"><stop stop-color="#ffffff"/><stop offset="1" stop-color="#f1f5f9"/></linearGradient>
+    <filter id="shadow" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="0" dy="9" stdDeviation="10" flood-color="#0f1b2d" flood-opacity="0.25"/></filter>
+  </defs>
+  <rect x="36" y="36" width="440" height="440" rx="88" fill="url(#tile)"/>
+  <rect x="36" y="36" width="440" height="440" rx="88" fill="none" stroke="#d9e1ec" stroke-width="10"/>
+  <g filter="url(#shadow)">
+    <rect x="96" y="88" width="320" height="336" rx="22" fill="url(#paper)" stroke="#cbd5e1" stroke-width="3"/>
+    <path d="M200 182 H390 M200 254 H390 M200 326 H390" stroke="#e2e8f0" stroke-width="3"/>
+    <g stroke-linejoin="round" stroke-width="4">
+      <!-- Tetragonal prism with two pyramidal terminations. -->
+      <g stroke="#24408f" transform="translate(151 136) scale(1.2) translate(-151 -143)">
+        <polygon points="151,108 171,124 171,162 151,178 131,162 131,124" fill="#4063d8"/>
+        <polygon points="151,108 131,124 151,130 171,124" fill="#c3cff6"/>
+        <polygon points="131,124 151,130 151,168 131,162" fill="#7b93e6"/>
+        <polygon points="131,162 151,168 171,162 151,178" fill="#c3cff6"/>
+        <path d="M151 108 V130 M151 130 V168 M151 168 V178" fill="none"/>
+      </g>
+      <!-- Hexagonal prism, with a broad light basal face. -->
+      <g stroke="#1f5f16" transform="translate(151 220) scale(1.2) translate(-151 -220)">
+        <polygon points="151,190 178,203 178,237 151,250 124,237 124,203" fill="#389826"/>
+        <polygon points="151,190 178,203 165,216 138,216 124,203" fill="#c6ecb8"/>
+        <polygon points="124,203 138,216 138,244 124,237" fill="#6fc45a"/>
+        <path d="M165 216 V244 M138 216 V244" fill="none"/>
+      </g>
+      <!-- Titanite wedge. -->
+      <g stroke="#5e3378" transform="translate(153 293) scale(1.2) translate(-153 -293)">
+        <polygon points="123,293 158,267 183,299 146,319" fill="#9558b2"/>
+        <polygon points="123,293 158,267 153,294" fill="#e2cdea"/>
+        <polygon points="123,293 153,294 146,319" fill="#b98bcc"/>
+        <path d="M153 294 L183 299" fill="none"/>
+      </g>
+      <!-- Slender rutile prism. -->
+      <g stroke="#7f1f1a" transform="translate(153 372) scale(1.2) translate(-153 -372)">
+        <polygon points="153,337 170,349 170,391 153,407 136,395 136,353" fill="#cb3c33"/>
+        <polygon points="153,337 170,349 153,359 136,353" fill="#f5c3bf"/>
+        <polygon points="136,353 153,359 153,407 136,395" fill="#e2756d"/>
+        <path d="M153 359 V407" fill="none"/>
+      </g>
+    </g>
+    <g fill="#94a3b8">
+      <rect x="212" y="124" width="156" height="12" rx="5"/>
+      <rect x="212" y="198" width="132" height="12" rx="5"/>
+      <rect x="212" y="272" width="150" height="12" rx="5"/>
+      <rect x="212" y="346" width="138" height="12" rx="5"/>
+    </g>
+    <g fill="#cbd5e1">
+      <rect x="212" y="148" width="102" height="9" rx="4"/>
+      <rect x="212" y="222" width="116" height="9" rx="4"/>
+      <rect x="212" y="296" width="94" height="9" rx="4"/>
+      <rect x="212" y="370" width="108" height="9" rx="4"/>
+    </g>
+  </g>
+</svg>
