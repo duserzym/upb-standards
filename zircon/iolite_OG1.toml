@@ -12,10 +12,11 @@ role = "reference_age"
 unit = "Ma"
 status = "provisional"
 source = "stern2009"
-notes = "Imported without numerical reinterpretation from an iolite JSON reference-material record."
+locator = "Abstract, p. 145"
+notes = "Corrected 2026-11-16: the iolite import placed the age in the uncertainty field (value 0.0, uncertainty 3465.4). The age is the Stern et al. (2009) TIMS 207Pb*/206Pb* age, 3465.4 +/- 0.6 Ma at 95 % confidence; kept under concordia_age as in the iolite record."
 
 [standards."IOLITE_Z_OG1".measurements.values]
-"concordia_age" = { value = 0.0, uncertainty = 3465.4, uncertainty_type = "reported_unspecified" }
+"concordia_age" = { value = 3465.4, uncertainty = 0.6, uncertainty_type = "expanded_95" }
 
 [[standards."IOLITE_Z_OG1".measurements]]
 role = "concentration"

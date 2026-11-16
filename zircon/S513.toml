@@ -1,16 +1,18 @@
-# Only documented inputs are stored; redundant ratios are derived in Python.
+# Curated zircon reference-material record.
+# Published values from Luo et al. (2025); redundant ratios are derived in Python.
 format_version = 2
 material = "zircon"
 
 [standards."S513"]
 aliases = []
+description = "Gem-quality Sri Lankan zircon, 51.3 carats (Luo et al. 2025)."
 
 [[standards."S513".measurements]]
 role = "concentration"
 unit = "ug/g"
 status = "provisional"
 source = "deer2013"
-notes = "Elemental mass fraction assigned to the {quantity} measurement channel; value is not multiplied by the isotope abundance. Average zircon composition. Legacy oxide-to-element mass-fraction conversion (oxide wt.% * 10000 * elemental/oxide molar-mass ratio), not a measurement of this standard. The original oxide averages and atomic weights are not preserved; the stored numbers could not be reproduced from the book tables and remain unverified (audit-2026-11)."
+notes = "Elemental mass fraction assigned to the {quantity} measurement channel; value is not multiplied by the isotope abundance. Average zircon composition, used for internal standardisation; Luo et al. (2025) do not report Si or Zr. Legacy oxide-to-element mass-fraction conversion (oxide wt.% * 10000 * elemental/oxide molar-mass ratio), not a measurement of this standard. The original oxide averages and atomic weights are not preserved; the stored numbers could not be reproduced from the book tables and remain unverified (audit-2026-11)."
 
 [standards."S513".measurements.values]
 "29Si" = 151443.22960004435
@@ -21,18 +23,21 @@ role = "concentration"
 unit = "ug/g"
 status = "provisional"
 source = "luo2025"
-locator = "Publisher abstract (full PDF unavailable)"
-notes = "Elemental Hf mass fraction assigned to the 177Hf measurement channel; value is not multiplied by the isotope abundance. Value and uncertainty confirmed in the publisher abstract; status remains provisional as pinned by UPbRPy tests (audit-2026-11)."
+locator = "Abstract, p. 403"
+notes = "Elemental mass fractions (2s) assigned to the {quantity} measurement channel; values are not multiplied by the isotope abundance. Total Pb (119 ug/g) is assigned to the 208Pb channel. The authors report these elements homogeneous to 8 % (1s) or better."
 
 [standards."S513".measurements.values]
-"177Hf" = { value = 8259.0, uncertainty = 244.0, uncertainty_type = "2sd" }
+"177Hf" = { value = 8259, uncertainty = 244, uncertainty_type = "2sd" }
+"208Pb" = { value = 119, uncertainty = 5.20, uncertainty_type = "2sd" }
+"232Th" = { value = 89.6, uncertainty = 3.92, uncertainty_type = "2sd" }
+"238U" = { value = 924, uncertainty = 64.6, uncertainty_type = "2sd" }
 
 [[standards."S513".measurements]]
 role = "initial_ratio"
 unit = "ratio"
 status = "provisional"
 source = "stacey1975"
-notes = "Stacey-Kramers model Pb at about 561 Ma. For S513, Seiland and AUSZ2, the archive rows labelled 206Pb/207Pb and 206Pb/208Pb contain 207Pb/204Pb and 208Pb/204Pb, respectively; stored here under their canonical keys, as in Seiland.toml. These are legacy model assignments, not measured common-Pb ratios. Intended second-stage growth law: R_j(t) = R_j(3700 Ma) + parent/204Pb * [exp(lambda_j * 3700) - exp(lambda_j * t)], with Table 8 anchors (11.152, 12.998, 31.23) and parent ratios (9.74, 9.74/137.88, 36.84) for 206Pb, 207Pb, 208Pb. The exact legacy decay constants and input age are unknown. Checked against the two-stage model parameters in Table 8 and growth curve in Table 9; calculation age and constants are not fully documented, and the stored triplet is not verified as that model. Retained pending recovery of the original calculation (audit-2026-11)."
+notes = "Stacey-Kramers model Pb at about 561 Ma; Luo et al. (2025) do not report a common-Pb composition. The stored triplet agrees with the second-stage model at 561.18 Ma (17.8174, 15.5767, 37.5934 with lambda238 = 1.55125e-10, lambda235 = 9.8485e-10, lambda232 = 4.9475e-11 per year and 238U/235U = 137.88) to within 0.02 %; the exact legacy constants are not documented. Reciprocal and cross-ratios are derived."
 
 [standards."S513".measurements.values]
 "206Pb/204Pb_i" = 17.81427985313352
@@ -42,32 +47,78 @@ notes = "Stacey-Kramers model Pb at about 561 Ma. For S513, Seiland and AUSZ2, t
 [[standards."S513".measurements]]
 role = "radiogenic_ratio"
 unit = "ratio"
-status = "provisional"
+status = "recommended"
 source = "luo2025"
-locator = "Publisher abstract (full PDF unavailable)"
-notes = "Th-corrected CA-ID-TIMS weighted mean ratios, n = 8. Reciprocal and linked ratios are derived. Value and uncertainty confirmed in the publisher abstract; status remains provisional as pinned by UPbRPy tests (audit-2026-11)."
+locator = "Abstract, p. 403"
+notes = "Th-corrected CA-ID-TIMS weighted mean ratios, n = 8, 2s (MSWD 0.22, 0.19 and 0.35). These are the ratios behind the recommended 561.18 Ma age. Reciprocal ratios are derived."
 
 [standards."S513".measurements.values]
-"206Pb/238U*" = { value = 0.090955, uncertainty = 1.9e-05, uncertainty_type = "2sd" }
+"206Pb/238U*" = { value = 0.090955, uncertainty = 0.000019, uncertainty_type = "2sd" }
 "207Pb/235U*" = { value = 0.73873, uncertainty = 0.00023, uncertainty_type = "2sd" }
+"207Pb/206Pb*" = { value = 0.058934, uncertainty = 0.000008, uncertainty_type = "2sd" }
 
 [[standards."S513".measurements]]
-role = "radiogenic_ratio"
-unit = "ratio"
-status = "provisional"
-source = "boise_upbr26plus_2026"
-notes = "Value from the UPbR26plus Analyte & Standards Archive, Instructions sheet, column U. This is not a published TIMS ratio: Luo et al. (2025) report an LA-ICP-MS 208Pb/232Th age of 561.3 ± 3.3 Ma in the abstract."
+role = "reference_age"
+unit = "Ma"
+status = "recommended"
+source = "luo2025"
+locator = "Abstract, p. 403"
+notes = "Th-corrected weighted mean 206Pb/238U CA-ID-TIMS age, n = 8, 95 % confidence, MSWD = 0.9, recommended by the authors as the best age estimate of S513. In situ 206Pb/238U ages agree: LA-ICP-MS 560.8 +/- 5.8/10.2 Ma (2s, n = 260) and SIMS 562.4 +/- 7.2/13.4 Ma (2s, n = 198)."
 
 [standards."S513".measurements.values]
-"208Pb/232Th*" = 0.028153518284538936
+"206Pb/238U_age" = { value = 561.18, uncertainty = 0.63, uncertainty_type = "expanded_95" }
 
 [[standards."S513".measurements]]
 role = "reference_age"
 unit = "Ma"
 status = "provisional"
 source = "luo2025"
-locator = "Publisher abstract (full PDF unavailable)"
-notes = "Th-corrected weighted mean 206Pb/238U CA-ID-TIMS age, 95% confidence, n = 8, MSWD = 0.9. Stored as the supported system-specific age, not a concordia age. Value and uncertainty confirmed in the publisher abstract; status remains provisional as pinned by UPbRPy tests (audit-2026-11)."
+locator = "Abstract, p. 403"
+notes = "LA-ICP-MS weighted mean 208Pb/232Th age, n = 86, 2s (the paper also gives 11.7 Ma including systematic uncertainty). No ID-TIMS Th-Pb value is published."
 
 [standards."S513".measurements.values]
-"206Pb/238U_age" = { value = 561.18, uncertainty = 0.63, uncertainty_type = "expanded_95" }
+"208Pb/232Th_age" = { value = 561.3, uncertainty = 3.3, uncertainty_type = "2sd" }
+
+[[standards."S513".measurements]]
+role = "reference_age"
+unit = "Ma"
+status = "provisional"
+source = "luo2025"
+locator = "Abstract, p. 403"
+notes = "Concordance assumption, not a published concordia age. The recommended 206Pb/238U age is repeated here as concordia_age so UPbRPy can derive 208Pb/232Th*; the published LA-ICP-MS 208Pb/232Th age (561.3 +/- 3.3 Ma) agrees. Replaces the UPbR26plus archive value 208Pb/232Th* = 0.028153518284538936 (a concordant ratio at 561.2 Ma)."
+
+[standards."S513".measurements.values]
+"concordia_age" = 561.18
+
+[[standards."S513".measurements]]
+role = "reference_age"
+unit = "Ma"
+status = "provisional"
+source = "luo2025"
+locator = "Abstract, p. 403"
+notes = "(U-Th)/He age from 37 aliquots, U-Th by isotope dilution, 2s, MSWD = 0.72. Not a U-Pb age; stored for (U-Th)/He work."
+
+[standards."S513".measurements.values]
+"UThHe_age" = { value = 420.3, uncertainty = 7.6, uncertainty_type = "2sd" }
+
+[[standards."S513".measurements]]
+role = "isotope_ratio"
+unit = "ratio"
+status = "recommended"
+source = "luo2025"
+locator = "Abstract, p. 403"
+notes = "Recommended reference value: mean 176Hf/177Hf by solution MC-ICP-MS, n = 12, 2s, MSWD = 1.4. Laser ablation gave 0.281605 +/- 0.000008 (2s, n = 310)."
+
+[standards."S513".measurements.values]
+"176Hf/177Hf" = { value = 0.281606, uncertainty = 0.000010, uncertainty_type = "2sd" }
+
+[[standards."S513".measurements]]
+role = "delta_value"
+unit = "permil"
+status = "provisional"
+source = "luo2025"
+locator = "Abstract, p. 403"
+notes = "Mean d18O by laser fluorination, n = 5, 2s, MSWD = 0.25 (VSMOW)."
+
+[standards."S513".measurements.values]
+"d18O" = { value = 11.71, uncertainty = 0.11, uncertainty_type = "2sd" }

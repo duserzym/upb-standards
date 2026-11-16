@@ -22,12 +22,12 @@ role = "initial_ratio"
 unit = "ratio"
 status = "provisional"
 source = "stacey1975"
-notes = "Canonical initial/common-Pb ratio; reciprocal and cross-ratios are derived. These are legacy model assignments, not measured common-Pb ratios. Intended second-stage growth law: R_j(t) = R_j(3700 Ma) + parent/204Pb * [exp(lambda_j * 3700) - exp(lambda_j * t)], with Table 8 anchors (11.152, 12.998, 31.23) and parent ratios (9.74, 9.74/137.88, 36.84) for 206Pb, 207Pb, 208Pb. The exact legacy decay constants and input age are unknown. Checked against the two-stage model parameters in Table 8 and growth curve in Table 9; calculation age and constants are not fully documented, and the stored triplet is not verified as that model. Retained pending recovery of the original calculation (audit-2026-11)."
+notes = "Stacey-Kramers second-stage model Pb at the OG1 age, 3465.4 Ma (Archean): R_j(t) = R_j(3700 Ma) + parent/204Pb * [exp(lambda_j * 3700 Ma) - exp(lambda_j * t)] with Table 8 anchors (11.152, 12.998, 31.23), parent ratios (9.74, 9.74/137.88, 36.84), lambda238 = 1.55125e-10, lambda235 = 9.8485e-10 and lambda232 = 4.9475e-11 per year. The values before 2026-11-16 (16.887, 15.464, 36.539) were model Pb at about 1.1 Ga, not the OG1 age. Stern et al. (2009) report negligible common Pb in OG1. Reciprocal and cross-ratios are derived."
 
 [standards."OG1".measurements.values]
-"206Pb/204Pb_i" = 16.887460319
-"207Pb/204Pb_i" = 15.46397384563289
-"208Pb/204Pb_i" = 36.53876009569999
+"206Pb/204Pb_i" = 11.769958
+"207Pb/204Pb_i" = 13.555308
+"208Pb/204Pb_i" = 31.740524
 
 [[standards."OG1".measurements]]
 role = "radiogenic_ratio"
@@ -39,14 +39,15 @@ notes = "Documented radiogenic ratio; reciprocal and linked ratios are derived."
 [standards."OG1".measurements.values]
 "206Pb/238U*" = 0.7113
 "207Pb/235U*" = 29.3322
+"207Pb/206Pb*" = { value = 0.29907, uncertainty = 0.00011, uncertainty_type = "expanded_95", status = "recommended", locator = "Abstract, p. 145", notes = "TIMS 207Pb*/206Pb* reference value, 95 % confidence limit." }
 
 [[standards."OG1".measurements]]
 role = "reference_age"
 unit = "Ma"
-status = "provisional"
+status = "recommended"
 source = "stern2009"
-locator = "Publisher abstract (full PDF unavailable)"
-notes = "OG1 ID-TIMS 207Pb*/206Pb* reference age, 95% confidence limit."
+locator = "Abstract, p. 145"
+notes = "OG1 ID-TIMS 207Pb*/206Pb* reference age (Archean), 95 % confidence limit, from the reference 207Pb*/206Pb* = 0.29907 +/- 0.00011."
 
 [standards."OG1".measurements.values]
 "207Pb/206Pb_age" = { value = 3465.4, uncertainty = 0.6, uncertainty_type = "expanded_95" }
@@ -56,7 +57,7 @@ role = "reference_age"
 unit = "Ma"
 status = "provisional"
 source = "stern2009"
-locator = "Publisher abstract (full PDF unavailable)"
+locator = "Abstract, p. 145"
 notes = "Concordance assumption, not a published concordia age. The published 207Pb/206Pb age is repeated here as concordia_age so UPbRPy can derive the radiogenic ratios that are not stored. Before the 2026-11 audit this record stored 3465.5 Ma under concordia_age."
 
 [standards."OG1".measurements.values]

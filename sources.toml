@@ -89,13 +89,6 @@ kind = "journal_article"
 doi = "10.3749/canmin.48.5.1423"
 url = "https://doi.org/10.3749/canmin.48.5.1423"
 
-[sources."price2014"]
-display = "Price, J.D. (2014). The Mount Scott Intrusive Suite, Wichita Mountains, Oklahoma. In: Suneson, N.H. (ed.), Igneous and Tectonic History of the Southern Oklahoma Aulacogen. Oklahoma Geological Survey, Norman, Guidebook 38, Part II, Research Paper 9, pp. 299-318."
-kind = "book_chapter"
-no_doi_reason = "Geological survey guidebook chapter; no DOI found in Crossref or the Oklahoma Geological Survey catalogue. Identified by Guidebook 38, Part II, Research Paper 9."
-file = "Price2014aThe Mount Scott Intrusive Suita.pdf"
-url = "https://ogs.ou.edu/docs/guidebooks/GB38PIIRP9.pdf"
-
 [sources."black2004"]
 display = "Black, L.P., Kamo, S.L., Allen, C.M., Davis, D.W., Aleinikoff, J.N., Valley, J.W., Mundil, R., Campbell, I.H., Korsch, R.J., Williams, I.S. & Foudoulis, C. (2004). Improved 206Pb/238U microprobe geochronology by the monitoring of a trace-element-related matrix effect; SHRIMP, ID–TIMS, ELA–ICP–MS and oxygen isotope documentation for a series of zircon standards. Chemical Geology 205(1-2), 115-140. doi:10.1016/j.chemgeo.2004.01.003"
 kind = "journal_article"
@@ -228,9 +221,22 @@ notes = "Hu, P., Luo, T., Crowley, J., Wu, Y., Zhang, C., Xia, X., Long, T., Zha
 file = "Hu2023aCharacterisation of Three Sri a.pdf"
 
 [sources."boise_upbr26plus_2026"]
-display = "Boise State Isotope Geology Laboratory, UPbR26plus spreadsheet, Analyte & Standards Archive (Zircon_04Nov26_HerreraLindsey-i193-LA-UPbR26plus.xlsm, 2026-11-04)"
+display = "Boise State Isotope Geology Laboratory (2026). UPbR26plus LA-ICP-MS reduction workbook, Analyte & Standards Archive (Instructions sheet), as used for the Zircon_04Nov26_Zhang session, 2026-11-04"
 kind = "lab_compilation"
 status = "provisional"
-file = "Zircon_04Nov26_HerreraLindsey-i193-LA-UPbR26plus.xlsm"
 no_doi_reason = "Unpublished laboratory compilation; no DOI."
-notes = "No DOI: an unpublished laboratory compilation; values to be confirmed by the Boise lab."
+notes = "Working values in the laboratory's reduction workbook. Not a publication; values to be confirmed by the Boise lab."
+
+[sources."boise_upbr22_2024"]
+display = "Boise State Isotope Geology Laboratory (2024). UPbR22 LA-ICP-MS reduction workbook, Analyte & Standards Archive and Initial Pb Input (Instructions sheet), as used for the Titanite_20Feb24_Zhang session, 2024-02-20"
+kind = "lab_compilation"
+status = "provisional"
+no_doi_reason = "Unpublished laboratory compilation; no DOI."
+notes = "Working values in the laboratory's reduction workbook. The El Muerto age is labelled 'Price et al., 2012' there; that publication was not found."
+
+[sources."prol_ledesma2012"]
+display = "Prol-Ledesma, R.M., Melgarejo, J.C. & Martin, R.F. (2012). The El Muerto \"NYF\" granitic pegmatite, Oaxaca, Mexico, and its striking enrichment in allanite-(Ce) and monazite-(Ce). The Canadian Mineralogist 50(4), 1055-1076. doi:10.3749/canmin.50.4.1055"
+kind = "journal_article"
+doi = "10.3749/canmin.50.4.1055"
+url = "https://doi.org/10.3749/canmin.50.4.1055"
+notes = "Cites the El Muerto titanite U-Pb age of 969 +/- 9 Ma from Solari et al. (1998)."

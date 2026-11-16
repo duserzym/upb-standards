@@ -5,13 +5,16 @@ material = "titanite"
 
 [standards."ElMuerto"]
 aliases = ["El Muerto"]
+description = "Titanite from the El Muerto pegmatite area, Oaxacan Complex, southern Mexico (Grenvillian)."
+origin = "Boise State Isotope Geology Laboratory working standard."
 
 [[standards."ElMuerto".measurements]]
 role = "concentration"
 unit = "ug/g"
 status = "provisional"
-source = "droubi2023"
-notes = "Elemental mass fraction assigned to the {quantity} measurement channel."
+source = "boise_upbr22_2024"
+locator = "Instructions sheet, Analyte & Standards Archive, ElMuerto column, 29Si row"
+notes = "Elemental mass fraction assigned to the {quantity} measurement channel. Laboratory archive value; no publication is given for it."
 
 [standards."ElMuerto".measurements.values]
 "29Si" = 149474.31066885774
@@ -20,8 +23,9 @@ notes = "Elemental mass fraction assigned to the {quantity} measurement channel.
 role = "initial_ratio"
 unit = "ratio"
 status = "provisional"
-source = "stacey1975"
-notes = "Canonical initial/common-Pb ratio; reciprocal and cross-ratios are derived. These are legacy model assignments, not measured common-Pb ratios. Intended second-stage growth law: R_j(t) = R_j(3700 Ma) + parent/204Pb * [exp(lambda_j * 3700) - exp(lambda_j * t)], with Table 8 anchors (11.152, 12.998, 31.23) and parent ratios (9.74, 9.74/137.88, 36.84) for 206Pb, 207Pb, 208Pb. The exact legacy decay constants and input age are unknown. Checked against the two-stage model parameters in Table 8 and growth curve in Table 9; calculation age and constants are not fully documented, and the stored triplet is not verified as that model. Retained pending recovery of the original calculation (audit-2026-11)."
+source = "boise_upbr22_2024"
+locator = "Instructions sheet, Initial Pb Input table, ElMuerto row"
+notes = "Laboratory archive common-Pb composition (206Pb/204Pb, 207Pb/204Pb, 208Pb/204Pb). Earlier versions of this record cited Stacey & Kramers (1975), but the values are not that model: at 964 Ma it gives 17.13, 15.52, 36.83 (207Pb/204Pb differs most). Reciprocal and cross-ratios are derived."
 
 [standards."ElMuerto".measurements.values]
 "206Pb/204Pb_i" = 17.21
@@ -32,8 +36,9 @@ notes = "Canonical initial/common-Pb ratio; reciprocal and cross-ratios are deri
 role = "total_ratio"
 unit = "ratio"
 status = "provisional"
-source = "droubi2023"
-notes = "Measured total ratio; exact reciprocals are derived."
+source = "boise_upbr22_2024"
+locator = "Instructions sheet, Analyte & Standards Archive, ElMuerto column"
+notes = "Laboratory archive total (not common-Pb corrected) ratios. The archive stores 206Pb/207Pb = 2.0412; 207Pb/206Pb_total is its reciprocal. Earlier versions of this record cited Droubi et al. (2023), which does not report El Muerto. Exact reciprocals are derived."
 
 [standards."ElMuerto".measurements.values]
 "206Pb/238U_total" = 0.32967
@@ -44,8 +49,20 @@ notes = "Measured total ratio; exact reciprocals are derived."
 role = "reference_age"
 unit = "Ma"
 status = "provisional"
-source = "price2014"
-notes = "Accepted age; concordant radiogenic ratios are derived when direct values are absent."
+source = "boise_upbr22_2024"
+locator = "Instructions sheet, Analyte & Standards Archive, ElMuerto column, age row"
+notes = "Laboratory working age, labelled 'ElMuerto (Price et al., 2012); 964.0 Ma' in the archive. No Price et al. (2012) publication with this age was found; earlier versions of this record cited Price (2014), a Wichita Mountains chapter that does not mention El Muerto. The published titanite age is 969 +/- 9 Ma (next block). Concordant radiogenic ratios are derived from this age."
 
 [standards."ElMuerto".measurements.values]
 "concordia_age" = 964
+
+[[standards."ElMuerto".measurements]]
+role = "reference_age"
+unit = "Ma"
+status = "provisional"
+source = "prol_ledesma2012"
+locator = "Geological setting"
+notes = "Titanite U-Pb age of 969 +/- 9 Ma from Solari et al. (1998), as cited by Prol-Ledesma et al. (2012), for titanite from 'crustal carbonatite' dikes they consider coeval with the El Muerto pegmatite. Zircon from the pegmatite gives 976 +/- 2 Ma (Solari et al. 1998) and 975 +/- 10 Ma (Anderson & Silver 1971). Solari et al. (1998) was not read; the decay system and uncertainty level are not stated in the citing paper."
+
+[standards."ElMuerto".measurements.values]
+"titanite_U-Pb_age" = { value = 969, uncertainty = 9, uncertainty_type = "reported_unspecified" }

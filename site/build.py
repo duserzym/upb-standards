@@ -135,6 +135,10 @@ def measurement_count(items):
 def short_citation(source):
     """Shorten literature authors before (year); retain other display text."""
     display = source["display"]
+    if source.get("kind") == "lab_compilation":
+        # "Laboratory name (year). Workbook description" -> "Laboratory name (year)"
+        lab = re.match(r"^(.*?\(\d{4}\))\.", display)
+        return lab.group(1) if lab else display
     if source.get("kind") not in {"journal_article", "book", "book_chapter"}:
         return display
     match = re.match(r"^(.*?)\s*\((\d{4}[a-z]?)\)", display)
