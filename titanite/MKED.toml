@@ -14,37 +14,37 @@ source = "droubi2023"
 notes = "Elemental mass fraction assigned to the {quantity} measurement channel; value is not multiplied by the isotope abundance."
 
 [standards."MKED".measurements.values]
-"139La" = { value = 467.0 }
-"140Ce" = { value = 2134.0 }
-"141Pr" = { value = 351.0 }
-"146Nd" = { value = 1742.0 }
-"147Sm" = { value = 375.0 }
-"153Eu" = { value = 68.6 }
-"157Gd" = { value = 304.0 }
-"159Tb" = { value = 44.2 }
-"163Dy" = { value = 246.0 }
-"165Ho" = { value = 43.0 }
-"166Er" = { value = 108.0 }
-"169Tm" = { value = 13.1 }
-"172Yb" = { value = 71.4 }
-"175Lu" = { value = 6.8 }
-"177Hf" = { value = 14.1 }
-"181Ta" = { value = 70.5 }
-"232Th" = { value = 369.0 }
-"238U" = { value = 131.0 }
-"29Si" = { value = 144073.0 }
-"49Ti" = { value = 220616.0 }
-"88Sr" = { value = 8.47 }
-"89Y" = { value = 875.0 }
-"91Zr" = { value = 236.0 }
-"93Nb" = { value = 923.0 }
+"139La" = { value = 467, uncertainty = 32, uncertainty_type = "2sd", source = "spandler2016", locator = "Table 2, p. 113; regular MKED1, n = 13", notes = "Elemental mass fraction; assigned channel may differ from the isotope measured in the paper. No isotope-abundance scaling." }
+"140Ce" = { value = 2134, uncertainty = 137, uncertainty_type = "2sd", source = "spandler2016", locator = "Table 2, p. 113; regular MKED1, n = 13", notes = "Elemental mass fraction; assigned channel may differ from the isotope measured in the paper. No isotope-abundance scaling." }
+"141Pr" = { value = 351, uncertainty = 20, uncertainty_type = "2sd", source = "spandler2016", locator = "Table 2, p. 113; regular MKED1, n = 13", notes = "Elemental mass fraction; assigned channel may differ from the isotope measured in the paper. No isotope-abundance scaling." }
+"146Nd" = { value = 1742, uncertainty = 108, uncertainty_type = "2sd", source = "spandler2016", locator = "Table 2, p. 113; regular MKED1, n = 13", notes = "Elemental mass fraction; assigned channel may differ from the isotope measured in the paper. No isotope-abundance scaling." }
+"147Sm" = { value = 375, uncertainty = 24, uncertainty_type = "2sd", source = "spandler2016", locator = "Table 2, p. 113; regular MKED1, n = 13", notes = "Elemental mass fraction; assigned channel may differ from the isotope measured in the paper. No isotope-abundance scaling." }
+"153Eu" = { value = 68.6, uncertainty = 4.3, uncertainty_type = "2sd", source = "spandler2016", locator = "Table 2, p. 113; regular MKED1, n = 13", notes = "Elemental mass fraction; assigned channel may differ from the isotope measured in the paper. No isotope-abundance scaling." }
+"157Gd" = { value = 304, uncertainty = 19, uncertainty_type = "2sd", source = "spandler2016", locator = "Table 2, p. 113; regular MKED1, n = 13", notes = "Elemental mass fraction; assigned channel may differ from the isotope measured in the paper. No isotope-abundance scaling." }
+"159Tb" = { value = 44.2, uncertainty = 2.4, uncertainty_type = "2sd", source = "spandler2016", locator = "Table 2, p. 113; regular MKED1, n = 13", notes = "Elemental mass fraction; assigned channel may differ from the isotope measured in the paper. No isotope-abundance scaling." }
+"163Dy" = { value = 246, uncertainty = 15, uncertainty_type = "2sd", source = "spandler2016", locator = "Table 2, p. 113; regular MKED1, n = 13", notes = "Elemental mass fraction; assigned channel may differ from the isotope measured in the paper. No isotope-abundance scaling." }
+"165Ho" = { value = 43, uncertainty = 2, uncertainty_type = "2sd", source = "spandler2016", locator = "Table 2, p. 113; regular MKED1, n = 13", notes = "Elemental mass fraction; assigned channel may differ from the isotope measured in the paper. No isotope-abundance scaling." }
+"166Er" = { value = 108, uncertainty = 6, uncertainty_type = "2sd", source = "spandler2016", locator = "Table 2, p. 113; regular MKED1, n = 13", notes = "Elemental mass fraction; assigned channel may differ from the isotope measured in the paper. No isotope-abundance scaling." }
+"169Tm" = { value = 13.1, uncertainty = 0.8, uncertainty_type = "2sd", source = "spandler2016", locator = "Table 2, p. 113; regular MKED1, n = 13", notes = "Elemental mass fraction; assigned channel may differ from the isotope measured in the paper. No isotope-abundance scaling." }
+"172Yb" = { value = 71, uncertainty = 4, uncertainty_type = "2sd", source = "spandler2016", locator = "Table 2, p. 113; regular MKED1, n = 13", notes = "Elemental mass fraction; assigned channel may differ from the isotope measured in the paper. No isotope-abundance scaling." }
+"175Lu" = { value = 6.8, uncertainty = 0.42, uncertainty_type = "2sd", source = "spandler2016", locator = "Table 2, p. 113; regular MKED1, n = 13", notes = "Elemental mass fraction; assigned channel may differ from the isotope measured in the paper. No isotope-abundance scaling." }
+"177Hf" = { value = 14.1, uncertainty = 0.9, uncertainty_type = "2sd", source = "spandler2016", locator = "Table 2, p. 113; regular MKED1, n = 13", notes = "Elemental mass fraction; assigned channel may differ from the isotope measured in the paper. No isotope-abundance scaling." }
+"181Ta" = { value = 71, uncertainty = 10, uncertainty_type = "2sd", source = "spandler2016", locator = "Table 2, p. 113; regular MKED1, n = 13", notes = "Elemental mass fraction; assigned channel may differ from the isotope measured in the paper. No isotope-abundance scaling." }
+"232Th" = { value = 369, uncertainty = 24, uncertainty_type = "2sd", source = "spandler2016", locator = "Table 2, p. 113; regular MKED1, n = 13", notes = "Elemental mass fraction; assigned channel may differ from the isotope measured in the paper. No isotope-abundance scaling." }
+"238U" = { value = 131, uncertainty = 7, uncertainty_type = "2sd", source = "spandler2016", locator = "Table 2, p. 113; regular MKED1, n = 13", notes = "Elemental mass fraction; assigned channel may differ from the isotope measured in the paper. No isotope-abundance scaling." }
+"29Si" = { value = 141000, locator = "Table 2 (publisher HTML), MKED-1 column", notes = "Elemental wt.% multiplied by 10000: 14.10 wt.%. The table labels its dispersion column 2RSD; that uncertainty convention was not resolved in this audit." }
+"49Ti" = { value = 221800, locator = "Table 2 (publisher HTML), MKED-1 column", notes = "Elemental wt.% multiplied by 10000: 22.18 wt.%. The table labels its dispersion column 2RSD; that uncertainty convention was not resolved in this audit." }
+"88Sr" = { value = 8.47, uncertainty = 0.47, uncertainty_type = "2sd", source = "spandler2016", locator = "Table 2, p. 113; regular MKED1, n = 13", notes = "Elemental mass fraction; assigned channel may differ from the isotope measured in the paper. No isotope-abundance scaling." }
+"89Y" = { value = 875, uncertainty = 53, uncertainty_type = "2sd", source = "spandler2016", locator = "Table 2, p. 113; regular MKED1, n = 13", notes = "Elemental mass fraction; assigned channel may differ from the isotope measured in the paper. No isotope-abundance scaling." }
+"91Zr" = { value = 236, uncertainty = 13, uncertainty_type = "2sd", source = "spandler2016", locator = "Table 2, p. 113; regular MKED1, n = 13", notes = "Elemental mass fraction; assigned channel may differ from the isotope measured in the paper. No isotope-abundance scaling." }
+"93Nb" = { value = 923, uncertainty = 79, uncertainty_type = "2sd", source = "spandler2016", locator = "Table 2, p. 113; regular MKED1, n = 13", notes = "Elemental mass fraction; assigned channel may differ from the isotope measured in the paper. No isotope-abundance scaling." }
 
 [[standards."MKED".measurements]]
 role = "initial_ratio"
 unit = "ratio"
 status = "provisional"
 source = "stacey1975"
-notes = "Canonical initial/common-Pb ratio; reciprocal and cross-ratios are derived."
+notes = "Canonical initial/common-Pb ratio; reciprocal and cross-ratios are derived. These are legacy model assignments, not measured common-Pb ratios. Intended second-stage growth law: R_j(t) = R_j(3700 Ma) + parent/204Pb * [exp(lambda_j * 3700) - exp(lambda_j * t)], with Table 8 anchors (11.152, 12.998, 31.23) and parent ratios (9.74, 9.74/137.88, 36.84) for 206Pb, 207Pb, 208Pb. The exact legacy decay constants and input age are unknown. Checked against the two-stage model parameters in Table 8 and growth curve in Table 9; calculation age and constants are not fully documented, and the stored triplet is not verified as that model. Retained pending recovery of the original calculation (audit-2026-11)."
 
 [standards."MKED".measurements.values]
 "206Pb/204Pb_i" = 16.111
@@ -60,14 +60,26 @@ notes = "Measured total ratio; exact reciprocals are derived."
 
 [standards."MKED".measurements.values]
 "206Pb/238U_total" = 0.265773
-"207Pb/206Pb_total" = 0.09591127363169859
+"207Pb/206Pb_total" = { value = 0.095778, uncertainty = 0.000048, uncertainty_type = "2sd", locator = "Table 3 (publisher HTML), MKED-1 ttn", notes = "Measured total Pb isotope ratio; Table 3 specifies absolute 2s uncertainty." }
 
 [[standards."MKED".measurements]]
 role = "reference_age"
 unit = "Ma"
 status = "provisional"
 source = "spandler2016"
-notes = "Accepted age; concordant radiogenic ratios are derived when direct values are absent."
+locator = "Table 3, p. 115"
+notes = "MKED1 weighted mean 206Pb/238U age; 2-sigma uncertainty."
 
 [standards."MKED".measurements.values]
-"concordia_age" = 1517.3
+"206Pb/238U_age" = { value = 1517.32, uncertainty = 0.32, uncertainty_type = "2sd" }
+
+[[standards."MKED".measurements]]
+role = "reference_age"
+unit = "Ma"
+status = "provisional"
+source = "spandler2016"
+locator = "Table 3, p. 115"
+notes = "Concordance assumption, not a published concordia age. The published 206Pb/238U age is repeated here as concordia_age so UPbRPy can derive the radiogenic ratios that are not stored. Before the 2026-11 audit this record stored 1517.3 Ma under concordia_age."
+
+[standards."MKED".measurements.values]
+"concordia_age" = 1517.32

@@ -11,7 +11,7 @@ role = "concentration"
 unit = "ug/g"
 status = "provisional"
 source = "deer2013"
-notes = "Average titanite elemental mass fraction assigned to the {quantity} measurement channel."
+notes = "Average titanite elemental mass fraction assigned to the {quantity} measurement channel. Legacy oxide-to-element mass-fraction conversion (oxide wt.% * 10000 * elemental/oxide molar-mass ratio), not a measurement of this standard. The original oxide averages and atomic weights are not preserved; the stored numbers could not be reproduced from the book tables and remain unverified (audit-2026-11)."
 
 [standards."OLT".measurements.values]
 "29Si" = 142051.06922948908
@@ -22,7 +22,8 @@ role = "reference_age"
 unit = "Ma"
 status = "provisional"
 source = "kennedy2010"
-notes = "Accepted age; concordant radiogenic ratios are derived when direct values are absent."
+locator = "Table 3, p. 1435; Figure 5, p. 1434"
+notes = "OLT1 TIMS concordia age, n = 6, MSWD = 1.8. The distinct OLT2 crystal has an age of 998.0 +/- 4.5 Ma. The stored OLT working standard is assigned to OLT1."
 
 [standards."OLT".measurements.values]
-"concordia_age" = 1014.8
+"concordia_age" = { value = 1014.8, uncertainty = 2.0, uncertainty_type = "2sd" }

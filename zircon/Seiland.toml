@@ -21,7 +21,7 @@ role = "concentration"
 unit = "ug/g"
 status = "provisional"
 source = "deer2013"
-notes = "Elemental mass fraction assigned to the {quantity} measurement channel; value is not multiplied by the isotope abundance. Average zircon composition."
+notes = "Elemental mass fraction assigned to the {quantity} measurement channel; value is not multiplied by the isotope abundance. Average zircon composition. Legacy oxide-to-element mass-fraction conversion (oxide wt.% * 10000 * elemental/oxide molar-mass ratio), not a measurement of this standard. The original oxide averages and atomic weights are not preserved; the stored numbers could not be reproduced from the book tables and remain unverified (audit-2026-11)."
 
 [standards."Seiland".measurements.values]
 "29Si" = 151443.0
@@ -32,7 +32,7 @@ role = "initial_ratio"
 unit = "ratio"
 status = "provisional"
 source = "stacey1975"
-notes = "Canonical initial/common-Pb ratio; reciprocal and cross-ratios are derived."
+notes = "Canonical initial/common-Pb ratio; reciprocal and cross-ratios are derived. These are legacy model assignments, not measured common-Pb ratios. Intended second-stage growth law: R_j(t) = R_j(3700 Ma) + parent/204Pb * [exp(lambda_j * 3700) - exp(lambda_j * t)], with Table 8 anchors (11.152, 12.998, 31.23) and parent ratios (9.74, 9.74/137.88, 36.84) for 206Pb, 207Pb, 208Pb. The exact legacy decay constants and input age are unknown. Checked against the two-stage model parameters in Table 8 and growth curve in Table 9; calculation age and constants are not fully documented, and the stored triplet is not verified as that model. Retained pending recovery of the original calculation (audit-2026-11)."
 
 [standards."Seiland".measurements.values]
 "206Pb/204Pb_i" = 17.8652

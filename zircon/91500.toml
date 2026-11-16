@@ -39,7 +39,7 @@ role = "concentration"
 unit = "ug/g"
 status = "provisional"
 source = "deer2013"
-notes = "Elemental mass fraction assigned to the {quantity} measurement channel; value is not multiplied by the isotope abundance. Average zircon composition."
+notes = "Elemental mass fraction assigned to the {quantity} measurement channel; value is not multiplied by the isotope abundance. Average zircon composition. Legacy oxide-to-element mass-fraction conversion (oxide wt.% * 10000 * elemental/oxide molar-mass ratio), not a measurement of this standard. The original oxide averages and atomic weights are not preserved; the stored numbers could not be reproduced from the book tables and remain unverified (audit-2026-11)."
 
 [standards."91500".measurements.values]
 "29Si" = 151443.22960004435
@@ -50,7 +50,7 @@ role = "initial_ratio"
 unit = "ratio"
 status = "provisional"
 source = "stacey1975"
-notes = "Canonical initial/common-Pb ratio; reciprocal and cross-ratios are derived."
+notes = "Canonical initial/common-Pb ratio; reciprocal and cross-ratios are derived. These are legacy model assignments, not measured common-Pb ratios. Intended second-stage growth law: R_j(t) = R_j(3700 Ma) + parent/204Pb * [exp(lambda_j * 3700) - exp(lambda_j * t)], with Table 8 anchors (11.152, 12.998, 31.23) and parent ratios (9.74, 9.74/137.88, 36.84) for 206Pb, 207Pb, 208Pb. The exact legacy decay constants and input age are unknown. Checked against the two-stage model parameters in Table 8 and growth curve in Table 9; calculation age and constants are not fully documented, and the stored triplet is not verified as that model. Retained pending recovery of the original calculation (audit-2026-11)."
 
 [standards."91500".measurements.values]
 "206Pb/204Pb_i" = 16.95
@@ -62,19 +62,21 @@ role = "radiogenic_ratio"
 unit = "ratio"
 status = "provisional"
 source = "wiedenbeck1995"
-notes = "Documented radiogenic ratio; reciprocal and linked ratios are derived."
+locator = "Table 1, pp. 4-5; Table 2, p. 8"
+notes = "Radiogenic ratios corrected for common Pb. U-Pb weighted means are from Table 1; 208Pb/232Th is the radiogenic weighted mean in Table 2. Both table footnotes specify 1-sigma absolute uncertainties."
 
 [standards."91500".measurements.values]
-"206Pb/238U*" = 0.17917
-"207Pb/235U*" = 1.8502
-"208Pb/232Th*" = 0.05374
+"206Pb/238U*" = { value = 0.17917, uncertainty = 8e-05, uncertainty_type = "1sd" }
+"207Pb/235U*" = { value = 1.8502, uncertainty = 0.0008, uncertainty_type = "1sd" }
+"208Pb/232Th*" = { value = 0.05374, uncertainty = 0.00015, uncertainty_type = "1sd" }
 
 [[standards."91500".measurements]]
 role = "reference_age"
 unit = "Ma"
 status = "provisional"
 source = "wiedenbeck1995"
-notes = "Accepted age; concordant radiogenic ratios are derived when direct values are absent."
+locator = "Table 1, pp. 4-5"
+notes = "Weighted mean 207Pb/206Pb apparent age, not a concordia age. Table 1 separately reports a 206Pb/238U age of 1062.4 +/- 0.4 Ma; no concordance is assumed for this Pb-Pb age."
 
 [standards."91500".measurements.values]
-"concordia_age" = 1065.4
+"207Pb/206Pb_age" = { value = 1065.4, uncertainty = 0.3, uncertainty_type = "1sd" }

@@ -9,9 +9,9 @@ aliases = ["MAD-UCSB"]
 [[standards."MADUCSB".measurements]]
 role = "concentration"
 unit = "ug/g"
-status = "recommended"
+status = "provisional"
 source = "deer2013"
-notes = "Elemental mass fraction assigned to the {quantity} measurement channel; value is not multiplied by the isotope abundance. Average apatite composition."
+notes = "Elemental mass fraction assigned to the {quantity} measurement channel; value is not multiplied by the isotope abundance. Average apatite composition. Legacy oxide-to-element mass-fraction conversion (oxide wt.% * 10000 * elemental/oxide molar-mass ratio), not a measurement of this standard. The original oxide averages and atomic weights are not preserved; the stored numbers could not be reproduced from the book tables and remain unverified (audit-2026-11)."
 
 [standards."MADUCSB".measurements.values]
 "31P" = 182326.02705940383
@@ -22,7 +22,8 @@ role = "initial_ratio"
 unit = "ratio"
 status = "provisional"
 source = "apen2022"
-notes = "Initial common-Pb ratio from the total Pb-U ID-TIMS isochron."
+locator = "Table 6, p. 7; Figure 4"
+notes = "Initial common-Pb intercept of the total Pb-U ID-TIMS isochron; 2-sigma analytical uncertainty."
 
 [standards."MADUCSB".measurements.values]
 "207Pb/206Pb_i" = { value = 0.71, uncertainty = 0.10, uncertainty_type = "2sd" }
@@ -32,7 +33,8 @@ role = "reference_age"
 unit = "Ma"
 status = "provisional"
 source = "apen2022"
-notes = "Total Pb-U ID-TIMS isochron age; concordant radiogenic ratios are derived."
+locator = "Table 6, p. 7; Figure 4"
+notes = "Total Pb-U ID-TIMS isochron age; the text on p. 8 calls this a concordia age. Table 6 uncertainty includes tracer uncertainty and is 2-sigma."
 
 [standards."MADUCSB".measurements.values]
 "concordia_age" = { value = 467.4, uncertainty = 8.4, uncertainty_type = "2sd" }

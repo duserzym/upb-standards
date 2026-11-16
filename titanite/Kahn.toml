@@ -11,7 +11,7 @@ role = "concentration"
 unit = "ug/g"
 status = "provisional"
 source = "deer2013"
-notes = "Average titanite elemental mass fraction assigned to the {quantity} measurement channel."
+notes = "Average titanite elemental mass fraction assigned to the {quantity} measurement channel. Legacy oxide-to-element mass-fraction conversion (oxide wt.% * 10000 * elemental/oxide molar-mass ratio), not a measurement of this standard. The original oxide averages and atomic weights are not preserved; the stored numbers could not be reproduced from the book tables and remain unverified (audit-2026-11)."
 
 [standards."KHAN".measurements.values]
 "29Si" = 142051.06922948908
@@ -22,7 +22,19 @@ role = "reference_age"
 unit = "Ma"
 status = "provisional"
 source = "heaman2009"
-notes = "Accepted age; concordant radiogenic ratios are derived when direct values are absent."
+locator = "Table 3 and Figure 3C, pp. 49-50"
+notes = "Khan titanite model-1 upper intercept crystallisation age, not a concordia age. Text and figure age errors are 2-sigma."
+
+[standards."KHAN".measurements.values]
+"upper_intercept_age" = { value = 522.2, uncertainty = 2.2, uncertainty_type = "2sd" }
+
+[[standards."KHAN".measurements]]
+role = "reference_age"
+unit = "Ma"
+status = "provisional"
+source = "heaman2009"
+locator = "Table 3 and Figure 3C, pp. 49-50"
+notes = "Concordance assumption, not a published concordia age. The published upper-intercept age is repeated here as concordia_age so UPbRPy can derive the radiogenic ratios that are not stored. Before the 2026-11 audit this record stored 522.2 Ma under concordia_age."
 
 [standards."KHAN".measurements.values]
 "concordia_age" = 522.2

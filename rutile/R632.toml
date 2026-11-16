@@ -9,9 +9,10 @@ aliases = []
 [[standards."R632".measurements]]
 role = "concentration"
 unit = "ug/g"
-status = "recommended"
+status = "provisional"
 source = "axelsson2018"
-notes = "Recommended elemental mass fraction assigned to the {quantity} measurement channel."
+locator = "Table 3, pp. 328-329 (Mean and 1s rows)"
+notes = "Mean elemental mass fractions and between-analysis 1s standard deviations, not the analytical uncertainties beside the Mean row. Zr is explicitly proposed as a reference mass fraction; the other measured trace elements remain provisional."
 
 [standards."R632".measurements.values]
 "118Sn" = { value = 289, uncertainty = 12, uncertainty_type = "1sd" }
@@ -22,16 +23,17 @@ notes = "Recommended elemental mass fraction assigned to the {quantity} measurem
 "51V" = { value = 1179, uncertainty = 64, uncertainty_type = "1sd" }
 "52Cr" = { value = 212, uncertainty = 23, uncertainty_type = "1sd" }
 "57Fe" = { value = 3220, uncertainty = 299, uncertainty_type = "1sd" }
-"91Zr" = { value = 4294, uncertainty = 196, uncertainty_type = "1sd" }
+"91Zr" = { value = 4294, uncertainty = 196, uncertainty_type = "1sd", status = "recommended" }
 "93Nb" = { value = 630, uncertainty = 28, uncertainty_type = "1sd" }
 "95Mo" = { value = 18.2, uncertainty = 1.2, uncertainty_type = "1sd" }
 
 [[standards."R632".measurements]]
 role = "concentration"
 unit = "ug/g"
-status = "recommended"
+status = "provisional"
 source = "deer2013"
-notes = "Average rutile Ti mass fraction assigned to the {quantity} measurement channel."
+locator = "Rutile, p. 393 (ideal TiO2; calculated)"
+notes = "Ideal TiO2 elemental Ti mass fraction: 1e6 * 47.9 / (47.9 + 2 * 16.0) = 599499.3742177722 ug/g. Formula checked in Deer et al.; rounded atomic masses reproduce the legacy calculation. This is a stoichiometric assumption, not a measured or recommended mass fraction for this rutile. Assigned to 49Ti without isotope-abundance scaling."
 
 [standards."R632".measurements.values]
 "49Ti" = 599499.3742177722
@@ -41,7 +43,8 @@ role = "reference_age"
 unit = "Ma"
 status = "recommended"
 source = "axelsson2018"
-notes = "Recommended combined U-Pb concordia age; radiogenic ratios are derived."
+locator = "Figure 7 and Conclusions, p. 336"
+notes = "Weighted average concordia age combining the three methods; the single-method best age is 496 +/- 3 Ma. The combined value is 496 +/- 2 Ma (2s)."
 
 [standards."R632".measurements.values]
 "concordia_age" = { value = 496, uncertainty = 2, uncertainty_type = "2sd" }

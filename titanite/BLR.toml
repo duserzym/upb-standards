@@ -44,7 +44,7 @@ role = "initial_ratio"
 unit = "ratio"
 status = "provisional"
 source = "stacey1975"
-notes = "Canonical initial/common-Pb ratio; reciprocal and cross-ratios are derived."
+notes = "Canonical initial/common-Pb ratio; reciprocal and cross-ratios are derived. These are legacy model assignments, not measured common-Pb ratios. Intended second-stage growth law: R_j(t) = R_j(3700 Ma) + parent/204Pb * [exp(lambda_j * 3700) - exp(lambda_j * t)], with Table 8 anchors (11.152, 12.998, 31.23) and parent ratios (9.74, 9.74/137.88, 36.84) for 206Pb, 207Pb, 208Pb. The exact legacy decay constants and input age are unknown. Checked against the two-stage model parameters in Table 8 and growth curve in Table 9; calculation age and constants are not fully documented, and the stored triplet is not verified as that model. Retained pending recovery of the original calculation (audit-2026-11)."
 
 [standards."BLR".measurements.values]
 "206Pb/204Pb_i" = 16.975998159
@@ -66,7 +66,19 @@ role = "reference_age"
 unit = "Ma"
 status = "provisional"
 source = "aleinikoff2007"
-notes = "Accepted age; concordant radiogenic ratios are derived when direct values are absent."
+locator = "Table A1 and Figure A1, pp. 113-114"
+notes = "BLR-1 weighted mean 206Pb/238U age, n = 5, MSWD = 0.56, including tracer calibration uncertainty."
 
 [standards."BLR".measurements.values]
-"concordia_age" = 1047
+"206Pb/238U_age" = { value = 1047.1, uncertainty = 0.4, uncertainty_type = "2sd" }
+
+[[standards."BLR".measurements]]
+role = "reference_age"
+unit = "Ma"
+status = "provisional"
+source = "aleinikoff2007"
+locator = "Table A1 and Figure A1, pp. 113-114"
+notes = "Concordance assumption, not a published concordia age. The published 206Pb/238U age is repeated here as concordia_age so UPbRPy can derive the radiogenic ratios that are not stored. Before the 2026-11 audit this record stored 1047 Ma under concordia_age."
+
+[standards."BLR".measurements.values]
+"concordia_age" = 1047.1

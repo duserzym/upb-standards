@@ -3,158 +3,167 @@
 format_version = 2
 
 [sources."deer2013"]
-display = "Deer, Howie & Zussman (2013), An Introduction to the Rock-Forming Minerals, 3rd ed."
+display = "Deer, W.A., Howie, R.A. & Zussman, J. (2013). An introduction to the rock-forming minerals. 3rd edition. The Mineralogical Society, London. ISBN 978-0-903056-33-5 (print); ISBN 978-0-903056-43-4 (electronic). doi:10.1180/DHZ"
 kind = "book"
-no_doi_reason = "Book; DOI not yet looked up."
 file = "Deer2013An introduction to the rock-forming minerals.pdf"
+doi = "10.1180/DHZ"
+url = "https://doi.org/10.1180/DHZ"
 
 [sources."georem2005"]
-display = "Jochum et al. (2005), Geostandards and Geoanalytical Research 29, 333-338, doi:10.1111/j.1751-908X.2005.tb00904.x"
+display = "Jochum, K.P., Nohl, U., Herwig, K., Lammel, E., Stoll, B. & Hofmann, A.W. (2005). GeoReM: A new geochemical database for reference materials and isotopic standards. Geostandards and Geoanalytical Research 29(3), 333-338. doi:10.1111/j.1751-908X.2005.tb00904.x"
 kind = "journal_article"
 doi = "10.1111/j.1751-908X.2005.tb00904.x"
 url = "https://doi.org/10.1111/j.1751-908X.2005.tb00904.x"
 notes = "Publication describing the GeoReM compilation used for USGS glass reference values."
 
 [sources."jochum2011"]
-display = "Jochum et al. (2011), Geostandards and Geoanalytical Research 35, 397-429, doi:10.1111/j.1751-908X.2011.00120.x"
+display = "Jochum, K.P., Weis, U., Stoll, B., Kuzmin, D., Yang, Q., Raczek, I., Jacob, D.E., Stracke, A., Birbaum, K., Frick, D.A., Günther, D. & Enzweiler, J. (2011). Determination of reference values for NIST SRM 610–617 glasses following ISO guidelines. Geostandards and Geoanalytical Research 35(4), 397-429. doi:10.1111/j.1751-908X.2011.00120.x"
 kind = "journal_article"
 doi = "10.1111/j.1751-908X.2011.00120.x"
 url = "https://doi.org/10.1111/j.1751-908X.2011.00120.x"
 
 [sources."woodhead2001"]
-display = "Woodhead & Hergt (2001), Geostandards Newsletter 25, 261-266, doi:10.1111/j.1751-908X.2001.tb00601.x"
+display = "Woodhead, J.D. & Hergt, J.M. (2001). Strontium, neodymium and lead isotope analyses of NIST glass certified reference materials: SRM 610, 612, 614. Geostandards Newsletter 25(2-3), 261-266. doi:10.1111/j.1751-908X.2001.tb00601.x"
 kind = "journal_article"
 doi = "10.1111/j.1751-908X.2001.tb00601.x"
 url = "https://doi.org/10.1111/j.1751-908X.2001.tb00601.x"
 
 [sources."meng2024"]
-display = "Meng et al. (2024), Journal of Analytical Atomic Spectrometry 39, 2488-2501, doi:10.1039/D4JA00190G"
+display = "Meng, J., Wu, S., Wang, H., Yang, Y., Huang, C., Zhang, C., Yang, W., Tu, J., Yang, S., Ma, Q., Wang, Q., Xu, L. & Xie, L. (2024). The KNW rutile—a natural reference material for microbeam U–Pb age and trace element determination. Journal of Analytical Atomic Spectrometry 39(10), 2488-2501. doi:10.1039/D4JA00190G"
 kind = "journal_article"
 doi = "10.1039/D4JA00190G"
 url = "https://doi.org/10.1039/D4JA00190G"
 file = "Meng2024The KNW rutile—a natural reference material for microbeam U–Pb age and trace element determination.pdf"
 
 [sources."axelsson2018"]
-display = "Axelsson et al. (2018), Geostandards and Geoanalytical Research 42, 319-338, doi:10.1111/ggr.12213"
+display = "Axelsson, E., Pape, J., Berndt, J., Corfu, F., Mezger, K. & Raith, M.M. (2018). Rutile R632 – A new natural reference material for U-Pb and Zr determination. Geostandards and Geoanalytical Research 42(3), 319-338. doi:10.1111/ggr.12213"
 kind = "journal_article"
 doi = "10.1111/ggr.12213"
 url = "https://doi.org/10.1111/ggr.12213"
 file = "Axelsson2018aRutile R632 â A New Natural a.pdf"
 
 [sources."kennedy2023"]
-display = "Kennedy et al. (2023), Geostandards and Geoanalytical Research 47, 373-402, doi:10.1111/ggr.12477"
+display = "Kennedy, A.K., Wotzlaw, J.-F., Crowley, J.L., Schmitz, M., Schaltegger, U., Wade, B., Martin, L., Talavera, C., Ware, B. & Bui, T.H. (2023). Apatite reference materials for SIMS microanalysis of isotopes and trace elements. Geostandards and Geoanalytical Research 47(2), 373-402. doi:10.1111/ggr.12477"
 kind = "journal_article"
 doi = "10.1111/ggr.12477"
 url = "https://doi.org/10.1111/ggr.12477"
 file = "Kennedy2023aApatite Reference Materials foa.pdf"
 
 [sources."apen2022"]
-display = "Apen et al. (2022), Chemical Geology 590, 120689, doi:10.1016/j.chemgeo.2021.120689"
+display = "Apen, F.E., Wall, C.J., Cottle, J.M., Schmitz, M.D., Kylander-Clark, A.R.C. & Seward, G.G.E. (2022). Apatites for destruction: Reference apatites from Morocco and Brazil for U-Pb petrochronology and Nd and Sr isotope geochemistry. Chemical Geology 590, 120689. doi:10.1016/j.chemgeo.2021.120689"
 kind = "journal_article"
 doi = "10.1016/j.chemgeo.2021.120689"
 url = "https://doi.org/10.1016/j.chemgeo.2021.120689"
 file = "Apen2022bApatites for destruction Refera.pdf"
 
 [sources."droubi2023"]
-display = "Droubi et al. (2023), Geostandards and Geoanalytical Research 47, 337-369, doi:10.1111/ggr.12488"
+display = "Droubi, O.K., Bauer, A.M., Bonamici, C., Nachlas, W.O., Tappa, M.J., Garber, J.M. & Reimink, J.R. (2023). U-Th-Pb and trace element evaluation of existing titanite and apatite LA-ICP-MS reference materials and determination of 208Pb/232Th-206Pb/238U date discordance in Archaean accessory phases. Geostandards and Geoanalytical Research 47(2), 337-369. doi:10.1111/ggr.12488"
 kind = "journal_article"
 doi = "10.1111/ggr.12488"
 url = "https://doi.org/10.1111/ggr.12488"
 
 [sources."aleinikoff2007"]
-display = "Aleinikoff et al. (2007), American Journal of Science 307, 63-118, doi:10.2475/01.2007.04"
+display = "Aleinikoff, J.N., Wintsch, R.P., Tollo, R.P., Unruh, D.M., Fanning, C.M. & Schmitz, M.D. (2007). Ages and origins of rocks of the Killingworth dome, south-central Connecticut: Implications for the tectonic evolution of southern New England. American Journal of Science 307(1), 63-118. doi:10.2475/01.2007.04"
 kind = "journal_article"
 doi = "10.2475/01.2007.04"
 url = "https://doi.org/10.2475/01.2007.04"
+file = "Aleinikoff2007bAges and origins of rocks of ta.pdf"
 
 [sources."spandler2016"]
-display = "Spandler et al. (2016), Chemical Geology 425, 110-126, doi:10.1016/j.chemgeo.2016.01.002"
+display = "Spandler, C., Hammerli, J., Sha, P., Hilbert-Wolf, H., Hu, Y., Roberts, E. & Schmitz, M. (2016). MKED1: A new titanite standard for in situ analysis of Sm–Nd isotopes and U–Pb geochronology. Chemical Geology 425, 110-126. doi:10.1016/j.chemgeo.2016.01.002"
 kind = "journal_article"
 doi = "10.1016/j.chemgeo.2016.01.002"
 url = "https://doi.org/10.1016/j.chemgeo.2016.01.002"
 file = "Spandler2016aMKED1 A new titanite standard a.pdf"
 
 [sources."heaman2009"]
-display = "Heaman (2009), Chemical Geology 261, 43-52, doi:10.1016/j.chemgeo.2008.10.021"
+display = "Heaman, L.M. (2009). The application of U–Pb geochronology to mafic, ultramafic and alkaline rocks: An evaluation of three mineral standards. Chemical Geology 261(1-2), 43-52. doi:10.1016/j.chemgeo.2008.10.021"
 kind = "journal_article"
 doi = "10.1016/j.chemgeo.2008.10.021"
 url = "https://doi.org/10.1016/j.chemgeo.2008.10.021"
+file = "Heaman2009aThe application of U–Pb geochra.pdf"
 
 [sources."kennedy2010"]
-display = "Kennedy et al. (2010), Canadian Mineralogist 48, 1423-1443, doi:10.3749/canmin.48.5.1423"
+display = "Kennedy, A.K., Kamo, S.L., Nasdala, L. & Timms, N.E. (2010). Grenville skarn titanite: Potential reference material for SIMS U–Th–Pb analysis. The Canadian Mineralogist 48(6), 1423-1443. doi:10.3749/canmin.48.5.1423"
 kind = "journal_article"
 doi = "10.3749/canmin.48.5.1423"
 url = "https://doi.org/10.3749/canmin.48.5.1423"
 
 [sources."price2014"]
-display = "Price (2014), The Mount Scott Intrusive Suite, Oklahoma Geological Survey Guidebook 38, 299-318"
+display = "Price, J.D. (2014). The Mount Scott Intrusive Suite, Wichita Mountains, Oklahoma. In: Suneson, N.H. (ed.), Igneous and Tectonic History of the Southern Oklahoma Aulacogen. Oklahoma Geological Survey, Norman, Guidebook 38, Part II, Research Paper 9, pp. 299-318."
 kind = "book_chapter"
-no_doi_reason = "Geological survey guidebook chapter; DOI not yet looked up."
+no_doi_reason = "Geological survey guidebook chapter; no DOI found in Crossref or the Oklahoma Geological Survey catalogue. Identified by Guidebook 38, Part II, Research Paper 9."
 file = "Price2014aThe Mount Scott Intrusive Suita.pdf"
+url = "https://ogs.ou.edu/docs/guidebooks/GB38PIIRP9.pdf"
 
 [sources."black2004"]
-display = "Black et al. (2004), Chemical Geology 205, 115-140, doi:10.1016/j.chemgeo.2004.01.003"
+display = "Black, L.P., Kamo, S.L., Allen, C.M., Davis, D.W., Aleinikoff, J.N., Valley, J.W., Mundil, R., Campbell, I.H., Korsch, R.J., Williams, I.S. & Foudoulis, C. (2004). Improved 206Pb/238U microprobe geochronology by the monitoring of a trace-element-related matrix effect; SHRIMP, ID–TIMS, ELA–ICP–MS and oxygen isotope documentation for a series of zircon standards. Chemical Geology 205(1-2), 115-140. doi:10.1016/j.chemgeo.2004.01.003"
 kind = "journal_article"
 doi = "10.1016/j.chemgeo.2004.01.003"
 url = "https://doi.org/10.1016/j.chemgeo.2004.01.003"
+file = "Black2004aImproved 206Pb-238U microprobea.pdf"
 
 [sources."stern2009"]
-display = "Stern et al. (2009), Geostandards and Geoanalytical Research 33, 145-168, doi:10.1111/j.1751-908X.2009.00023.x"
+display = "Stern, R.A., Bodorkos, S., Kamo, S.L., Hickman, A.H. & Corfu, F. (2009). Measurement of SIMS instrumental mass fractionation of Pb isotopes during zircon dating. Geostandards and Geoanalytical Research 33(2), 145-168. doi:10.1111/j.1751-908X.2009.00023.x"
 kind = "journal_article"
 doi = "10.1111/j.1751-908X.2009.00023.x"
 url = "https://doi.org/10.1111/j.1751-908X.2009.00023.x"
 
 [sources."paces1993"]
-display = "Paces & Miller (1993), Journal of Geophysical Research: Solid Earth 98, 13997-14013, doi:10.1029/93JB01159"
+display = "Paces, J.B. & Miller, J.D., Jr. (1993). Precise U-Pb ages of Duluth Complex and related mafic intrusions, northeastern Minnesota: Geochronological insights to physical, petrogenetic, paleomagnetic, and tectonomagmatic processes associated with the 1.1 Ga Midcontinent Rift System. Journal of Geophysical Research: Solid Earth 98(B8), 13997-14013. doi:10.1029/93JB01159"
 kind = "journal_article"
 doi = "10.1029/93JB01159"
 url = "https://doi.org/10.1029/93JB01159"
+file = "Paces1993aPrecise U-Pb ages of Duluth Coa.pdf"
 
 [sources."slama2008"]
-display = "Slama et al. (2008), Chemical Geology 249, 1-35, doi:10.1016/j.chemgeo.2007.11.005"
+display = "Sláma, J., Košler, J., Condon, D.J., Crowley, J.L., Gerdes, A., Hanchar, J.M., Horstwood, M.S.A., Morris, G.A., Nasdala, L., Norberg, N., Schaltegger, U., Schoene, B., Tubrett, M.N. & Whitehouse, M.J. (2008). Plešovice zircon — A new natural reference material for U–Pb and Hf isotopic microanalysis. Chemical Geology 249(1-2), 1-35. doi:10.1016/j.chemgeo.2007.11.005"
 kind = "journal_article"
 doi = "10.1016/j.chemgeo.2007.11.005"
 url = "https://doi.org/10.1016/j.chemgeo.2007.11.005"
+file = "Slama2008aPlesovice zircon \\textemdash Aq.pdf"
 
 [sources."wiedenbeck1995"]
-display = "Wiedenbeck et al. (1995), Geostandards Newsletter 19, 1-23, doi:10.1111/j.1751-908X.1995.tb00147.x"
+display = "Wiedenbeck, M., Allé, P., Corfu, F., Griffin, W.L., Meier, M., Oberli, F., von Quadt, A., Roddick, J.C. & Spiegel, W. (1995). Three natural zircon standards for U-Th-Pb, Lu-Hf, trace element and REE analyses. Geostandards Newsletter 19(1), 1-23. doi:10.1111/j.1751-908X.1995.tb00147.x"
 kind = "journal_article"
 doi = "10.1111/j.1751-908X.1995.tb00147.x"
 url = "https://doi.org/10.1111/j.1751-908X.1995.tb00147.x"
 file = "Wiedenbeck1995aTHREE NATURAL ZIRCON STANDARDSb.pdf"
 
 [sources."kennedy2014"]
-display = "Kennedy et al. (2014), Canadian Mineralogist 52, 409-421, doi:10.3749/canmin.52.3.409"
+display = "Kennedy, A.K., Wotzlaw, J.-F., Schaltegger, U., Crowley, J.L. & Schmitz, M. (2014). Eocene zircon reference material for microanalysis of U–Th–Pb isotopes and trace elements. The Canadian Mineralogist 52(3), 409-421. doi:10.3749/canmin.52.3.409"
 kind = "journal_article"
 doi = "10.3749/canmin.52.3.409"
 url = "https://doi.org/10.3749/canmin.52.3.409"
 
 [sources."pedersen1989"]
-display = "Pedersen et al. (1989), Caledonian Geology of Scandinavia, 3-18, doi:10.1007/978-94-009-2549-6_1"
+display = "Pedersen, R.B., Dunning, G.R. & Robins, B. (1989). U–Pb ages of nepheline syenite pegmatites from the Seiland Magmatic Province, N Norway. In: Gayer, R.A. (ed.), The Caledonide Geology of Scandinavia. Graham & Trotman, London, pp. 3-8. doi:10.1007/978-94-009-2549-6_1"
 kind = "book_chapter"
 doi = "10.1007/978-94-009-2549-6_1"
 url = "https://doi.org/10.1007/978-94-009-2549-6_1"
 
 [sources."stacey1975"]
-display = "Stacey & Kramers (1975), Earth and Planetary Science Letters 26, 207-221, doi:10.1016/0012-821X(75)90088-6"
+display = "Stacey, J.S. & Kramers, J.D. (1975). Approximation of terrestrial lead isotope evolution by a two-stage model. Earth and Planetary Science Letters 26(2), 207-221. doi:10.1016/0012-821X(75)90088-6"
 kind = "journal_article"
 doi = "10.1016/0012-821X(75)90088-6"
 url = "https://doi.org/10.1016/0012-821X(75)90088-6"
+file = "Stacey1975aApproximation of terrestrial la.pdf"
 
 [sources."thomson2012"]
-display = "Thomson et al. (2012), Geochemistry, Geophysics, Geosystems 13, Q0AA21, doi:10.1029/2011GC003928"
+display = "Thomson, S.N., Gehrels, G.E., Ruiz, J. & Buchwaldt, R. (2012). Routine low-damage apatite U-Pb dating using laser ablation–multicollector–ICPMS. Geochemistry, Geophysics, Geosystems 13(2), Q0AA21. doi:10.1029/2011GC003928"
 kind = "journal_article"
 doi = "10.1029/2011GC003928"
 url = "https://doi.org/10.1029/2011GC003928"
+file = "Thomson2012aRoutine low-damage apatite U-Pa.pdf"
 
 [sources."schoene_bowring2006"]
-display = "Schoene & Bowring (2006), Contributions to Mineralogy and Petrology 151, 615-630, doi:10.1007/s00410-006-0077-4"
+display = "Schoene, B. & Bowring, S.A. (2006). U–Pb systematics of the McClure Mountain syenite: thermochronological constraints on the age of the 40Ar/39Ar standard MMhb. Contributions to Mineralogy and Petrology 151(5), 615-630. doi:10.1007/s00410-006-0077-4"
 kind = "journal_article"
 doi = "10.1007/s00410-006-0077-4"
 url = "https://doi.org/10.1007/s00410-006-0077-4"
 
 [sources."woodhead_hergt2005"]
-display = "Woodhead & Hergt (2005), Geostandards and Geoanalytical Research 29, 183-195, doi:10.1111/j.1751-908X.2005.tb00891.x"
+display = "Woodhead, J.D. & Hergt, J.M. (2005). A preliminary appraisal of seven natural zircon reference materials for in situ Hf isotope determination. Geostandards and Geoanalytical Research 29(2), 183-195. doi:10.1111/j.1751-908X.2005.tb00891.x"
 kind = "journal_article"
 doi = "10.1111/j.1751-908X.2005.tb00891.x"
 url = "https://doi.org/10.1111/j.1751-908X.2005.tb00891.x"
@@ -204,18 +213,19 @@ no_doi_reason = "Unattributed software import; no publication identified."
 notes = "The source JSON supplies no publication; values are retained verbatim as provisional records pending review."
 
 [sources."luo2025"]
-display = "Luo et al. (2025), Geostandards and Geoanalytical Research 49, 403-423, doi:10.1111/ggr.12603"
+display = "Luo, T., Qing, L., Zhang, C., Crowley, J., Li, Q., Ling, X., Xia, X., He, D., Deng, X., Zhang, W. & Hu, Z. (2025). Zircon S513 – A new gem-quality reference material for in situ microbeam U-Th-Pb, (U-Th)/He geochronology and Hf-O isotope measurement. Geostandards and Geoanalytical Research 49(2), 403-423. doi:10.1111/ggr.12603"
 kind = "journal_article"
 doi = "10.1111/ggr.12603"
 url = "https://doi.org/10.1111/ggr.12603"
 notes = "Zircon S513 - A New Gem-Quality Reference Material for In Situ Microbeam U-Th-Pb, (U-Th)/He Geochronology and Hf-O Isotope Measurement."
 
 [sources."hu2023"]
-display = "Hu et al. (2023), Geostandards and Geoanalytical Research 47, 509-533, doi:10.1111/ggr.12495"
+display = "Hu, P., Luo, T., Crowley, J., Wu, Y., Zhang, C., Xia, X., Long, T., Zhang, S., Bao, Z., Xu, L., Feng, L., Zhang, W. & Hu, Z. (2023). Characterisation of three Sri Lankan zircon megacrysts as potential reference materials for microbeam U-Pb geochronology and Hf-O-Zr isotope measurements. Geostandards and Geoanalytical Research 47(3), 509-533. doi:10.1111/ggr.12495"
 kind = "journal_article"
 doi = "10.1111/ggr.12495"
 url = "https://doi.org/10.1111/ggr.12495"
 notes = "Hu, P., Luo, T., Crowley, J., Wu, Y., Zhang, C., Xia, X., Long, T., Zhang, S., Bao, Z., Xu, L., Feng, L., Zhang, W. & Hu, Z. (2023), Characterisation of Three Sri Lankan Zircon Megacrysts as Potential Reference Materials for Microbeam U-Pb Geochronology and Hf-O-Zr Isotope Measurements, Geostandards and Geoanalytical Research 47(3), 509-533. The materials are SLZA, SLZB and SLZC; the Boise standard LTSE is SLZC (confirmed by Yiming Zhang, 2026-11-05)."
+file = "Hu2023aCharacterisation of Three Sri a.pdf"
 
 [sources."boise_upbr26plus_2026"]
 display = "Boise State Isotope Geology Laboratory, UPbR26plus spreadsheet, Analyte & Standards Archive (Zircon_04Nov26_HerreraLindsey-i193-LA-UPbR26plus.xlsm, 2026-11-04)"

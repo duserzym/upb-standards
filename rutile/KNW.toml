@@ -12,7 +12,8 @@ role = "concentration"
 unit = "ug/g"
 status = "recommended"
 source = "meng2024"
-notes = "Recommended elemental mass fraction assigned to the {quantity} measurement channel. Sufficiently homogeneous."
+locator = "Table 5, p. 2498"
+notes = "Reference mass fractions (Mean column) and overall expanded uncertainties (U column) at 95% confidence; elemental ug/g, not isotope mass fractions."
 
 [standards."KNW".measurements.values]
 "177Hf" = { value = 51.9, uncertainty = 10.7, uncertainty_type = "expanded_95" }
@@ -27,7 +28,8 @@ role = "concentration"
 unit = "ug/g"
 status = "provisional"
 source = "meng2024"
-notes = "Recommended elemental mass fraction assigned to the {quantity} measurement channel. Heterogeneous; use with caution."
+locator = "Table 5, p. 2498"
+notes = "Mean mass fractions and expanded uncertainties U at 95% confidence. Ta, W, Pb, U and Fe are heterogeneous; these working values remain provisional. The Pb column is radiogenic Pb mass fraction (Pb*), not measured total Pb; it is assigned to the 208Pb channel as an elemental calibration value, without isotope-abundance scaling."
 
 [standards."KNW".measurements.values]
 "181Ta" = { value = 238, uncertainty = 136, uncertainty_type = "expanded_95" }
@@ -39,9 +41,10 @@ notes = "Recommended elemental mass fraction assigned to the {quantity} measurem
 [[standards."KNW".measurements]]
 role = "concentration"
 unit = "ug/g"
-status = "recommended"
+status = "provisional"
 source = "deer2013"
-notes = "Average rutile Ti mass fraction assigned to the {quantity} measurement channel."
+locator = "Rutile, p. 393 (ideal TiO2; calculated)"
+notes = "Ideal TiO2 elemental Ti mass fraction: 1e6 * 47.9 / (47.9 + 2 * 16.0) = 599499.3742177722 ug/g. Formula checked in Deer et al.; rounded atomic masses reproduce the legacy calculation. This is a stoichiometric assumption, not a measured or recommended mass fraction for this rutile. Assigned to 49Ti without isotope-abundance scaling."
 
 [standards."KNW".measurements.values]
 "49Ti" = 599499.3742177722
@@ -51,12 +54,13 @@ role = "reference_age"
 unit = "Ma"
 status = "recommended"
 source = "meng2024"
-notes = "ID-TIMS ages reported in §3.2. The authors recommend the 206Pb/238U system."
+locator = "Section 3.2 and Figure 3, p. 2493; Table 3"
+notes = "Seven ID-TIMS subsamples. Section 4.1 favours the concordia age; the abstract and Conclusions explicitly recommend the 206Pb/238U weighted mean as well. The other two system-specific means remain provisional. Table 3 specifies 2s uncertainties."
 
 [standards."KNW".measurements.values]
 "206Pb/238U_age" = { value = 1088.2, uncertainty = 1.9, uncertainty_type = "2sd" }
-"207Pb/206Pb_age" = { value = 1083.1, uncertainty = 6.0, uncertainty_type = "2sd" }
-"207Pb/235U_age" = { value = 1086.6, uncertainty = 4.6, uncertainty_type = "2sd" }
+"207Pb/206Pb_age" = { value = 1083.1, uncertainty = 6.0, uncertainty_type = "2sd", status = "provisional" }
+"207Pb/235U_age" = { value = 1086.6, uncertainty = 4.6, uncertainty_type = "2sd", status = "provisional" }
 "concordia_age" = { value = 1088.2, uncertainty = 1.5, uncertainty_type = "2sd" }
 
 [[standards."KNW".measurements]]
@@ -64,7 +68,8 @@ role = "radiogenic_ratio"
 unit = "ratio"
 status = "provisional"
 source = "meng2024"
-notes = "Table 3, KNW1–KNW7. Inverse-variance weighted means of the seven printed ID-TIMS aliquot ratios. Uncertainties are propagated 2σ standard errors of each mean. The authors recommend the separately listed ages. Table 3 uses 238U/235U = 137.818."
+locator = "Table 3, KNW1-KNW7"
+notes = "Table 3, KNW1–KNW7. Inverse-variance weighted means of the seven printed ID-TIMS aliquot ratios. Uncertainties are propagated 2σ standard errors of each mean. The authors recommend the separately listed ages. Table 3 uses 238U/235U = 137.818. Recomputed from the printed ratios and 2s errors in the 2026-11 audit; all three means and errors reproduce."
 
 [standards."KNW".measurements.values]
 "206Pb/238U*" = { value = 0.183870, uncertainty = 0.000327, uncertainty_type = "2sd" }

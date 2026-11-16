@@ -10,7 +10,7 @@ role = "concentration"
 unit = "ug/g"
 status = "provisional"
 source = "deer2013"
-notes = "Elemental mass fraction assigned to the {quantity} measurement channel; value is not multiplied by the isotope abundance. Average zircon composition. LTSE is the SLZC megacryst of Hu et al. (2023)."
+notes = "Elemental mass fraction assigned to the {quantity} measurement channel; value is not multiplied by the isotope abundance. Average zircon composition. LTSE is the SLZC megacryst of Hu et al. (2023). Legacy oxide-to-element mass-fraction conversion (oxide wt.% * 10000 * elemental/oxide molar-mass ratio), not a measurement of this standard. The original oxide averages and atomic weights are not preserved; the stored numbers could not be reproduced from the book tables and remain unverified (audit-2026-11)."
 
 [standards."LTSE".measurements.values]
 "29Si" = 151443.22960004435
@@ -33,7 +33,8 @@ role = "reference_age"
 unit = "Ma"
 status = "recommended"
 source = "hu2023"
-notes = "SLZC: Th-corrected weighted mean 206Pb/238U CA-ID-TIMS age, 95% confidence, n = 7 (Hu et al. 2023). LTSE is the SLZC megacryst, confirmed by Yiming Zhang on 2026-11-05. The UPbR26plus archive's 560.928 Ma is superseded."
+locator = "Figure 4f, p. 518; CA-ID-TIMS results, p. 517"
+notes = "SLZC (LTSE): Th-corrected weighted mean 206Pb/238U CA-ID-TIMS age, n = 7. Published uncertainty is +/- 0.22/0.57/1.29 Ma at 95% confidence: analytical / analytical plus tracer / analytical plus tracer plus decay constants. The stored 1.29 Ma is the full uncertainty. The UPbR26plus archive's 560.928 Ma is superseded."
 
 [standards."LTSE".measurements.values]
 "206Pb/238U_age" = { value = 560.83, uncertainty = 1.29, uncertainty_type = "expanded_95" }

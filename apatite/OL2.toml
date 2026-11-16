@@ -9,9 +9,9 @@ aliases = []
 [[standards."OL2".measurements]]
 role = "concentration"
 unit = "ug/g"
-status = "recommended"
+status = "provisional"
 source = "deer2013"
-notes = "Elemental mass fraction assigned to the {quantity} measurement channel; value is not multiplied by the isotope abundance. Average apatite composition."
+notes = "Elemental mass fraction assigned to the {quantity} measurement channel; value is not multiplied by the isotope abundance. Average apatite composition. Legacy oxide-to-element mass-fraction conversion (oxide wt.% * 10000 * elemental/oxide molar-mass ratio), not a measurement of this standard. The original oxide averages and atomic weights are not preserved; the stored numbers could not be reproduced from the book tables and remain unverified (audit-2026-11)."
 
 [standards."OL2".measurements.values]
 "31P" = 182326.02705940383
@@ -22,7 +22,8 @@ role = "initial_ratio"
 unit = "ratio"
 status = "recommended"
 source = "kennedy2023"
-notes = "Concordia-constrained three-dimensional common-Pb composition reported with the ID-TIMS results."
+locator = "Table 4, p. 390"
+notes = "Common-Pb 206Pb/204Pb and 207Pb/204Pb from the concordia-constrained 3D ID-TIMS regression (Pbc 3D columns), not the measured total Pb composition or the Stacey-Kramers columns."
 
 [standards."OL2".measurements.values]
 "206Pb/204Pb_i" = 49.09
@@ -33,7 +34,8 @@ role = "reference_age"
 unit = "Ma"
 status = "recommended"
 source = "kennedy2023"
-notes = "Concordia-constrained ID-TIMS age; concordant radiogenic ratios are derived."
+locator = "Table 4, p. 390; ID-TIMS methods, p. 378"
+notes = "Weighted mean 3D concordia intercept age. Methods specify 95% confidence and exclude tracer-calibration and decay-constant systematic uncertainties. No initial 230Th disequilibrium correction."
 
 [standards."OL2".measurements.values]
-"concordia_age" = { value = 868.87, uncertainty = 0.25, uncertainty_type = "2sd" }
+"concordia_age" = { value = 868.87, uncertainty = 0.25, uncertainty_type = "expanded_95" }
