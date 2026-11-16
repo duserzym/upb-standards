@@ -1,16 +1,28 @@
-<p align="center"><img src="assets/icon-256.png" width="128" alt=""></p>
+<p align="center">
+  <img src="assets/icon-256.png" width="112" alt="">
+</p>
 
-# upb-standards
+<h1 align="center">upb-standards</h1>
 
-Reference-material values for LA-ICP-MS U–Pb and trace-element reduction in
-UPbRPy. This format-2 TOML library records source quantities, uncertainties,
-measurement conventions and citations for zircon, apatite, titanite, rutile,
-glass, carbonate and hematite. UPbRPy derives missing reciprocal and linked
-ratios from these documented inputs.
+<p align="center">Reference-material values with full citations for LA-ICP-MS U-Pb and trace-element reduction</p>
 
-[Browse the materials, sources and conventions](https://duserzym.github.io/upb-standards/).
+<p align="center">
+  <a href="https://duserzym.github.io/upb-standards/">Browse the library</a> ·
+  <a href="https://duserzym.github.io/upb-standards/sources.html">Sources</a> ·
+  <a href="https://github.com/duserzym/grainatlas">GrainAtlas</a> ·
+  <a href="https://github.com/duserzym/upblab">UPb Lab</a> ·
+  <a href="https://github.com/duserzym/UPbRPy">UPbRPy</a>
+</p>
 
-![The materials page of the docs site](docs/site-materials.png)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/images/materials-1440x900-dark.png">
+  <img src="docs/images/materials-1440x900-light.png" width="100%" alt="Reference materials in the library">
+</picture>
+
+A format-2 TOML library of reference-material values for UPbRPy. It records
+source quantities, uncertainties, measurement conventions and citations for
+zircon, apatite, titanite, rutile, glass, carbonate and hematite. UPbRPy derives
+reciprocal and linked ratios from these inputs.
 
 ## What is in it
 
@@ -36,16 +48,18 @@ Regenerate the table with `python3 site/build.py --readme`.
 UPbRPy bundles a copy of the library. To load another checkout, pass its
 directory or `library.toml` to `UPbRPy.load_standard_measurements(path)`.
 In Studio, choose **File → Reference Material Library** and select
-`library.toml` to adopt a reviewed library explicitly. The older wide CSV
-remains a separate compatibility archive.
+`library.toml` to adopt a reviewed library. The older wide CSV remains a
+separate compatibility archive.
 
 Keep a clone at `~/UPbRPy/upb-standards` for the desktop apps, or set
-`UPB_STANDARDS_DIR` before launching an app to use another clone. Git must
-be on the app’s path. In Updates, **Check standards** fetches Git metadata,
-compares the clone’s TOML files with GitHub main and lists differences. It
-also checks whether the active library digest differs from the clone. If
-GitHub is unavailable, it uses the last checked revision when available,
-otherwise local HEAD. Checking does not adopt or edit values.
+`UPB_STANDARDS_DIR` before launching an app to use another clone.
+Git must be on the app’s path.
+
+In Updates, **Check standards** fetches Git metadata and compares the clone’s
+TOML files with GitHub main. It lists differences and checks whether the
+active library digest differs from the clone. If GitHub is unavailable,
+it uses the last checked revision when available, otherwise local HEAD.
+Checking never adopts or edits values.
 
 Record the Git revision and library digest when archiving a reduction.
 [Usage and provenance details](https://duserzym.github.io/upb-standards/upbrpy.html).
@@ -67,6 +81,11 @@ Always also cite the original publications listed for each value in the
 [source registry](https://duserzym.github.io/upb-standards/sources.html).
 Keep the full library digest with the archived reduction.
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/images/sources-1440x900-dark.png">
+  <img src="docs/images/sources-1440x900-light.png" width="100%" alt="Source registry with full literature citations">
+</picture>
+
 ## Contributing a material
 
 Add documented source quantities in a material TOML file, register it in
@@ -84,6 +103,13 @@ python3 site/build.py --out _site --check
 Open `_site/index.html` directly; no server is needed. Regenerate the icon
 PNGs with `sh assets/make_icons.sh` (requires `rsvg-convert`). The Pages
 workflow runs by hand with `gh workflow run pages`.
+
+## Related apps
+
+- **[GrainAtlas](https://github.com/duserzym/grainatlas)**: stitch SEM images of grain mounts, find grains, place laser spots and print sheets.
+- **[UPb Lab](https://github.com/duserzym/upblab)**: one window for the lab workflow: sessions, images and review of stored results.
+- **[UPbRPy](https://github.com/duserzym/UPbRPy)**: data reduction engine and desktop Studio for LA-ICP-MS U-Pb and trace elements.
+- **UPbDB**: the lab database server for sessions, spots and stored reductions (private).
 
 ## License
 
