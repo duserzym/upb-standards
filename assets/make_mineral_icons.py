@@ -76,7 +76,8 @@ def shade(colour, n):
     return rgb2hex([x * f + 255 * 0.05 for x in hex2rgb(colour)])
 
 
-def render(vertices, faces, colours, view, pad=2.0):
+def project_faces(vertices, faces, colours, view):
+    """Return visible (depth, 2D loop, shaded colour) faces in painter order."""
     m = view_matrix(**view)
     world = [apply(m, v) for v in vertices]
     drawn = []
@@ -91,6 +92,11 @@ def render(vertices, faces, colours, view, pad=2.0):
         depth = sum(p[2] for p in loop) / len(loop)
         drawn.append((depth, [(p[0], -p[1]) for p in loop], shade(colours[f["form"]], n)))
     drawn.sort(key=lambda d: d[0])
+    return drawn
+
+
+def render(vertices, faces, colours, view, pad=2.0):
+    drawn = project_faces(vertices, faces, colours, view)
     pts = [p for _, loop, _ in drawn for p in loop]
     xs, ys = [p[0] for p in pts], [p[1] for p in pts]
     scale = min((34 - 2 * pad) / (max(xs) - min(xs)), (42 - 2 * pad) / (max(ys) - min(ys)))
