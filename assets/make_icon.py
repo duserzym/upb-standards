@@ -6,12 +6,14 @@ Run from the repository root (Python 3, standard library only):
 
 Reads assets/minerals/crystals.json; writes assets/icon.svg (four catalogue
 rows) and assets/icon-small.svg (one large zircon beside three thick value
-bars). No atlas.json is needed. Projection, culling, painter order and KEY/RIM
-shading are shared with make_mineral_icons.py. Stored views are fitted uniformly
+bars). No atlas.json is needed. Projection, culling and painter order are shared
+with make_mineral_icons.py; fills use brightened form colours without lighting.
+Stored views are fitted uniformly
 into their boxes. make_icons.sh uses the small variant for 32/64 px and the
 site favicon, which also serves as the 42 px header mark.
 """
 
+import colorsys
 import json
 from pathlib import Path
 
@@ -21,11 +23,26 @@ ASSETS = Path(__file__).resolve().parent
 MATERIALS = ("zircon", "apatite", "titanite", "rutile")
 
 
+def brighten(colour):
+    """Keep the form hue, lifting lightness and saturation within vivid bounds."""
+    rgb = [int(colour[i:i + 2], 16) / 255 for i in (1, 3, 5)]
+    hue, lightness, saturation = colorsys.rgb_to_hls(*rgb)
+    lightness = min(0.70, max(0.60, lightness + 0.18))
+    saturation = min(0.95, max(0.85, saturation + 0.20))
+    return "#" + "".join(f"{round(c * 255):02x}" for c in
+                         colorsys.hls_to_rgb(hue, lightness, saturation))
+
+
 def crystal_svg(data, box, small=False):
     """Fit a stored crystal into (x, y, width, height), preserving its aspect."""
     faces = [{"loop": f["loop"], "form": i} for i, f in enumerate(data["faces"])]
     colours = {i: f["color"] for i, f in enumerate(data["faces"])}
-    drawn = project_faces(data["vertices"], faces, colours, data["view"])
+    # Project each face separately to retain its input colour, discarding the
+    # shared renderer's shaded fill. The stable depth sort keeps painter order.
+    drawn = [(depth, loop, brighten(colours[face["form"]]))
+             for face in faces
+             for depth, loop, _ in project_faces(data["vertices"], [face], colours, data["view"])]
+    drawn.sort(key=lambda face: face[0])
     points = [p for _, loop, _ in drawn for p in loop]
     xs, ys = [p[0] for p in points], [p[1] for p in points]
     cx, cy = (min(xs) + max(xs)) / 2, (min(ys) + max(ys)) / 2

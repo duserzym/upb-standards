@@ -100,7 +100,8 @@ Build and check the manual locally with Python 3.11 or later:
 python3 site/build.py --out _site --check
 ```
 
-Open `_site/index.html` directly; no server is needed. Regenerate the icon
+Open `_site/index.html` directly; no server is needed. Generate the icon SVGs
+from the mineral crystals with `python3 assets/make_icon.py`, then render the
 PNGs with `sh assets/make_icons.sh` (requires `rsvg-convert`).
 The mineral marks are crystals from the
 [Mineral Habit Atlas](https://duserzym.github.io/mineral-habit-matrix/); the site
