@@ -200,30 +200,119 @@ def number(value):
     return f'<span class="number">{esc(full)}</span>'
 
 
-def mineral_mark(material):
-    if material == "zircon":
-        faces = ('<path d="M17 2 27 12V30L17 40 7 30V12Z" fill="#4063d8"/>'
-                 '<path d="M17 2 7 12 17 16 27 12Z" fill="#c3cff6"/>'
-                 '<path d="M7 12 17 16V34L7 30Z" fill="#7b93e6"/>'
-                 '<path d="M7 30 17 34 27 30 17 40Z" fill="#c3cff6"/>'
-                 '<path d="M17 2V16M17 16V34M17 34V40" fill="none"/>')
-        return ('<span class="mineral-mark"><svg viewBox="0 0 34 42" aria-hidden="true">'
-                f'<g stroke="#24408f" stroke-width="1.2" stroke-linejoin="round">{faces}</g>'
-                '</svg></span>')
-    shapes = {
-        "apatite": ('#389826', '#c6ecb8', 'M17 4 29 10V32L17 38 5 32V10Z', 'M17 4 29 10 23 17H11L5 10Z'),
-        "titanite": ('#9558b2', '#e2cdea', 'M3 24 22 7 31 28 12 36Z', 'M3 24 22 7 17 25Z'),
-        "rutile": ('#cb3c33', '#f5c3bf', 'M17 2 25 8V33L17 40 9 34V9Z', 'M17 2 25 8 17 13 9 9Z'),
-        "glass": ('#89aab2', '#d9edf0', 'M3 20 23 15 31 21V25L11 30 3 24Z', 'M3 20 23 15 31 21 11 26Z'),
-        "carbonate": ('#389826', '#c6ecb8', 'M4 16 21 5 31 26 14 37Z', 'M4 16 21 5 23 22Z'),
-        "hematite": ('#cb3c33', '#f5c3bf', 'M3 19 11 8H25L32 23 24 34H10Z', 'M3 19 11 8H25L21 21Z'),
+MINERALS = ROOT / "assets" / "minerals"
+
+
+def mineral_mark(material, size=""):
+    """A crystal from the Mineral Habit Atlas: a still SVG that CRYSTAL_SCRIPT spins live."""
+    still = MINERALS / f"{material}.svg"
+    if not still.is_file():
+        still = MINERALS / "glass.svg"
+    return (f'<span class="{" ".join(filter(None, ("mineral-mark", size)))}" data-crystal="{esc(still.stem)}">'
+            f'{still.read_text(encoding="utf-8").strip()}</span>')
+
+
+def crystal_data(body):
+    """The crystals.json entries for the marks that appear in a page body."""
+    used = sorted(set(re.findall(r'data-crystal="([a-z]+)"', body)))
+    if not used:
+        return ""
+    crystals = json.loads((MINERALS / "crystals.json").read_text(encoding="utf-8"))
+    data = json.dumps({name: crystals[name] for name in used if name in crystals}, separators=(",", ":"))
+    return (f'<script id="crystals" type="application/json">{data}</script>\n'
+            f'<script>{CRYSTAL_SCRIPT}</script>\n')
+
+
+CRYSTAL_SCRIPT = r"""
+(() => {
+  // Live view of the Mineral Habit Atlas crystals. Each crystal is convex, so drawing
+  // the faces that point at the viewer is a complete render; no depth sorting needed.
+  const crystals = JSON.parse(document.getElementById('crystals').textContent);
+  const still = matchMedia('(prefers-reduced-motion: reduce)');
+  const darkScheme = matchMedia('(prefers-color-scheme: dark)');
+  const unit = v => { const n = Math.hypot(...v); return v.map(x => x / n); };
+  const KEY = unit([2.5, 4, 5]), RIM = unit([-4, 1, -3]);  // atlas key and rim lights
+  const rad = Math.PI / 180;
+  const marks = [];
+  function project(c, turn) {
+    // Same chain as the atlas card: c axis up, turned about it, then tipped towards the viewer.
+    const t = c.view.tilt * rad, u = turn * rad;
+    const ct = Math.cos(t), st = Math.sin(t), cu = Math.cos(u), su = Math.sin(u);
+    return c.vertices.map(([x, y, z]) => {
+      const X = cu * x - su * y, Y = z, Z = -su * x - cu * y;
+      return [X, ct * Y - st * Z, st * Y + ct * Z];
+    });
+  }
+  function draw(m, turn) {
+    const { canvas, ctx, c, radius } = m;
+    const w = canvas.width, h = canvas.height, s = 0.98 * Math.min(w, h) / (2 * radius);
+    const P = project(c, turn);
+    const dark = darkScheme.matches;
+    ctx.clearRect(0, 0, w, h);
+    ctx.lineJoin = 'round';
+    const front = [];
+    for (const f of c.faces) {
+      const [a, b, d] = f.loop.slice(0, 3).map(i => P[i]);
+      const e1 = [b[0] - a[0], b[1] - a[1], b[2] - a[2]], e2 = [d[0] - a[0], d[1] - a[1], d[2] - a[2]];
+      const n = unit([e1[1] * e2[2] - e1[2] * e2[1], e1[2] * e2[0] - e1[0] * e2[2], e1[0] * e2[1] - e1[1] * e2[0]]);
+      if (n[2] <= 1e-6) continue;
+      const k = Math.max(0, n[0] * KEY[0] + n[1] * KEY[1] + n[2] * KEY[2]);
+      const r = Math.max(0, n[0] * RIM[0] + n[1] * RIM[1] + n[2] * RIM[2]);
+      const g = 0.58 + 0.5 * k + 0.12 * r;
+      const rgb = [1, 3, 5].map(i => Math.min(255, Math.round(parseInt(f.color.slice(i, i + 2), 16) * g + 12.75)));
+      front.push([f.loop, `rgb(${rgb.join(',')})`]);
     }
-    base, light, outline, top = shapes.get(material, shapes["glass"])
-    stroke = '#607f87' if material == 'glass' else 'currentColor'
-    return (f'<span class="mineral-mark"><svg viewBox="0 0 34 42" aria-hidden="true">'
-            f'<path d="{outline}" fill="{base}" stroke="{stroke}" stroke-width="1.5" stroke-linejoin="round"/>'
-            f'<path d="{top}" fill="{light}" stroke="{stroke}" stroke-width="1.5" stroke-linejoin="round"/>'
-            '</svg></span>')
+    const path = loop => {
+      ctx.beginPath();
+      loop.forEach((i, j) => ctx[j ? 'lineTo' : 'moveTo'](w / 2 + P[i][0] * s, h / 2 - P[i][1] * s));
+      ctx.closePath();
+    };
+    for (const [loop, fill] of front) {
+      path(loop); ctx.fillStyle = fill; ctx.strokeStyle = fill; ctx.lineWidth = 0.6; ctx.fill(); ctx.stroke();
+    }
+    ctx.strokeStyle = dark ? 'rgba(11, 10, 8, .75)' : 'rgba(42, 32, 24, .6)';
+    ctx.lineWidth = Math.max(1, w / 90);
+    for (const [loop] of front) { path(loop); ctx.stroke(); }
+  }
+  function size(m) {
+    const box = m.el.getBoundingClientRect(), dpr = window.devicePixelRatio || 1;
+    m.canvas.width = Math.round(box.width * dpr);
+    m.canvas.height = Math.round(box.height * dpr);
+  }
+  document.querySelectorAll('[data-crystal]').forEach((el, i) => {
+    const c = crystals[el.dataset.crystal];
+    if (!c) return;
+    const canvas = document.createElement('canvas');
+    canvas.setAttribute('aria-hidden', 'true');
+    const m = { el, canvas, ctx: canvas.getContext('2d'), c, visible: true, phase: i * 37,
+                radius: Math.max(...c.vertices.map(v => Math.hypot(...v))) };
+    el.classList.add('live');
+    el.append(canvas);
+    size(m);
+    marks.push(m);
+  });
+  if (!marks.length) return;
+  const seen = new IntersectionObserver(entries => entries.forEach(e => {
+    const m = marks.find(x => x.el === e.target); if (m) m.visible = e.isIntersecting;
+  }));
+  marks.forEach(m => seen.observe(m.el));
+  const start = performance.now();
+  let running = false;
+  function frame(now) {
+    const spin = still.matches ? 0 : (now - start) / 1000 * 18;  // 18 degrees a second
+    for (const m of marks) {
+      if (m.visible || !spin) draw(m, m.c.view.turn + (spin ? spin + m.phase : 0));
+    }
+    if (spin) requestAnimationFrame(frame); else running = false;
+  }
+  function kick() { if (!running) { running = true; requestAnimationFrame(frame); } }
+  kick();
+  const redraw = () => { marks.forEach(size); running = false; kick(); };
+  window.addEventListener('resize', redraw);
+  still.addEventListener('change', redraw);
+  darkScheme.addEventListener('change', redraw);
+})();
+"""
 
 
 SEARCH_SCRIPT = r"""
@@ -380,7 +469,7 @@ def page(title, body, path, groups, index, material=None):
 </main>
 <script id="search-index" type="application/json">{data}</script>
 <script>{SEARCH_SCRIPT}</script>
-</body>
+{crystal_data(body)}</body>
 </html>
 '''
 
@@ -514,7 +603,7 @@ def material_page(material, items, sources):
         '<thead><tr><th scope="col">Standard</th><th scope="col">Aliases</th>'
         '<th scope="col">Reference ages</th><th scope="col">Sources</th></tr></thead>'
         f'<tbody>{"".join(summaries)}</tbody></table></div>')
-    return f'''<p class="eyebrow">Materials</p><h1>{esc(material.title())}</h1>
+    return f'''<div class="material-head">{mineral_mark(material, "hero")}<div><p class="eyebrow">Materials</p><h1>{esc(material.title())}</h1></div></div>
 {summary}
 <p class="lede">{esc(SUMMARIES.get(material, "Reference-material values."))} Each panel records the stored source measurements.</p>
 <div class="toolbar"><label><span class="search-label">Filter {esc(material)} standards</span><input type="search" id="standard-search" placeholder="Name, alias or source" autocomplete="off"></label>

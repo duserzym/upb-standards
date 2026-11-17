@@ -101,7 +101,12 @@ python3 site/build.py --out _site --check
 ```
 
 Open `_site/index.html` directly; no server is needed. Regenerate the icon
-PNGs with `sh assets/make_icons.sh` (requires `rsvg-convert`). The Pages
+PNGs with `sh assets/make_icons.sh` (requires `rsvg-convert`).
+The mineral marks are crystals from the
+[Mineral Habit Atlas](https://duserzym.github.io/mineral-habit-matrix/); the site
+spins them live and falls back to still SVGs. Redraw them with
+`python3 assets/make_mineral_icons.py <mineral-habit-matrix>/site/data/atlas.json`.
+The Pages
 workflow runs by hand with `gh workflow run pages`.
 
 ## Related apps
