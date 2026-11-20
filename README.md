@@ -73,6 +73,13 @@ Each measurement records its role, unit, status and source.
 
 [The 2026-11 audit lists what was checked and what is not yet verified.](https://github.com/duserzym/upb-standards/blob/main/docs/audit-2026-11.md)
 
+## ID-TIMS tracers
+
+The separate [versioned spike registry](spikes/README.md) records published
+EARTHTIME tracer compositions, sub-fractions, calibration versions and
+append-only locks. Private calibrations extend it through private overlays.
+Run `python3 spikes/check.py` to validate the public records.
+
 ## How to cite
 
 Cite this library as **upb-standards**,

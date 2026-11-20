@@ -240,3 +240,10 @@ kind = "journal_article"
 doi = "10.3749/canmin.50.4.1055"
 url = "https://doi.org/10.3749/canmin.50.4.1055"
 notes = "Cites the El Muerto titanite U-Pb age of 969 +/- 9 Ma from Solari et al. (1998)."
+
+[sources."condon2015"]
+display = "Condon, D.J., Schoene, B., McLean, N.M., Bowring, S.A. & Parrish, R.R. (2015). Metrology and traceability of U–Pb isotope dilution geochronology (EARTHTIME Tracer Calibration Part I). Geochimica et Cosmochimica Acta 164, 464–480."
+kind = "journal_article"
+doi = "10.1016/j.gca.2015.05.026"
+url = "https://doi.org/10.1016/j.gca.2015.05.026"
+notes = "DOI checked against the first page of the paper. Tracer compositions: Table 3, p. 474."

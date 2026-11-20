@@ -1,0 +1,36 @@
+format_version = 1
+
+[spike]
+id = "ET535"
+name = "ET535"
+aliases = []
+spike_type = "535"
+isotopes = ["205Pb", "233U", "235U"]
+description = "ET535 isotope-dilution tracer solution."
+visibility = "public"
+
+[[spike.subfractions]]
+id = "master"
+name = "EARTHTIME master solution"
+notes = "Published solution composition; concentrations are those printed in Table 3."
+
+[[spike.versions]]
+subfraction = "master"
+version = "v3"
+status = "current"
+source = "condon2015"
+locator = "Table 3, p. 474 (PDF p. 11), ET535 v.3.0"
+notes = "Recommended values transcribed as printed; uncertainties are absolute one standard deviation. No reciprocal or cross-ratios have been derived."
+calibrated = "2015"
+
+[spike.versions.concentrations]
+"205Pb" = { value = 1.0312e-11, unit = "mol/g", uncertainty = 2.6e-14, uncertainty_type = "1sd_abs" }
+"235U" = { value = 1.0336e-9, unit = "mol/g", uncertainty = 2.6e-12, uncertainty_type = "1sd_abs" }
+
+[spike.versions.ratios]
+"204Pb/205Pb" = { value = 0.00009, uncertainty = 0.000009, uncertainty_type = "1sd_abs" }
+"206Pb/205Pb" = { value = 0.000389, uncertainty = 0.00017, uncertainty_type = "1sd_abs" }
+"207Pb/205Pb" = { value = 0.00030, uncertainty = 0.00014, uncertainty_type = "1sd_abs" }
+"208Pb/205Pb" = { value = 0.000744, uncertainty = 0.00035, uncertainty_type = "1sd_abs" }
+"233U/235U" = { value = 0.995062, uncertainty = 0.000054, uncertainty_type = "1sd_abs" }
+"238U/235U" = { value = 0.00307993, uncertainty = 4.0e-7, uncertainty_type = "1sd_abs" }
